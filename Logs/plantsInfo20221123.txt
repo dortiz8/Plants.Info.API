@@ -1,0 +1,819 @@
+2022-11-23 15:17:39.069 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-23 15:17:39.189 -05:00 [DBG] Hosting starting
+2022-11-23 15:17:39.428 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F562FF4D3E1714315F9DB10F9C4760B87D7CC159)
+2022-11-23 15:17:39.567 -05:00 [INF] Now listening on: https://localhost:7235
+2022-11-23 15:17:39.569 -05:00 [INF] Now listening on: http://localhost:5235
+2022-11-23 15:17:39.571 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2022-11-23 15:17:39.573 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-23 15:17:39.575 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-23 15:17:39.576 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-23 15:17:39.577 -05:00 [INF] Hosting environment: Development
+2022-11-23 15:17:39.577 -05:00 [INF] Content root path: C:\Users\dortiz\source\repos\TestFolder\Plant.info.API\
+2022-11-23 15:17:39.578 -05:00 [DBG] Hosting started
+2022-11-23 15:17:40.060 -05:00 [DBG] Connection id "0HMMDHV2KRVN0" accepted.
+2022-11-23 15:17:40.062 -05:00 [DBG] Connection id "0HMMDHV2KRVN0" started.
+2022-11-23 15:17:40.067 -05:00 [DBG] Connection id "0HMMDHV2KRVN1" accepted.
+2022-11-23 15:17:40.070 -05:00 [DBG] Connection id "0HMMDHV2KRVN0" received FIN.
+2022-11-23 15:17:40.070 -05:00 [DBG] Connection id "0HMMDHV2KRVN1" received FIN.
+2022-11-23 15:17:40.072 -05:00 [DBG] Connection id "0HMMDHV2KRVN1" started.
+2022-11-23 15:17:40.082 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-23 15:17:40.082 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-23 15:17:40.137 -05:00 [DBG] Connection id "0HMMDHV2KRVN0" stopped.
+2022-11-23 15:17:40.137 -05:00 [DBG] Connection id "0HMMDHV2KRVN1" stopped.
+2022-11-23 15:17:40.140 -05:00 [DBG] Connection id "0HMMDHV2KRVN0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 15:17:40.141 -05:00 [DBG] Connection id "0HMMDHV2KRVN1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 15:17:40.734 -05:00 [DBG] Connection id "0HMMDHV2KRVN2" accepted.
+2022-11-23 15:17:40.859 -05:00 [DBG] Connection id "0HMMDHV2KRVN2" started.
+2022-11-23 15:17:41.055 -05:00 [DBG] Connection 0HMMDHV2KRVN2 established using the following protocol: "Tls12"
+2022-11-23 15:17:41.142 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - -
+2022-11-23 15:17:41.183 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-23 15:17:41.330 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-23 15:17:41.544 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-23 15:17:41.549 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 412.0498ms
+2022-11-23 15:17:41.556 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - -
+2022-11-23 15:17:41.560 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.9292ms
+2022-11-23 15:17:41.762 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - -
+2022-11-23 15:17:41.840 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.1024ms
+2022-11-23 15:17:42.273 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - -
+2022-11-23 15:17:42.449 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 175.7167ms
+2022-11-23 15:19:54.455 -05:00 [DBG] Connection id "0HMMDHV2KRVN2" is closing.
+2022-11-23 15:19:54.460 -05:00 [DBG] Connection id "0HMMDHV2KRVN2" is closed. The last processed stream ID was 7.
+2022-11-23 15:19:54.463 -05:00 [DBG] Connection id "0HMMDHV2KRVN2" received FIN.
+2022-11-23 15:19:54.464 -05:00 [DBG] Connection id "0HMMDHV2KRVN2" stopped.
+2022-11-23 15:19:54.465 -05:00 [DBG] Connection id "0HMMDHV2KRVN2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 17:09:42.967 -05:00 [DBG] Connection id "0HMMDHV2KRVN3" accepted.
+2022-11-23 17:09:42.990 -05:00 [DBG] Connection id "0HMMDHV2KRVN3" started.
+2022-11-23 17:09:43.015 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:09:43.023 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:09:43.030 -05:00 [DBG] Https port '7235' loaded from configuration.
+2022-11-23 17:09:43.033 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:09:43.041 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 25.8974ms
+2022-11-23 17:09:43.042 -05:00 [DBG] Connection id "0HMMDHV2KRVN3" disconnecting.
+2022-11-23 17:09:43.044 -05:00 [DBG] Connection id "0HMMDHV2KRVN3" stopped.
+2022-11-23 17:09:43.045 -05:00 [DBG] Connection id "0HMMDHV2KRVN3" received FIN.
+2022-11-23 17:09:43.047 -05:00 [DBG] Connection id "0HMMDHV2KRVN4" accepted.
+2022-11-23 17:09:43.049 -05:00 [DBG] Connection id "0HMMDHV2KRVN3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 17:09:43.050 -05:00 [DBG] Connection id "0HMMDHV2KRVN4" started.
+2022-11-23 17:09:43.051 -05:00 [DBG] Connection id "0HMMDHV2KRVN5" accepted.
+2022-11-23 17:09:43.056 -05:00 [DBG] Connection id "0HMMDHV2KRVN5" started.
+2022-11-23 17:09:43.057 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:09:43.058 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:09:43.060 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:09:43.062 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 5.0800ms
+2022-11-23 17:09:43.063 -05:00 [DBG] Connection id "0HMMDHV2KRVN5" disconnecting.
+2022-11-23 17:09:43.063 -05:00 [DBG] Connection id "0HMMDHV2KRVN5" received FIN.
+2022-11-23 17:09:43.064 -05:00 [DBG] Connection 0HMMDHV2KRVN4 established using the following protocol: "Tls12"
+2022-11-23 17:09:43.064 -05:00 [DBG] Connection id "0HMMDHV2KRVN5" stopped.
+2022-11-23 17:09:43.068 -05:00 [DBG] Connection id "0HMMDHV2KRVN5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 17:09:43.068 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:09:43.072 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:09:43.096 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:09:43.100 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:09:43.102 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:09:43.104 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:09:43.105 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:09:43.108 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:09:43.133 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:09:43.136 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:09:43.138 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:09:43.141 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:09:43.142 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:09:43.143 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:09:43.145 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:09:43.205 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:09:43.209 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:09:43.212 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:09:43.213 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:09:43.214 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:09:43.216 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:09:43.218 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:09:43.219 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:09:43.220 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:09:43.221 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:09:43.222 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:09:43.223 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:09:43.224 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:09:43.225 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:09:43.226 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:09:43.226 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:09:43.227 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:09:43.228 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:09:43.229 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:09:43.230 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:09:43.234 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:09:43.236 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:09:43.238 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:09:43.239 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:09:43.241 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:09:43.242 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:09:43.243 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:09:43.244 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:09:43.244 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:09:43.245 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:09:43.246 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:09:43.248 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:09:43.249 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:09:43.250 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:09:43.251 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:09:47.056 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:09:47.060 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:09:47.062 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:09:47.064 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:09:47.065 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:09:47.067 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:09:47.217 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:09:47.220 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:09:47.222 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:09:47.223 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 4071.4861ms
+2022-11-23 17:09:47.224 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:09:47.226 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:09:47.227 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:09:47.230 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:09:47.231 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:09:47.232 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:09:47.233 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 4165.1199ms
+2022-11-23 17:09:47.234 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:09:47.237 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:09:47.239 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:09:47.240 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:09:47.242 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:09:47.244 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:09:47.246 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:09:47.250 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:09:47.252 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:09:47.253 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:09:47.258 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:09:47.259 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:09:47.260 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:09:47.261 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:09:47.262 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:09:47.263 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:09:47.264 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:09:47.265 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:09:47.266 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:09:47.268 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:09:47.269 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:09:47.270 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:09:47.271 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:09:47.273 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:09:47.274 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:09:47.275 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:09:47.277 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:09:47.278 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:09:47.279 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:09:47.280 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:09:47.282 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:09:47.284 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:09:47.285 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:09:47.287 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:09:47.290 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:09:47.292 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:09:47.293 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:09:47.296 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:09:47.298 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:09:47.300 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:09:47.301 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:09:47.303 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:09:47.323 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:09:47.333 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:09:47.334 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:09:47.335 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:09:47.336 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:09:47.338 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:09:47.342 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 96.0808ms
+2022-11-23 17:09:47.343 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:09:47.345 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 128.0764ms
+2022-11-23 17:10:17.820 -05:00 [DBG] Connection id "0HMMDHV2KRVN6" accepted.
+2022-11-23 17:10:17.821 -05:00 [DBG] Connection id "0HMMDHV2KRVN6" started.
+2022-11-23 17:10:17.823 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:10:17.824 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:17.825 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:10:17.826 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 3.8313ms
+2022-11-23 17:10:17.828 -05:00 [DBG] Connection id "0HMMDHV2KRVN6" disconnecting.
+2022-11-23 17:10:17.829 -05:00 [DBG] Connection id "0HMMDHV2KRVN6" received FIN.
+2022-11-23 17:10:17.829 -05:00 [DBG] Connection id "0HMMDHV2KRVN6" stopped.
+2022-11-23 17:10:17.833 -05:00 [DBG] Connection id "0HMMDHV2KRVN6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 17:10:17.845 -05:00 [DBG] Connection id "0HMMDHV2KRVN7" accepted.
+2022-11-23 17:10:17.850 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:10:17.851 -05:00 [DBG] Connection id "0HMMDHV2KRVN7" started.
+2022-11-23 17:10:17.852 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:17.853 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:10:17.854 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:10:17.855 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:17.856 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:10:17.857 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:10:17.859 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:17.860 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 6.9897ms
+2022-11-23 17:10:17.861 -05:00 [DBG] Connection id "0HMMDHV2KRVN7" received FIN.
+2022-11-23 17:10:17.862 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:10:17.863 -05:00 [DBG] Connection id "0HMMDHV2KRVN7" disconnecting.
+2022-11-23 17:10:17.864 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:10:17.865 -05:00 [DBG] Connection id "0HMMDHV2KRVN7" sending FIN because: "The client closed the connection."
+2022-11-23 17:10:17.866 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:17.868 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:10:17.870 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:10:17.871 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:10:17.873 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:10:17.875 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:10:17.876 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:10:17.878 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:17.881 -05:00 [DBG] Connection id "0HMMDHV2KRVN7" stopped.
+2022-11-23 17:10:17.881 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:17.884 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:17.885 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:10:17.886 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:17.887 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:17.888 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:17.890 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:17.891 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:17.892 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:17.893 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:10:17.894 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:17.895 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:17.896 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:17.897 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:10:17.898 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:17.899 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:17.900 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:17.901 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:17.902 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:17.903 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:17.904 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:17.905 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:17.906 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:17.907 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:17.909 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:17.911 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:17.912 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:17.913 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:17.914 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:17.916 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:17.917 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:17.918 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:17.919 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:17.919 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:17.920 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:17.972 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:10:17.975 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:10:17.976 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:10:17.977 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:10:17.978 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:10:17.979 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:10:17.980 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 101.4975ms
+2022-11-23 17:10:17.981 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:10:17.981 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:17.982 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:17.982 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 132.0380ms
+2022-11-23 17:10:17.983 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:10:17.985 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:10:17.986 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:17.987 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:10:17.988 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:10:17.989 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:17.990 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:10:17.993 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:10:17.995 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:10:17.996 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:10:17.998 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:10:17.999 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:10:18.001 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:18.002 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:18.003 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:18.004 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:10:18.007 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:18.008 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:18.009 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:18.011 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:18.012 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:18.013 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:18.014 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:10:18.015 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:18.016 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:18.017 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:18.018 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:10:18.019 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:18.020 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:18.021 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:18.023 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:18.025 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:18.027 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:18.029 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:18.030 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:18.030 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:18.031 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:18.032 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:18.033 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:18.034 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:18.035 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:18.036 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:18.037 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:18.039 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:18.040 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:18.041 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:18.042 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:18.043 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:18.046 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:10:18.048 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:10:18.049 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:10:18.049 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:10:18.050 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:10:18.053 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:10:18.056 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 55.3545ms
+2022-11-23 17:10:18.058 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:18.060 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 78.9632ms
+2022-11-23 17:10:20.885 -05:00 [DBG] Connection id "0HMMDHV2KRVN8" accepted.
+2022-11-23 17:10:20.887 -05:00 [DBG] Connection id "0HMMDHV2KRVN8" started.
+2022-11-23 17:10:20.890 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:10:20.891 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:20.892 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:10:20.894 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 4.4368ms
+2022-11-23 17:10:20.895 -05:00 [DBG] Connection id "0HMMDHV2KRVN8" disconnecting.
+2022-11-23 17:10:20.895 -05:00 [DBG] Connection id "0HMMDHV2KRVN8" received FIN.
+2022-11-23 17:10:20.897 -05:00 [DBG] Connection id "0HMMDHV2KRVN8" stopped.
+2022-11-23 17:10:20.900 -05:00 [DBG] Connection id "0HMMDHV2KRVN8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 17:10:20.910 -05:00 [DBG] Connection id "0HMMDHV2KRVN9" accepted.
+2022-11-23 17:10:20.912 -05:00 [DBG] Connection id "0HMMDHV2KRVN9" started.
+2022-11-23 17:10:20.913 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:10:20.915 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:20.917 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:10:20.918 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 4.5451ms
+2022-11-23 17:10:20.919 -05:00 [DBG] Connection id "0HMMDHV2KRVN9" disconnecting.
+2022-11-23 17:10:20.919 -05:00 [DBG] Connection id "0HMMDHV2KRVN9" received FIN.
+2022-11-23 17:10:20.920 -05:00 [DBG] Connection id "0HMMDHV2KRVN9" stopped.
+2022-11-23 17:10:20.923 -05:00 [DBG] Connection id "0HMMDHV2KRVN9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 17:10:20.942 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:10:20.946 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:20.948 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:10:20.952 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:10:20.958 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:20.960 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:10:20.961 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:10:20.962 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:20.963 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:10:20.966 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:10:20.967 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:10:20.969 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:10:20.971 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:10:20.973 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:10:20.975 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:20.977 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:20.978 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:20.979 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:10:20.981 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:20.982 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:20.983 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:20.984 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:20.985 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:20.987 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:20.989 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:10:20.990 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:20.992 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:20.993 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:20.995 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:10:20.996 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:20.997 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:20.998 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:21.000 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:21.002 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:21.003 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:21.004 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:21.007 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:21.008 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:21.010 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:21.012 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:21.013 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:21.014 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:21.015 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:21.016 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:21.017 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:21.018 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:21.019 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:21.020 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:21.021 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:21.023 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:21.030 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:10:21.032 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:10:21.033 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:10:21.034 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:10:21.034 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:10:21.035 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:10:21.036 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 61.1897ms
+2022-11-23 17:10:21.038 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:21.038 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:10:21.040 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 97.9062ms
+2022-11-23 17:10:21.041 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:21.043 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:10:21.045 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:10:21.046 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:21.047 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:10:21.048 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:10:21.048 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:21.050 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:10:21.052 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:10:21.053 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:10:21.054 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:10:21.057 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:10:21.058 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:10:21.061 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:21.062 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:21.064 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:21.065 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:10:21.066 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:21.067 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:21.068 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:21.069 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:21.069 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:21.070 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:21.072 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:10:21.075 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:21.076 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:21.077 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:21.078 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:10:21.079 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:21.081 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:21.082 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:21.083 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:21.084 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:21.085 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:21.086 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:21.087 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:21.091 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:21.093 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:21.095 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:21.097 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:21.098 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:21.100 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:21.101 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:21.102 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:21.103 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:21.112 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:21.116 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:21.118 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:21.119 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:21.128 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:10:21.130 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:10:21.131 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:10:21.132 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:10:21.133 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:10:21.134 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:10:21.135 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 74.0048ms
+2022-11-23 17:10:21.137 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:21.139 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 100.7897ms
+2022-11-23 17:10:27.569 -05:00 [DBG] Connection id "0HMMDHV2KRVNA" accepted.
+2022-11-23 17:10:27.571 -05:00 [DBG] Connection id "0HMMDHV2KRVNA" started.
+2022-11-23 17:10:27.572 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:10:27.573 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:27.574 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:10:27.577 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 4.1023ms
+2022-11-23 17:10:27.578 -05:00 [DBG] Connection id "0HMMDHV2KRVNA" disconnecting.
+2022-11-23 17:10:27.578 -05:00 [DBG] Connection id "0HMMDHV2KRVNA" received FIN.
+2022-11-23 17:10:27.579 -05:00 [DBG] Connection id "0HMMDHV2KRVNA" stopped.
+2022-11-23 17:10:27.582 -05:00 [DBG] Connection id "0HMMDHV2KRVNA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 17:10:27.594 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:10:27.597 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:27.600 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:10:27.602 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:10:27.603 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:27.605 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:10:27.608 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:10:27.609 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:27.610 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:10:27.612 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:10:27.613 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:10:27.616 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:10:27.618 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:10:27.619 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:10:27.620 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:27.622 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:27.624 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:27.625 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:10:27.627 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:27.628 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:27.629 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:27.631 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:27.632 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:27.633 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:27.634 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:10:27.636 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:27.637 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:27.638 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:27.640 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:10:27.642 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:27.643 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:27.646 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:27.647 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:27.648 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:27.649 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:27.650 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:27.651 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:27.652 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:27.653 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:27.655 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:27.656 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:27.658 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:27.661 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:27.663 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:27.664 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:27.665 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:27.667 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:27.668 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:27.670 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:27.671 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:27.678 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:10:27.680 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:10:27.681 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:10:27.682 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:10:27.682 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:10:27.683 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:10:27.684 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 64.1672ms
+2022-11-23 17:10:27.686 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:27.687 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 92.2666ms
+2022-11-23 17:10:56.533 -05:00 [DBG] Connection id "0HMMDHV2KRVNB" accepted.
+2022-11-23 17:10:56.542 -05:00 [DBG] Connection id "0HMMDHV2KRVNB" started.
+2022-11-23 17:10:56.547 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:10:56.548 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:56.549 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:10:56.550 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 3.3834ms
+2022-11-23 17:10:56.551 -05:00 [DBG] Connection id "0HMMDHV2KRVNB" disconnecting.
+2022-11-23 17:10:56.552 -05:00 [DBG] Connection id "0HMMDHV2KRVNB" received FIN.
+2022-11-23 17:10:56.553 -05:00 [DBG] Connection id "0HMMDHV2KRVNB" stopped.
+2022-11-23 17:10:56.557 -05:00 [DBG] Connection id "0HMMDHV2KRVNB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 17:10:56.586 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:10:56.593 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:56.595 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:10:56.598 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:10:56.602 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:56.607 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:10:56.609 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:10:56.611 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:56.613 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:10:56.615 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:10:56.617 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:10:56.618 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:10:56.621 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:10:56.623 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:10:56.626 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:56.628 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:56.630 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:56.631 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:10:56.633 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:56.637 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:56.638 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:56.641 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:56.643 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:56.644 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:56.646 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:10:56.647 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:56.649 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:56.651 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:56.653 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:10:56.655 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:56.657 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:56.659 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:56.660 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:56.661 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:56.662 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:56.663 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:56.665 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:56.666 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:56.667 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:56.668 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:56.669 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:56.670 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:56.670 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:56.672 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:56.673 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:56.675 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:56.677 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:56.679 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:56.680 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:56.682 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:56.690 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:10:56.693 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:10:56.693 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:10:56.694 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:10:56.697 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:10:56.700 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:10:56.702 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 75.7329ms
+2022-11-23 17:10:56.703 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:56.705 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 119.0097ms
+2022-11-23 17:10:59.487 -05:00 [DBG] Connection id "0HMMDHV2KRVNC" accepted.
+2022-11-23 17:10:59.489 -05:00 [DBG] Connection id "0HMMDHV2KRVNC" started.
+2022-11-23 17:10:59.491 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:10:59.492 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:59.494 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:10:59.495 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 4.2468ms
+2022-11-23 17:10:59.497 -05:00 [DBG] Connection id "0HMMDHV2KRVNC" disconnecting.
+2022-11-23 17:10:59.497 -05:00 [DBG] Connection id "0HMMDHV2KRVNC" received FIN.
+2022-11-23 17:10:59.498 -05:00 [DBG] Connection id "0HMMDHV2KRVNC" stopped.
+2022-11-23 17:10:59.503 -05:00 [DBG] Connection id "0HMMDHV2KRVNC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 17:10:59.512 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:10:59.516 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:10:59.518 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:10:59.519 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:10:59.521 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:59.523 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:10:59.525 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:10:59.527 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:59.528 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:10:59.531 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:10:59.533 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:10:59.535 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:10:59.537 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:10:59.540 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:10:59.543 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:59.544 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:10:59.545 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:59.547 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:10:59.549 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:59.551 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:59.552 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:10:59.553 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:10:59.553 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:59.554 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:59.556 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:10:59.557 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:59.558 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:10:59.560 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:10:59.562 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:10:59.563 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:59.564 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:10:59.565 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:59.566 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:59.567 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:59.568 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:10:59.569 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:10:59.570 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:59.571 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:59.572 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:59.573 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:59.574 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:59.574 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:10:59.575 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:10:59.577 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:59.578 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:10:59.579 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:59.580 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:59.581 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:59.582 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:10:59.583 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:10:59.587 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:10:59.589 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:10:59.590 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:10:59.591 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:10:59.592 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:10:59.594 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:10:59.596 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 53.4257ms
+2022-11-23 17:10:59.598 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:10:59.599 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 87.1320ms
+2022-11-23 17:12:37.900 -05:00 [DBG] Connection id "0HMMDHV2KRVND" accepted.
+2022-11-23 17:12:37.901 -05:00 [DBG] Connection id "0HMMDHV2KRVND" started.
+2022-11-23 17:12:37.903 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:12:37.903 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:12:37.904 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:12:37.906 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 2.8889ms
+2022-11-23 17:12:37.907 -05:00 [DBG] Connection id "0HMMDHV2KRVND" disconnecting.
+2022-11-23 17:12:37.909 -05:00 [DBG] Connection id "0HMMDHV2KRVND" stopped.
+2022-11-23 17:12:37.909 -05:00 [DBG] Connection id "0HMMDHV2KRVND" received FIN.
+2022-11-23 17:12:37.913 -05:00 [DBG] Connection id "0HMMDHV2KRVND" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-23 17:12:37.923 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:12:37.925 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:12:37.927 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:12:37.929 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:12:37.931 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:12:37.932 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:12:37.933 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:12:37.934 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:12:37.935 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:12:37.938 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:12:37.940 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:12:37.944 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:12:37.948 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:12:37.952 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:12:37.956 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:12:37.964 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:12:37.966 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:12:37.968 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:12:37.990 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:12:37.993 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:12:37.995 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:12:37.998 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:12:38.000 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:12:38.004 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:12:38.010 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:12:38.011 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:12:38.013 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:12:38.014 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:12:38.016 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:12:38.017 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:12:38.018 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:12:38.019 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:12:38.021 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:12:38.024 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:12:38.025 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:12:38.027 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:12:38.029 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:12:38.031 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:12:38.032 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:12:38.033 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:12:38.035 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:12:38.037 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:12:38.038 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:12:38.039 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:12:38.040 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:12:38.041 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:12:38.043 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:12:38.044 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:12:38.045 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:12:38.046 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:12:38.054 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:12:38.057 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:12:38.058 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:12:38.059 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:12:38.059 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:12:38.061 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:12:38.062 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 105.7824ms
+2022-11-23 17:12:38.064 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:12:38.064 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 141.5194ms
+2022-11-23 17:13:14.445 -05:00 [DBG] Connection id "0HMMDHV2KRVNE" accepted.
+2022-11-23 17:13:14.446 -05:00 [DBG] Connection id "0HMMDHV2KRVNE" started.
+2022-11-23 17:13:14.447 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2022-11-23 17:13:14.448 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:13:14.450 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2022-11-23 17:13:14.451 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 3.8265ms
+2022-11-23 17:13:14.453 -05:00 [DBG] Connection id "0HMMDHV2KRVNE" received FIN.
+2022-11-23 17:13:14.453 -05:00 [DBG] Connection id "0HMMDHV2KRVNE" disconnecting.
+2022-11-23 17:13:14.468 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/api/users/1/plants - -
+2022-11-23 17:13:14.471 -05:00 [DBG] Connection id "0HMMDHV2KRVNE" sending FIN because: "The client closed the connection."
+2022-11-23 17:13:14.473 -05:00 [DBG] The request path  does not match the path filter
+2022-11-23 17:13:14.475 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2022-11-23 17:13:14.477 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2022-11-23 17:13:14.479 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:13:14.480 -05:00 [DBG] Connection id "0HMMDHV2KRVNE" stopped.
+2022-11-23 17:13:14.481 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2022-11-23 17:13:14.483 -05:00 [INF] CORS policy execution successful.
+2022-11-23 17:13:14.485 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:13:14.488 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-23 17:13:14.493 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-23 17:13:14.497 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-23 17:13:14.498 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-23 17:13:14.501 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-23 17:13:14.502 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-23 17:13:14.504 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:13:14.505 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-23 17:13:14.508 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:13:14.509 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-23 17:13:14.513 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:13:14.516 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:13:14.517 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-23 17:13:14.518 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-23 17:13:14.519 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-23 17:13:14.520 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:13:14.521 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-23 17:13:14.522 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:13:14.524 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-23 17:13:14.525 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-23 17:13:14.526 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-23 17:13:14.527 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:13:14.529 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2022-11-23 17:13:14.531 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2022-11-23 17:13:14.532 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:13:14.533 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2022-11-23 17:13:14.534 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2022-11-23 17:13:14.535 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2022-11-23 17:13:14.535 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:13:14.536 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:13:14.537 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:13:14.538 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:13:14.539 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:13:14.540 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-23 17:13:14.541 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-23 17:13:14.543 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:13:14.544 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-23 17:13:14.546 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:13:14.547 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:13:14.547 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:13:14.549 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-23 17:13:14.562 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-23 17:13:14.570 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-23 17:13:14.572 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-23 17:13:14.573 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-23 17:13:14.576 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-23 17:13:14.577 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-23 17:13:14.578 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-23 17:13:14.580 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 75.7703ms
+2022-11-23 17:13:14.581 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2022-11-23 17:13:14.582 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/api/users/1/plants - - - 200 648 application/json;+charset=utf-8 114.3496ms
+2022-11-23 17:15:25.935 -05:00 [DBG] Connection id "0HMMDHV2KRVN4" is closing.
+2022-11-23 17:15:25.938 -05:00 [DBG] Connection id "0HMMDHV2KRVN4" is closed. The last processed stream ID was 21.
+2022-11-23 17:15:25.940 -05:00 [DBG] Connection id "0HMMDHV2KRVN4" received FIN.
+2022-11-23 17:15:25.940 -05:00 [DBG] Connection id "0HMMDHV2KRVN4" stopped.
+2022-11-23 17:15:25.941 -05:00 [DBG] Connection id "0HMMDHV2KRVN4" sending FIN because: "The Socket transport's send loop completed gracefully."

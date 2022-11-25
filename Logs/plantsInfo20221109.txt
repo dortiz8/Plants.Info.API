@@ -1,0 +1,715 @@
+2022-11-09 08:37:41.343 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-09 08:37:41.488 -05:00 [DBG] Hosting starting
+2022-11-09 08:37:41.792 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F562FF4D3E1714315F9DB10F9C4760B87D7CC159)
+2022-11-09 08:37:41.929 -05:00 [INF] Now listening on: https://localhost:7235
+2022-11-09 08:37:41.930 -05:00 [INF] Now listening on: http://localhost:5235
+2022-11-09 08:37:41.931 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2022-11-09 08:37:41.932 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-09 08:37:41.933 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-09 08:37:41.934 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-09 08:37:41.936 -05:00 [INF] Hosting environment: Development
+2022-11-09 08:37:41.936 -05:00 [INF] Content root path: C:\Users\dortiz\source\repos\TestFolder\Plant.info.API\
+2022-11-09 08:37:41.937 -05:00 [DBG] Hosting started
+2022-11-09 08:37:42.289 -05:00 [DBG] Connection id "0HMM2AU9RNUMM" accepted.
+2022-11-09 08:37:42.289 -05:00 [DBG] Connection id "0HMM2AU9RNUMN" accepted.
+2022-11-09 08:37:42.293 -05:00 [DBG] Connection id "0HMM2AU9RNUMN" started.
+2022-11-09 08:37:42.293 -05:00 [DBG] Connection id "0HMM2AU9RNUMM" started.
+2022-11-09 08:37:47.725 -05:00 [DBG] Connection id "0HMM2AU9RNUMO" accepted.
+2022-11-09 08:37:47.729 -05:00 [DBG] Connection id "0HMM2AU9RNUMO" started.
+2022-11-09 08:37:48.104 -05:00 [DBG] Connection 0HMM2AU9RNUMO established using the following protocol: "Tls12"
+2022-11-09 08:37:48.193 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - -
+2022-11-09 08:37:48.250 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-09 08:37:48.366 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-09 08:37:48.744 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-09 08:37:48.753 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 563.8183ms
+2022-11-09 08:37:48.792 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - -
+2022-11-09 08:37:48.793 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - -
+2022-11-09 08:37:48.814 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 21.1255ms
+2022-11-09 08:37:48.952 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 159.9424ms
+2022-11-09 08:37:49.066 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - -
+2022-11-09 08:37:49.260 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 193.8893ms
+2022-11-09 08:37:52.625 -05:00 [DBG] Authentication of the HTTPS connection timed out.
+2022-11-09 08:37:52.625 -05:00 [DBG] Authentication of the HTTPS connection timed out.
+2022-11-09 08:37:52.631 -05:00 [DBG] Connection id "0HMM2AU9RNUMM" stopped.
+2022-11-09 08:37:52.631 -05:00 [DBG] Connection id "0HMM2AU9RNUMN" stopped.
+2022-11-09 08:37:52.632 -05:00 [DBG] Connection id "0HMM2AU9RNUMM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:37:52.633 -05:00 [DBG] Connection id "0HMM2AU9RNUMN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:39:41.338 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-09 08:39:41.422 -05:00 [DBG] Hosting starting
+2022-11-09 08:39:41.584 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F562FF4D3E1714315F9DB10F9C4760B87D7CC159)
+2022-11-09 08:39:41.673 -05:00 [INF] Now listening on: https://localhost:7235
+2022-11-09 08:39:41.675 -05:00 [INF] Now listening on: http://localhost:5235
+2022-11-09 08:39:41.676 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2022-11-09 08:39:41.676 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-09 08:39:41.677 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-09 08:39:41.677 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-09 08:39:41.678 -05:00 [INF] Hosting environment: Development
+2022-11-09 08:39:41.678 -05:00 [INF] Content root path: C:\Users\dortiz\source\repos\TestFolder\Plant.info.API\
+2022-11-09 08:39:41.679 -05:00 [DBG] Hosting started
+2022-11-09 08:39:41.915 -05:00 [DBG] Connection id "0HMM2AVDGJFBD" accepted.
+2022-11-09 08:39:41.915 -05:00 [DBG] Connection id "0HMM2AVDGJFBE" accepted.
+2022-11-09 08:39:41.917 -05:00 [DBG] Connection id "0HMM2AVDGJFBD" started.
+2022-11-09 08:39:41.918 -05:00 [DBG] Connection id "0HMM2AVDGJFBE" started.
+2022-11-09 08:39:41.925 -05:00 [DBG] Connection id "0HMM2AVDGJFBD" received FIN.
+2022-11-09 08:39:41.925 -05:00 [DBG] Connection id "0HMM2AVDGJFBE" received FIN.
+2022-11-09 08:39:41.935 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-09 08:39:41.935 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-09 08:39:42.031 -05:00 [DBG] Connection id "0HMM2AVDGJFBD" stopped.
+2022-11-09 08:39:42.031 -05:00 [DBG] Connection id "0HMM2AVDGJFBE" stopped.
+2022-11-09 08:39:42.035 -05:00 [DBG] Connection id "0HMM2AVDGJFBD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:39:42.035 -05:00 [DBG] Connection id "0HMM2AVDGJFBE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:39:42.344 -05:00 [DBG] Connection id "0HMM2AVDGJFBF" accepted.
+2022-11-09 08:39:42.382 -05:00 [DBG] Connection id "0HMM2AVDGJFBG" accepted.
+2022-11-09 08:39:42.386 -05:00 [DBG] Connection id "0HMM2AVDGJFBG" started.
+2022-11-09 08:39:42.386 -05:00 [DBG] Connection id "0HMM2AVDGJFBF" started.
+2022-11-09 08:39:42.505 -05:00 [DBG] Connection 0HMM2AVDGJFBG established using the following protocol: "Tls12"
+2022-11-09 08:39:42.505 -05:00 [DBG] Connection 0HMM2AVDGJFBF established using the following protocol: "Tls12"
+2022-11-09 08:39:42.578 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - -
+2022-11-09 08:39:42.628 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-09 08:39:42.755 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-09 08:39:42.895 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-09 08:39:42.897 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 323.0947ms
+2022-11-09 08:39:42.908 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - -
+2022-11-09 08:39:42.912 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.7837ms
+2022-11-09 08:39:43.057 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - -
+2022-11-09 08:39:43.089 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.2471ms
+2022-11-09 08:39:43.468 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - -
+2022-11-09 08:39:43.658 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 190.2513ms
+2022-11-09 08:41:27.790 -05:00 [DBG] Connection id "0HMM2AVDGJFBH" accepted.
+2022-11-09 08:41:27.792 -05:00 [DBG] Connection id "0HMM2AVDGJFBH" received FIN.
+2022-11-09 08:41:27.794 -05:00 [DBG] Connection id "0HMM2AVDGJFBH" started.
+2022-11-09 08:41:27.794 -05:00 [DBG] Connection id "0HMM2AVDGJFBI" accepted.
+2022-11-09 08:41:27.797 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-09 08:41:27.797 -05:00 [DBG] Connection id "0HMM2AVDGJFBI" started.
+2022-11-09 08:41:27.801 -05:00 [DBG] Connection id "0HMM2AVDGJFBH" stopped.
+2022-11-09 08:41:27.803 -05:00 [DBG] Connection id "0HMM2AVDGJFBH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:41:27.811 -05:00 [DBG] Connection 0HMM2AVDGJFBI established using the following protocol: "Tls12"
+2022-11-09 08:41:27.820 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants/ application/json 104
+2022-11-09 08:41:27.824 -05:00 [DBG] The request path  does not match the path filter
+2022-11-09 08:41:27.851 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/'
+2022-11-09 08:41:27.858 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsById (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants/'
+2022-11-09 08:41:27.860 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsById (Plants.info.API)'
+2022-11-09 08:41:27.863 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsById (Plants.info.API)'
+2022-11-09 08:41:27.885 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]] GetPlantsById(Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-09 08:41:27.888 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-09 08:41:27.889 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-09 08:41:27.891 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-09 08:41:27.893 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-09 08:41:27.894 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-09 08:41:27.896 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:41:27.969 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:41:27.982 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:41:27.985 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-09 08:41:27.986 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:41:27.987 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:41:27.988 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:41:27.990 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:41:29.241 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-09 08:41:29.245 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-09 08:41:29.246 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-09 08:41:29.246 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-09 08:41:29.247 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-09 08:41:29.248 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-09 08:41:29.362 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsById (Plants.info.API) in 1461.6646ms
+2022-11-09 08:41:29.364 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsById (Plants.info.API)'
+2022-11-09 08:41:29.366 -05:00 [DBG] Connection id "0HMM2AVDGJFBI" completed keep alive response.
+2022-11-09 08:41:29.372 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants/ application/json 104 - 200 430 application/json;+charset=utf-8 1551.3512ms
+2022-11-09 08:41:29.375 -05:00 [DBG] Connection id "0HMM2AVDGJFBI", Request id "0HMM2AVDGJFBI:00000002": started reading request body.
+2022-11-09 08:41:29.377 -05:00 [DBG] Connection id "0HMM2AVDGJFBI", Request id "0HMM2AVDGJFBI:00000002": done reading request body.
+2022-11-09 08:41:31.075 -05:00 [DBG] Connection id "0HMM2AVDGJFBF" received FIN.
+2022-11-09 08:41:31.085 -05:00 [DBG] Connection id "0HMM2AVDGJFBF" is closed. The last processed stream ID was 0.
+2022-11-09 08:41:31.087 -05:00 [DBG] Connection id "0HMM2AVDGJFBF" sending FIN because: "The client closed the connection."
+2022-11-09 08:41:31.088 -05:00 [DBG] Connection id "0HMM2AVDGJFBF" stopped.
+2022-11-09 08:41:55.597 -05:00 [DBG] Connection id "0HMM2AVDGJFBG" is closing.
+2022-11-09 08:41:55.599 -05:00 [DBG] Connection id "0HMM2AVDGJFBG" is closed. The last processed stream ID was 7.
+2022-11-09 08:41:55.601 -05:00 [DBG] Connection id "0HMM2AVDGJFBG" received FIN.
+2022-11-09 08:41:55.601 -05:00 [DBG] Connection id "0HMM2AVDGJFBG" stopped.
+2022-11-09 08:41:55.602 -05:00 [DBG] Connection id "0HMM2AVDGJFBG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:43:40.573 -05:00 [DBG] Connection id "0HMM2AVDGJFBI" disconnecting.
+2022-11-09 08:43:40.575 -05:00 [DBG] Connection id "0HMM2AVDGJFBI" stopped.
+2022-11-09 08:43:40.577 -05:00 [DBG] Connection id "0HMM2AVDGJFBI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:44:53.307 -05:00 [DBG] Connection id "0HMM2AVDGJFBJ" accepted.
+2022-11-09 08:44:53.308 -05:00 [DBG] Connection id "0HMM2AVDGJFBJ" received FIN.
+2022-11-09 08:44:53.310 -05:00 [DBG] Connection id "0HMM2AVDGJFBJ" started.
+2022-11-09 08:44:53.310 -05:00 [DBG] Connection id "0HMM2AVDGJFBK" accepted.
+2022-11-09 08:44:53.314 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-09 08:44:53.315 -05:00 [DBG] Connection id "0HMM2AVDGJFBK" started.
+2022-11-09 08:44:53.320 -05:00 [DBG] Connection id "0HMM2AVDGJFBJ" stopped.
+2022-11-09 08:44:53.323 -05:00 [DBG] Connection id "0HMM2AVDGJFBJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:44:53.325 -05:00 [DBG] Connection 0HMM2AVDGJFBK established using the following protocol: "Tls12"
+2022-11-09 08:44:53.329 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 278
+2022-11-09 08:44:53.330 -05:00 [DBG] POST requests are not supported
+2022-11-09 08:44:53.332 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/'
+2022-11-09 08:44:53.333 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants/'
+2022-11-09 08:44:53.334 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:44:53.335 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:44:53.338 -05:00 [INF] Route matched with {action = "CreatePlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Plants.info.API.Models.Plant] CreatePlant(Int32, Plants.info.API.Data.Models.PlantCreation) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-09 08:44:53.340 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-09 08:44:53.342 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-09 08:44:53.344 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-09 08:44:53.346 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-09 08:44:53.347 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-09 08:44:53.349 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:44:53.353 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:44:53.356 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:44:53.357 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-09 08:44:53.359 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:44:53.360 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:44:53.361 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:44:53.362 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:44:53.363 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:44:53.366 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' using the name '' in request data ...
+2022-11-09 08:44:53.410 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-09 08:44:53.412 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-09 08:44:53.420 -05:00 [DBG] Connection id "0HMM2AVDGJFBK", Request id "0HMM2AVDGJFBK:00000002": started reading request body.
+2022-11-09 08:44:53.422 -05:00 [DBG] Connection id "0HMM2AVDGJFBK", Request id "0HMM2AVDGJFBK:00000002": done reading request body.
+2022-11-09 08:44:53.487 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-25-10T00:00:00. Path 'dateAdded', line 4, position 42.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:44:53.499 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-27-10T00:00:00. Path 'dateWatered', line 5, position 44.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:44:53.503 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-25-10T00:00:00. Path 'dateFertilized', line 6, position 47.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:44:53.514 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:44:53.515 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:44:53.516 -05:00 [DBG] Attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:44:53.523 -05:00 [DBG] Done attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:44:53.525 -05:00 [DBG] The request has model state errors, returning an error response.
+2022-11-09 08:44:53.527 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-11-09 08:44:53.528 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-09 08:44:53.530 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-09 08:44:53.531 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-11-09 08:44:53.533 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-11-09 08:44:53.534 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-09 08:44:53.553 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API) in 204.6999ms
+2022-11-09 08:44:53.555 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:44:53.556 -05:00 [DBG] Connection id "0HMM2AVDGJFBK" completed keep alive response.
+2022-11-09 08:44:53.558 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 278 - 400 611 application/problem+json;+charset=utf-8 228.8490ms
+2022-11-09 08:47:04.494 -05:00 [DBG] Connection id "0HMM2AVDGJFBK" disconnecting.
+2022-11-09 08:47:04.495 -05:00 [DBG] Connection id "0HMM2AVDGJFBK" stopped.
+2022-11-09 08:47:04.497 -05:00 [DBG] Connection id "0HMM2AVDGJFBK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:49:35.372 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-09 08:49:35.458 -05:00 [DBG] Hosting starting
+2022-11-09 08:49:35.637 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F562FF4D3E1714315F9DB10F9C4760B87D7CC159)
+2022-11-09 08:49:35.735 -05:00 [INF] Now listening on: https://localhost:7235
+2022-11-09 08:49:35.737 -05:00 [INF] Now listening on: http://localhost:5235
+2022-11-09 08:49:35.738 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2022-11-09 08:49:35.738 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-09 08:49:35.739 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-09 08:49:35.739 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-09 08:49:35.740 -05:00 [INF] Hosting environment: Development
+2022-11-09 08:49:35.741 -05:00 [INF] Content root path: C:\Users\dortiz\source\repos\TestFolder\Plant.info.API\
+2022-11-09 08:49:35.742 -05:00 [DBG] Hosting started
+2022-11-09 08:49:35.845 -05:00 [DBG] Connection id "0HMM2B4UGOEVK" accepted.
+2022-11-09 08:49:35.848 -05:00 [DBG] Connection id "0HMM2B4UGOEVK" started.
+2022-11-09 08:49:35.854 -05:00 [DBG] Connection id "0HMM2B4UGOEVL" accepted.
+2022-11-09 08:49:35.856 -05:00 [DBG] Connection id "0HMM2B4UGOEVL" started.
+2022-11-09 08:49:35.886 -05:00 [DBG] Connection id "0HMM2B4UGOEVL" received FIN.
+2022-11-09 08:49:35.886 -05:00 [DBG] Connection id "0HMM2B4UGOEVK" received FIN.
+2022-11-09 08:49:35.894 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-09 08:49:35.894 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-09 08:49:35.900 -05:00 [DBG] Connection id "0HMM2B4UGOEVM" accepted.
+2022-11-09 08:49:35.936 -05:00 [DBG] Connection id "0HMM2B4UGOEVK" stopped.
+2022-11-09 08:49:35.936 -05:00 [DBG] Connection id "0HMM2B4UGOEVL" stopped.
+2022-11-09 08:49:35.938 -05:00 [DBG] Connection id "0HMM2B4UGOEVM" started.
+2022-11-09 08:49:35.940 -05:00 [DBG] Connection id "0HMM2B4UGOEVK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:49:35.941 -05:00 [DBG] Connection id "0HMM2B4UGOEVL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:49:35.984 -05:00 [DBG] Connection 0HMM2B4UGOEVM established using the following protocol: "Tls12"
+2022-11-09 08:49:36.030 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - -
+2022-11-09 08:49:36.054 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-09 08:49:36.132 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-09 08:49:36.248 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-09 08:49:36.253 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 224.9597ms
+2022-11-09 08:49:36.258 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - -
+2022-11-09 08:49:36.258 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - -
+2022-11-09 08:49:36.264 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 5.8434ms
+2022-11-09 08:49:36.280 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.6263ms
+2022-11-09 08:49:36.558 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - -
+2022-11-09 08:49:36.713 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 154.4844ms
+2022-11-09 08:49:43.594 -05:00 [DBG] Connection id "0HMM2B4UGOEVN" accepted.
+2022-11-09 08:49:43.595 -05:00 [DBG] Connection id "0HMM2B4UGOEVN" received FIN.
+2022-11-09 08:49:43.596 -05:00 [DBG] Connection id "0HMM2B4UGOEVN" started.
+2022-11-09 08:49:43.596 -05:00 [DBG] Connection id "0HMM2B4UGOEVO" accepted.
+2022-11-09 08:49:43.601 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-09 08:49:43.603 -05:00 [DBG] Connection id "0HMM2B4UGOEVO" started.
+2022-11-09 08:49:43.608 -05:00 [DBG] Connection id "0HMM2B4UGOEVN" stopped.
+2022-11-09 08:49:43.610 -05:00 [DBG] Connection id "0HMM2B4UGOEVN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:49:43.617 -05:00 [DBG] Connection 0HMM2B4UGOEVO established using the following protocol: "Tls12"
+2022-11-09 08:49:43.626 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 278
+2022-11-09 08:49:43.629 -05:00 [DBG] POST requests are not supported
+2022-11-09 08:49:43.649 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/'
+2022-11-09 08:49:43.654 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants/'
+2022-11-09 08:49:43.657 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:49:43.659 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:49:43.676 -05:00 [INF] Route matched with {action = "CreatePlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Plants.info.API.Models.Plant] CreatePlant(Int32, Plants.info.API.Data.Models.PlantCreation) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-09 08:49:43.679 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-09 08:49:43.680 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-09 08:49:43.681 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-09 08:49:43.683 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-09 08:49:43.685 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-09 08:49:43.688 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:49:43.746 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:49:43.756 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:49:43.759 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-09 08:49:43.760 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:49:43.761 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:49:43.762 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:49:43.764 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:49:43.766 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:49:43.769 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' using the name '' in request data ...
+2022-11-09 08:49:43.773 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-09 08:49:43.774 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-09 08:49:43.780 -05:00 [DBG] Connection id "0HMM2B4UGOEVO", Request id "0HMM2B4UGOEVO:00000002": started reading request body.
+2022-11-09 08:49:43.782 -05:00 [DBG] Connection id "0HMM2B4UGOEVO", Request id "0HMM2B4UGOEVO:00000002": done reading request body.
+2022-11-09 08:49:43.871 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-25-10T00:00:00. Path 'dateAdded', line 4, position 42.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:49:43.878 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-27-10T00:00:00. Path 'dateWatered', line 5, position 44.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:49:43.880 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-25-10T00:00:00. Path 'dateFertilized', line 6, position 47.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:49:43.889 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:49:43.892 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:49:43.892 -05:00 [DBG] Attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:49:43.897 -05:00 [DBG] Done attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:49:43.899 -05:00 [DBG] The request has model state errors, returning an error response.
+2022-11-09 08:49:43.901 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-11-09 08:49:43.903 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-09 08:49:43.906 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-09 08:49:43.908 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-11-09 08:49:43.911 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-11-09 08:49:43.912 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-09 08:49:43.960 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API) in 268.9129ms
+2022-11-09 08:49:43.962 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:49:43.964 -05:00 [DBG] Connection id "0HMM2B4UGOEVO" completed keep alive response.
+2022-11-09 08:49:43.966 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 278 - 400 611 application/problem+json;+charset=utf-8 340.2261ms
+2022-11-09 08:50:23.887 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 278
+2022-11-09 08:50:23.888 -05:00 [DBG] POST requests are not supported
+2022-11-09 08:50:23.890 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/'
+2022-11-09 08:50:23.891 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants/'
+2022-11-09 08:50:23.893 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:50:23.894 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:50:23.896 -05:00 [INF] Route matched with {action = "CreatePlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Plants.info.API.Models.Plant] CreatePlant(Int32, Plants.info.API.Data.Models.PlantCreation) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-09 08:50:23.898 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-09 08:50:23.899 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-09 08:50:23.901 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-09 08:50:23.904 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-09 08:50:23.906 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-09 08:50:23.907 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:50:23.910 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:50:23.912 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:50:23.914 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-09 08:50:23.915 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:50:23.916 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:50:23.917 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:50:23.919 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:50:23.920 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:50:23.922 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' using the name '' in request data ...
+2022-11-09 08:50:23.923 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-09 08:50:23.924 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-09 08:50:23.925 -05:00 [DBG] Connection id "0HMM2B4UGOEVO", Request id "0HMM2B4UGOEVO:00000003": started reading request body.
+2022-11-09 08:50:23.926 -05:00 [DBG] Connection id "0HMM2B4UGOEVO", Request id "0HMM2B4UGOEVO:00000003": done reading request body.
+2022-11-09 08:50:23.931 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-25-10T00:00:00. Path 'dateAdded', line 4, position 42.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:50:23.935 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-27-10T00:00:00. Path 'dateWatered', line 5, position 44.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:50:23.939 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-25-10T00:00:00. Path 'dateFertilized', line 6, position 47.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:50:23.941 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:50:23.942 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:50:23.943 -05:00 [DBG] Attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:50:23.945 -05:00 [DBG] Done attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:50:23.947 -05:00 [DBG] The request has model state errors, returning an error response.
+2022-11-09 08:50:23.947 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-11-09 08:50:23.948 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-09 08:50:23.952 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-09 08:50:23.953 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-11-09 08:50:23.955 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-11-09 08:50:23.956 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-09 08:50:23.958 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API) in 50.7237ms
+2022-11-09 08:50:23.959 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:50:23.960 -05:00 [DBG] Connection id "0HMM2B4UGOEVO" completed keep alive response.
+2022-11-09 08:50:23.961 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 278 - 400 611 application/problem+json;+charset=utf-8 74.1460ms
+2022-11-09 08:50:30.470 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - -
+2022-11-09 08:50:30.482 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-09 08:50:30.518 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-09 08:50:30.552 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - -
+2022-11-09 08:50:30.555 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - -
+2022-11-09 08:50:30.562 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 92.5971ms
+2022-11-09 08:50:30.566 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 10.3872ms
+2022-11-09 08:50:30.595 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.9768ms
+2022-11-09 08:50:30.806 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - -
+2022-11-09 08:50:30.821 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.7038ms
+2022-11-09 08:50:56.304 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 233
+2022-11-09 08:50:56.307 -05:00 [DBG] POST requests are not supported
+2022-11-09 08:50:56.308 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/'
+2022-11-09 08:50:56.310 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants/'
+2022-11-09 08:50:56.311 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:50:56.312 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:50:56.313 -05:00 [INF] Route matched with {action = "CreatePlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Plants.info.API.Models.Plant] CreatePlant(Int32, Plants.info.API.Data.Models.PlantCreation) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-09 08:50:56.315 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-09 08:50:56.317 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-09 08:50:56.318 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-09 08:50:56.322 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-09 08:50:56.323 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-09 08:50:56.325 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:50:56.327 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:50:56.328 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:50:56.328 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-09 08:50:56.330 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:50:56.331 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:50:56.332 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:50:56.333 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:50:56.334 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:50:56.336 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' using the name '' in request data ...
+2022-11-09 08:50:56.339 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-09 08:50:56.340 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-09 08:50:56.341 -05:00 [DBG] Connection id "0HMM2B4UGOEVO", Request id "0HMM2B4UGOEVO:00000004": started reading request body.
+2022-11-09 08:50:56.343 -05:00 [DBG] Connection id "0HMM2B4UGOEVO", Request id "0HMM2B4UGOEVO:00000004": done reading request body.
+2022-11-09 08:50:56.344 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-27-10T00:00:00. Path 'dateWatered', line 4, position 44.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:50:56.347 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-25-10T00:00:00. Path 'dateFertilized', line 5, position 47.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:50:56.349 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:50:56.351 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:50:56.353 -05:00 [DBG] Attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:50:56.355 -05:00 [DBG] Done attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:50:56.356 -05:00 [DBG] The request has model state errors, returning an error response.
+2022-11-09 08:50:56.356 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-11-09 08:50:56.357 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-09 08:50:56.359 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-09 08:50:56.360 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-11-09 08:50:56.362 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-11-09 08:50:56.363 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-09 08:50:56.364 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API) in 39.3392ms
+2022-11-09 08:50:56.365 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:50:56.367 -05:00 [DBG] Connection id "0HMM2B4UGOEVO" completed keep alive response.
+2022-11-09 08:50:56.368 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 233 - 400 497 application/problem+json;+charset=utf-8 64.1902ms
+2022-11-09 08:51:24.435 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-09 08:51:24.701 -05:00 [DBG] Hosting starting
+2022-11-09 08:51:25.212 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F562FF4D3E1714315F9DB10F9C4760B87D7CC159)
+2022-11-09 08:51:25.456 -05:00 [INF] Now listening on: https://localhost:7235
+2022-11-09 08:51:25.458 -05:00 [INF] Now listening on: http://localhost:5235
+2022-11-09 08:51:25.459 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2022-11-09 08:51:25.461 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-09 08:51:25.463 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-09 08:51:25.465 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-09 08:51:25.467 -05:00 [INF] Hosting environment: Development
+2022-11-09 08:51:25.469 -05:00 [INF] Content root path: C:\Users\dortiz\source\repos\TestFolder\Plant.info.API\
+2022-11-09 08:51:25.470 -05:00 [DBG] Hosting started
+2022-11-09 08:51:25.739 -05:00 [DBG] Connection id "0HMM2B5V8N3VF" accepted.
+2022-11-09 08:51:25.739 -05:00 [DBG] Connection id "0HMM2B5V8N3VG" accepted.
+2022-11-09 08:51:25.744 -05:00 [DBG] Connection id "0HMM2B5V8N3VF" started.
+2022-11-09 08:51:25.751 -05:00 [DBG] Connection id "0HMM2B5V8N3VG" started.
+2022-11-09 08:51:25.756 -05:00 [DBG] Connection id "0HMM2B5V8N3VG" received FIN.
+2022-11-09 08:51:25.756 -05:00 [DBG] Connection id "0HMM2B5V8N3VF" received FIN.
+2022-11-09 08:51:26.010 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-09 08:51:26.010 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-09 08:51:26.121 -05:00 [DBG] Connection id "0HMM2B5V8N3VG" stopped.
+2022-11-09 08:51:26.121 -05:00 [DBG] Connection id "0HMM2B5V8N3VF" stopped.
+2022-11-09 08:51:26.126 -05:00 [DBG] Connection id "0HMM2B5V8N3VG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:51:26.126 -05:00 [DBG] Connection id "0HMM2B5V8N3VF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:51:32.632 -05:00 [DBG] Connection id "0HMM2B5V8N3VH" accepted.
+2022-11-09 08:51:32.983 -05:00 [DBG] Connection id "0HMM2B5V8N3VH" started.
+2022-11-09 08:51:33.741 -05:00 [DBG] Connection 0HMM2B5V8N3VH established using the following protocol: "Tls12"
+2022-11-09 08:51:34.214 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - -
+2022-11-09 08:51:34.542 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-09 08:51:34.885 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-09 08:51:35.466 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - -
+2022-11-09 08:51:35.477 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - -
+2022-11-09 08:51:35.490 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-09 08:51:35.501 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 32.5475ms
+2022-11-09 08:51:35.512 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 1310.2060ms
+2022-11-09 08:51:35.607 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 129.2909ms
+2022-11-09 08:51:35.848 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - -
+2022-11-09 08:51:36.260 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 411.9399ms
+2022-11-09 08:53:10.981 -05:00 [DBG] Connection id "0HMM2B5V8N3VI" accepted.
+2022-11-09 08:53:10.986 -05:00 [DBG] Connection id "0HMM2B5V8N3VI" received FIN.
+2022-11-09 08:53:10.988 -05:00 [DBG] Connection id "0HMM2B5V8N3VI" started.
+2022-11-09 08:53:10.988 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ" accepted.
+2022-11-09 08:53:11.040 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ" started.
+2022-11-09 08:53:11.073 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-09 08:53:11.077 -05:00 [DBG] Connection id "0HMM2B5V8N3VI" stopped.
+2022-11-09 08:53:11.079 -05:00 [DBG] Connection id "0HMM2B5V8N3VI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-09 08:53:11.085 -05:00 [DBG] Connection 0HMM2B5V8N3VJ established using the following protocol: "Tls12"
+2022-11-09 08:53:11.096 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 233
+2022-11-09 08:53:11.100 -05:00 [DBG] POST requests are not supported
+2022-11-09 08:53:11.129 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/'
+2022-11-09 08:53:11.136 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants/'
+2022-11-09 08:53:11.138 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:53:11.143 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:53:11.164 -05:00 [INF] Route matched with {action = "CreatePlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Plants.info.API.Models.Plant] CreatePlant(Int32, Plants.info.API.Data.Models.PlantCreation) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-09 08:53:11.167 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-09 08:53:11.168 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-09 08:53:11.170 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-09 08:53:11.173 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-09 08:53:11.174 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-09 08:53:11.176 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:53:11.281 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:53:11.300 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:53:11.303 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-09 08:53:11.306 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:53:11.307 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:53:11.308 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:53:11.310 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:53:11.313 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:53:11.315 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' using the name '' in request data ...
+2022-11-09 08:53:11.316 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-09 08:53:11.318 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-09 08:53:11.336 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ", Request id "0HMM2B5V8N3VJ:00000002": started reading request body.
+2022-11-09 08:53:11.338 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ", Request id "0HMM2B5V8N3VJ:00000002": done reading request body.
+2022-11-09 08:53:11.607 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-27-10T00:00:00. Path 'dateWatered', line 4, position 44.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:53:11.663 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-25-10T00:00:00. Path 'dateFertilized', line 5, position 47.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:53:11.679 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:53:11.681 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:53:11.681 -05:00 [DBG] Attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:53:11.687 -05:00 [DBG] Done attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:53:11.691 -05:00 [DBG] The request has model state errors, returning an error response.
+2022-11-09 08:53:11.693 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-11-09 08:53:11.695 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-09 08:53:11.698 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-09 08:53:11.699 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-11-09 08:53:11.704 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-11-09 08:53:11.708 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-09 08:53:11.789 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API) in 605.1362ms
+2022-11-09 08:53:11.791 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:53:11.793 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ" completed keep alive response.
+2022-11-09 08:53:11.796 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 233 - 400 497 application/problem+json;+charset=utf-8 700.7658ms
+2022-11-09 08:54:10.161 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 233
+2022-11-09 08:54:10.164 -05:00 [DBG] POST requests are not supported
+2022-11-09 08:54:10.167 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/'
+2022-11-09 08:54:10.168 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants/'
+2022-11-09 08:54:10.170 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:54:10.171 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:54:10.173 -05:00 [INF] Route matched with {action = "CreatePlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Plants.info.API.Models.Plant] CreatePlant(Int32, Plants.info.API.Data.Models.PlantCreation) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-09 08:54:10.177 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-09 08:54:10.178 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-09 08:54:10.179 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-09 08:54:10.181 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-09 08:54:10.182 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-09 08:54:10.184 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:54:10.189 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:54:10.202 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:54:10.204 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-09 08:54:10.205 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:54:10.206 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:54:10.207 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:54:10.208 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:54:10.208 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:54:10.209 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' using the name '' in request data ...
+2022-11-09 08:54:10.210 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-09 08:54:10.211 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-09 08:54:10.212 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ", Request id "0HMM2B5V8N3VJ:00000003": started reading request body.
+2022-11-09 08:54:10.213 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ", Request id "0HMM2B5V8N3VJ:00000003": done reading request body.
+2022-11-09 08:54:10.265 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-27-10T00:00:00. Path 'dateWatered', line 4, position 44.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:54:10.314 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-25-10T00:00:00. Path 'dateFertilized', line 5, position 47.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:54:10.318 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:54:10.321 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:54:10.322 -05:00 [DBG] Attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:54:10.324 -05:00 [DBG] Done attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:54:10.325 -05:00 [DBG] The request has model state errors, returning an error response.
+2022-11-09 08:54:10.326 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-11-09 08:54:10.327 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-09 08:54:10.329 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-09 08:54:10.329 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-11-09 08:54:10.331 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-11-09 08:54:10.332 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-09 08:54:10.335 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API) in 150.6741ms
+2022-11-09 08:54:10.337 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:54:10.339 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ" completed keep alive response.
+2022-11-09 08:54:10.340 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 233 - 400 497 application/problem+json;+charset=utf-8 179.8154ms
+2022-11-09 08:54:53.479 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 233
+2022-11-09 08:54:53.486 -05:00 [DBG] POST requests are not supported
+2022-11-09 08:54:53.488 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/'
+2022-11-09 08:54:53.491 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants/'
+2022-11-09 08:54:53.495 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:54:53.497 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:54:53.499 -05:00 [INF] Route matched with {action = "CreatePlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Plants.info.API.Models.Plant] CreatePlant(Int32, Plants.info.API.Data.Models.PlantCreation) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-09 08:54:53.504 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-09 08:54:53.506 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-09 08:54:53.506 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-09 08:54:53.508 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-09 08:54:53.509 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-09 08:54:53.512 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:54:53.517 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-09 08:54:53.520 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:54:53.522 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-09 08:54:53.525 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:54:53.527 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:54:53.528 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-09 08:54:53.531 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-09 08:54:53.533 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:54:53.536 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' using the name '' in request data ...
+2022-11-09 08:54:53.538 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-09 08:54:53.542 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-09 08:54:53.544 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ", Request id "0HMM2B5V8N3VJ:00000004": started reading request body.
+2022-11-09 08:54:53.546 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ", Request id "0HMM2B5V8N3VJ:00000004": done reading request body.
+2022-11-09 08:54:53.609 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-27-10T00:00:00. Path 'dateWatered', line 4, position 44.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:54:53.652 -05:00 [DBG] JSON input formatter threw an exception.
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 2022-25-10T00:00:00. Path 'dateFertilized', line 5, position 47.
+   at Newtonsoft.Json.JsonReader.ReadDateTimeString(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+2022-11-09 08:54:53.654 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:54:53.655 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:54:53.656 -05:00 [DBG] Attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-09 08:54:53.658 -05:00 [DBG] Done attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-09 08:54:53.659 -05:00 [DBG] The request has model state errors, returning an error response.
+2022-11-09 08:54:53.660 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-11-09 08:54:53.660 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-09 08:54:53.662 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-09 08:54:53.663 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-11-09 08:54:53.664 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-11-09 08:54:53.665 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-09 08:54:53.666 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API) in 154.2601ms
+2022-11-09 08:54:53.668 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-09 08:54:53.669 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ" completed keep alive response.
+2022-11-09 08:54:53.670 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 233 - 400 497 application/problem+json;+charset=utf-8 190.8125ms
+2022-11-09 08:58:30.534 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ" received FIN.
+2022-11-09 08:58:30.553 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ" disconnecting.
+2022-11-09 08:58:30.564 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ" sending FIN because: "The client closed the connection."
+2022-11-09 08:58:30.578 -05:00 [DBG] Connection id "0HMM2B5V8N3VJ" stopped.

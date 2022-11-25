@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "Pink Princess",
+    "Genus": "Philodendron",
+    "DateAdded": "2022-05-11T00:00:00",
+    "DateWatered": "2022-03-11T00:00:00",
+    "DateFertilized": "2022-02-11T00:00:00",
+    "WaterInterval": 6,
+    "FertilizeInterval": 25
+  },
+  {
+    "Name": "Monstera Albo",
+    "Genus": "Monstera",
+    "DateAdded": "2022-03-11T00:00:00",
+    "DateWatered": "2022-03-11T00:00:00",
+    "DateFertilized": "2022-01-11T00:00:00",
+    "WaterInterval": 10,
+    "FertilizeInterval": 20
+  }
+]

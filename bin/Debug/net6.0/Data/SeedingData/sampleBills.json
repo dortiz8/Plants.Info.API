@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "Water",
+    "Cost": 25.00,
+    "DateDay": 15,
+    "DateAdded": "2022-01-11T00:00:00"
+  },
+  {
+    "Name": "Light",
+    "Cost": 130.00,
+    "DateDay": 1,
+    "DateAdded": "2022-03-11T00:00:00"
+  }
+]

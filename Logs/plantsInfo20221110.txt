@@ -1,0 +1,476 @@
+2022-11-10 17:02:05.646 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-10 17:02:05.768 -05:00 [DBG] Hosting starting
+2022-11-10 17:02:05.958 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F562FF4D3E1714315F9DB10F9C4760B87D7CC159)
+2022-11-10 17:02:06.104 -05:00 [INF] Now listening on: https://localhost:7235
+2022-11-10 17:02:06.106 -05:00 [INF] Now listening on: http://localhost:5235
+2022-11-10 17:02:06.107 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2022-11-10 17:02:06.108 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-10 17:02:06.109 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-10 17:02:06.111 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-10 17:02:06.112 -05:00 [INF] Hosting environment: Development
+2022-11-10 17:02:06.113 -05:00 [INF] Content root path: C:\Users\dortiz\source\repos\TestFolder\Plant.info.API\
+2022-11-10 17:02:06.114 -05:00 [DBG] Hosting started
+2022-11-10 17:02:06.465 -05:00 [DBG] Connection id "0HMM3CSQG1H0J" accepted.
+2022-11-10 17:02:06.468 -05:00 [DBG] Connection id "0HMM3CSQG1H0J" started.
+2022-11-10 17:02:06.473 -05:00 [DBG] Connection id "0HMM3CSQG1H0K" accepted.
+2022-11-10 17:02:06.474 -05:00 [DBG] Connection id "0HMM3CSQG1H0K" started.
+2022-11-10 17:02:06.492 -05:00 [DBG] Connection id "0HMM3CSQG1H0J" received FIN.
+2022-11-10 17:02:06.492 -05:00 [DBG] Connection id "0HMM3CSQG1H0K" received FIN.
+2022-11-10 17:02:06.501 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-10 17:02:06.501 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-10 17:02:06.568 -05:00 [DBG] Connection id "0HMM3CSQG1H0J" stopped.
+2022-11-10 17:02:06.568 -05:00 [DBG] Connection id "0HMM3CSQG1H0K" stopped.
+2022-11-10 17:02:06.571 -05:00 [DBG] Connection id "0HMM3CSQG1H0J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:02:06.571 -05:00 [DBG] Connection id "0HMM3CSQG1H0K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:02:07.050 -05:00 [DBG] Connection id "0HMM3CSQG1H0L" accepted.
+2022-11-10 17:02:07.078 -05:00 [DBG] Connection id "0HMM3CSQG1H0M" accepted.
+2022-11-10 17:02:07.089 -05:00 [DBG] Connection id "0HMM3CSQG1H0L" started.
+2022-11-10 17:02:07.092 -05:00 [DBG] Connection id "0HMM3CSQG1H0M" started.
+2022-11-10 17:02:07.183 -05:00 [DBG] Connection id "0HMM3CSQG1H0M" received FIN.
+2022-11-10 17:02:07.205 -05:00 [DBG] Connection 0HMM3CSQG1H0L established using the following protocol: "Tls12"
+2022-11-10 17:02:07.205 -05:00 [DBG] Connection 0HMM3CSQG1H0M established using the following protocol: "Tls12"
+2022-11-10 17:02:07.235 -05:00 [DBG] Connection id "0HMM3CSQG1H0M" is closed. The last processed stream ID was 0.
+2022-11-10 17:02:07.257 -05:00 [DBG] Connection id "0HMM3CSQG1H0M" sending FIN because: "The client closed the connection."
+2022-11-10 17:02:07.260 -05:00 [DBG] Connection id "0HMM3CSQG1H0M" stopped.
+2022-11-10 17:02:07.285 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger - -
+2022-11-10 17:02:07.325 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-10 17:02:07.394 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger - - - 301 0 - 114.3907ms
+2022-11-10 17:02:07.401 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - -
+2022-11-10 17:02:07.478 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-10 17:02:07.713 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-10 17:02:07.716 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/swagger-ui.css - -
+2022-11-10 17:02:07.716 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - -
+2022-11-10 17:02:07.716 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/swagger-ui-standalone-preset.js - -
+2022-11-10 17:02:07.722 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/swagger-ui-bundle.js - -
+2022-11-10 17:02:07.725 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 323.8226ms
+2022-11-10 17:02:07.731 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 14.6804ms
+2022-11-10 17:02:07.751 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-10 17:02:07.757 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/swagger-ui.css - - - 200 143632 text/css 40.9699ms
+2022-11-10 17:02:07.758 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-10 17:02:07.765 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-10 17:02:07.767 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 51.2499ms
+2022-11-10 17:02:07.769 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 47.6261ms
+2022-11-10 17:02:07.956 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - -
+2022-11-10 17:02:08.061 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 104.7752ms
+2022-11-10 17:02:08.520 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - -
+2022-11-10 17:02:08.582 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/favicon-32x32.png - -
+2022-11-10 17:02:08.590 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-11-10 17:02:08.594 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/favicon-32x32.png - - - 200 628 image/png 12.0656ms
+2022-11-10 17:02:08.789 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 269.3532ms
+2022-11-10 17:02:23.481 -05:00 [DBG] Connection id "0HMM3CSQG1H0N" accepted.
+2022-11-10 17:02:23.482 -05:00 [DBG] Connection id "0HMM3CSQG1H0N" started.
+2022-11-10 17:02:23.490 -05:00 [DBG] Connection id "0HMM3CSQG1H0O" accepted.
+2022-11-10 17:02:23.493 -05:00 [DBG] Connection id "0HMM3CSQG1H0N" received FIN.
+2022-11-10 17:02:23.493 -05:00 [DBG] Connection id "0HMM3CSQG1H0O" started.
+2022-11-10 17:02:23.496 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-10 17:02:23.503 -05:00 [DBG] Connection id "0HMM3CSQG1H0N" stopped.
+2022-11-10 17:02:23.505 -05:00 [DBG] Connection id "0HMM3CSQG1H0N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:02:23.509 -05:00 [DBG] Connection 0HMM3CSQG1H0O established using the following protocol: "Tls12"
+2022-11-10 17:02:23.518 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 215
+2022-11-10 17:02:23.520 -05:00 [DBG] POST requests are not supported
+2022-11-10 17:02:23.563 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/'
+2022-11-10 17:02:23.583 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants/'
+2022-11-10 17:02:23.612 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-10 17:02:23.616 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-10 17:02:23.637 -05:00 [INF] Route matched with {action = "CreatePlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Plants.info.API.Models.Plant] CreatePlant(Int32, Plants.info.API.Data.Models.PlantCreation) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-10 17:02:23.642 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-10 17:02:23.643 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-10 17:02:23.645 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-10 17:02:23.661 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-10 17:02:23.667 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-10 17:02:23.673 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:02:23.755 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:02:23.764 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:02:23.767 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-10 17:02:23.769 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:02:23.771 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:02:23.772 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:02:23.777 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:02:23.779 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-10 17:02:23.781 -05:00 [DBG] Attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' using the name '' in request data ...
+2022-11-10 17:02:23.783 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-10 17:02:23.784 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-10 17:02:23.790 -05:00 [DBG] Connection id "0HMM3CSQG1H0O", Request id "0HMM3CSQG1H0O:00000002": started reading request body.
+2022-11-10 17:02:23.791 -05:00 [DBG] Connection id "0HMM3CSQG1H0O", Request id "0HMM3CSQG1H0O:00000002": done reading request body.
+2022-11-10 17:02:23.946 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-10 17:02:23.948 -05:00 [DBG] Done attempting to bind parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-10 17:02:23.950 -05:00 [DBG] Attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation' ...
+2022-11-10 17:02:23.957 -05:00 [DBG] Done attempting to validate the bound parameter 'plantObject' of type 'Plants.info.API.Data.Models.PlantCreation'.
+2022-11-10 17:02:29.022 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-10 17:02:29.028 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-10 17:02:29.029 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-10 17:02:29.032 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-10 17:02:29.035 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-10 17:02:29.038 -05:00 [INF] Executing CreatedAtRouteResult, writing value of type 'Plants.info.API.Models.Plant'.
+2022-11-10 17:02:29.065 -05:00 [DBG] Found the endpoints ["Plants.info.API.Controllers.PlantsController.GetPlantById (Plants.info.API)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2022-11-10 17:02:29.075 -05:00 [DBG] Successfully processed template api/users/{userId}/plants/{plantId} for Plants.info.API.Controllers.PlantsController.GetPlantById (Plants.info.API) resulting in /api/users/1/plants/3 and 
+2022-11-10 17:02:29.079 -05:00 [DBG] Link generation succeeded for endpoints ["Plants.info.API.Controllers.PlantsController.GetPlantById (Plants.info.API)"] with result /api/users/1/plants/3
+2022-11-10 17:02:29.145 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API) in 5467.8995ms
+2022-11-10 17:02:29.148 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.CreatePlant (Plants.info.API)'
+2022-11-10 17:02:29.150 -05:00 [DBG] Connection id "0HMM3CSQG1H0O" completed keep alive response.
+2022-11-10 17:02:29.157 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/users/1/plants/ application/json 215 - 201 223 application/json;+charset=utf-8 5638.8381ms
+2022-11-10 17:04:20.015 -05:00 [DBG] Connection id "0HMM3CSQG1H0L" is closing.
+2022-11-10 17:04:20.017 -05:00 [DBG] Connection id "0HMM3CSQG1H0L" is closed. The last processed stream ID was 17.
+2022-11-10 17:04:20.020 -05:00 [DBG] Connection id "0HMM3CSQG1H0L" received FIN.
+2022-11-10 17:04:20.021 -05:00 [DBG] Connection id "0HMM3CSQG1H0L" stopped.
+2022-11-10 17:04:20.023 -05:00 [DBG] Connection id "0HMM3CSQG1H0L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:04:40.206 -05:00 [DBG] Connection id "0HMM3CSQG1H0O" disconnecting.
+2022-11-10 17:04:40.208 -05:00 [DBG] Connection id "0HMM3CSQG1H0O" stopped.
+2022-11-10 17:04:40.210 -05:00 [DBG] Connection id "0HMM3CSQG1H0O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:07:54.514 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-10 17:07:54.643 -05:00 [DBG] Hosting starting
+2022-11-10 17:07:54.897 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F562FF4D3E1714315F9DB10F9C4760B87D7CC159)
+2022-11-10 17:07:55.058 -05:00 [INF] Now listening on: https://localhost:7235
+2022-11-10 17:07:55.060 -05:00 [INF] Now listening on: http://localhost:5235
+2022-11-10 17:07:55.062 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2022-11-10 17:07:55.063 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-10 17:07:55.064 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-10 17:07:55.065 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-10 17:07:55.066 -05:00 [INF] Hosting environment: Development
+2022-11-10 17:07:55.067 -05:00 [INF] Content root path: C:\Users\dortiz\source\repos\TestFolder\Plant.info.API\
+2022-11-10 17:07:55.068 -05:00 [DBG] Hosting started
+2022-11-10 17:07:55.416 -05:00 [DBG] Connection id "0HMM3D02FSUBE" accepted.
+2022-11-10 17:07:55.419 -05:00 [DBG] Connection id "0HMM3D02FSUBE" started.
+2022-11-10 17:07:55.424 -05:00 [DBG] Connection id "0HMM3D02FSUBF" accepted.
+2022-11-10 17:07:55.425 -05:00 [DBG] Connection id "0HMM3D02FSUBF" started.
+2022-11-10 17:07:55.427 -05:00 [DBG] Connection id "0HMM3D02FSUBF" received FIN.
+2022-11-10 17:07:55.427 -05:00 [DBG] Connection id "0HMM3D02FSUBE" received FIN.
+2022-11-10 17:07:55.437 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-10 17:07:55.437 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-10 17:07:55.459 -05:00 [DBG] Connection id "0HMM3D02FSUBG" accepted.
+2022-11-10 17:07:55.476 -05:00 [DBG] Connection id "0HMM3D02FSUBF" stopped.
+2022-11-10 17:07:55.476 -05:00 [DBG] Connection id "0HMM3D02FSUBE" stopped.
+2022-11-10 17:07:55.477 -05:00 [DBG] Connection id "0HMM3D02FSUBG" started.
+2022-11-10 17:07:55.479 -05:00 [DBG] Connection id "0HMM3D02FSUBF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:07:55.480 -05:00 [DBG] Connection id "0HMM3D02FSUBE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:07:55.531 -05:00 [DBG] Connection 0HMM3D02FSUBG established using the following protocol: "Tls12"
+2022-11-10 17:07:55.583 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - -
+2022-11-10 17:07:55.610 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-10 17:07:55.708 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-10 17:07:55.848 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-10 17:07:55.853 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 273.8782ms
+2022-11-10 17:07:55.858 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - -
+2022-11-10 17:07:55.858 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - -
+2022-11-10 17:07:55.865 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 6.9185ms
+2022-11-10 17:07:55.879 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.5285ms
+2022-11-10 17:07:56.158 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - -
+2022-11-10 17:07:56.400 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 242.7190ms
+2022-11-10 17:10:07.760 -05:00 [DBG] Connection id "0HMM3D02FSUBG" is closing.
+2022-11-10 17:10:07.765 -05:00 [DBG] Connection id "0HMM3D02FSUBG" is closed. The last processed stream ID was 7.
+2022-11-10 17:10:07.769 -05:00 [DBG] Connection id "0HMM3D02FSUBG" received FIN.
+2022-11-10 17:10:07.770 -05:00 [DBG] Connection id "0HMM3D02FSUBG" stopped.
+2022-11-10 17:10:07.771 -05:00 [DBG] Connection id "0HMM3D02FSUBG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:11:09.093 -05:00 [DBG] Connection id "0HMM3D02FSUBH" accepted.
+2022-11-10 17:11:09.095 -05:00 [DBG] Connection id "0HMM3D02FSUBH" received FIN.
+2022-11-10 17:11:09.096 -05:00 [DBG] Connection id "0HMM3D02FSUBI" accepted.
+2022-11-10 17:11:09.096 -05:00 [DBG] Connection id "0HMM3D02FSUBH" started.
+2022-11-10 17:11:09.101 -05:00 [DBG] Connection id "0HMM3D02FSUBI" started.
+2022-11-10 17:11:09.104 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-10 17:11:09.110 -05:00 [DBG] Connection id "0HMM3D02FSUBH" stopped.
+2022-11-10 17:11:09.112 -05:00 [DBG] Connection id "0HMM3D02FSUBH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:11:09.117 -05:00 [DBG] Connection 0HMM3D02FSUBI established using the following protocol: "Tls12"
+2022-11-10 17:11:09.128 -05:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:7235/api/users/2/plants/3 application/json 110
+2022-11-10 17:11:09.133 -05:00 [DBG] PATCH requests are not supported
+2022-11-10 17:11:09.164 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/2/plants/3'
+2022-11-10 17:11:09.170 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants/{plantId}' is valid for the request path '/api/users/2/plants/3'
+2022-11-10 17:11:09.173 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:11:09.175 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:11:09.203 -05:00 [INF] Route matched with {action = "PatchPlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PatchPlant(Int32, Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-10 17:11:09.207 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-10 17:11:09.212 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-10 17:11:09.216 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-10 17:11:09.220 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-10 17:11:09.222 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-10 17:11:09.225 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:11:09.324 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:11:09.332 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:11:09.337 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-10 17:11:09.339 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:11:09.341 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:11:09.342 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:11:09.345 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:11:09.349 -05:00 [DBG] Attempting to bind parameter 'plantId' of type 'System.Int32' ...
+2022-11-10 17:11:09.351 -05:00 [DBG] Attempting to bind parameter 'plantId' of type 'System.Int32' using the name 'plantId' in request data ...
+2022-11-10 17:11:09.354 -05:00 [DBG] Done attempting to bind parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:11:09.355 -05:00 [DBG] Done attempting to bind parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:11:09.356 -05:00 [DBG] Attempting to validate the bound parameter 'plantId' of type 'System.Int32' ...
+2022-11-10 17:11:09.357 -05:00 [DBG] Done attempting to validate the bound parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:11:09.359 -05:00 [DBG] Attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' ...
+2022-11-10 17:11:09.361 -05:00 [DBG] Attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' using the name '' in request data ...
+2022-11-10 17:11:09.364 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-10 17:11:09.367 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-10 17:11:09.376 -05:00 [DBG] Connection id "0HMM3D02FSUBI", Request id "0HMM3D02FSUBI:00000002": started reading request body.
+2022-11-10 17:11:09.378 -05:00 [DBG] Connection id "0HMM3D02FSUBI", Request id "0HMM3D02FSUBI:00000002": done reading request body.
+2022-11-10 17:11:09.542 -05:00 [DBG] Done attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:11:09.545 -05:00 [DBG] Done attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:11:09.547 -05:00 [DBG] Attempting to validate the bound parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' ...
+2022-11-10 17:11:09.562 -05:00 [DBG] Done attempting to validate the bound parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:11:11.593 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-10 17:11:11.601 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-11-10 17:11:11.602 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-11-10 17:11:11.607 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-11-10 17:11:11.608 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-11-10 17:11:11.674 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API) in 2441.1261ms
+2022-11-10 17:11:11.677 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:11:11.678 -05:00 [DBG] Connection id "0HMM3D02FSUBI" completed keep alive response.
+2022-11-10 17:11:11.685 -05:00 [INF] Request finished HTTP/1.1 PATCH https://localhost:7235/api/users/2/plants/3 application/json 110 - 404 161 application/problem+json;+charset=utf-8 2556.4342ms
+2022-11-10 17:11:24.156 -05:00 [DBG] Connection id "0HMM3D02FSUBJ" accepted.
+2022-11-10 17:11:24.171 -05:00 [DBG] Connection id "0HMM3D02FSUBJ" started.
+2022-11-10 17:11:24.183 -05:00 [DBG] Connection 0HMM3D02FSUBJ established using the following protocol: "Tls12"
+2022-11-10 17:11:24.196 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - -
+2022-11-10 17:11:24.208 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-10 17:11:24.237 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-10 17:11:24.248 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 52.4153ms
+2022-11-10 17:11:24.301 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - -
+2022-11-10 17:11:24.301 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - -
+2022-11-10 17:11:24.305 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.2775ms
+2022-11-10 17:11:24.341 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.5464ms
+2022-11-10 17:11:24.555 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - -
+2022-11-10 17:11:24.572 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.8429ms
+2022-11-10 17:11:39.222 -05:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:7235/api/users/1/plants/3 application/json 110
+2022-11-10 17:11:39.223 -05:00 [DBG] PATCH requests are not supported
+2022-11-10 17:11:39.226 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/3'
+2022-11-10 17:11:39.227 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants/{plantId}' is valid for the request path '/api/users/1/plants/3'
+2022-11-10 17:11:39.229 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:11:39.231 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:11:39.232 -05:00 [INF] Route matched with {action = "PatchPlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PatchPlant(Int32, Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-10 17:11:39.235 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-10 17:11:39.237 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-10 17:11:39.238 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-10 17:11:39.240 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-10 17:11:39.241 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-10 17:11:39.244 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:11:39.248 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:11:39.251 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:11:39.253 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-10 17:11:39.254 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:11:39.255 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:11:39.256 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:11:39.257 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:11:39.258 -05:00 [DBG] Attempting to bind parameter 'plantId' of type 'System.Int32' ...
+2022-11-10 17:11:39.259 -05:00 [DBG] Attempting to bind parameter 'plantId' of type 'System.Int32' using the name 'plantId' in request data ...
+2022-11-10 17:11:39.261 -05:00 [DBG] Done attempting to bind parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:11:39.262 -05:00 [DBG] Done attempting to bind parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:11:39.265 -05:00 [DBG] Attempting to validate the bound parameter 'plantId' of type 'System.Int32' ...
+2022-11-10 17:11:39.268 -05:00 [DBG] Done attempting to validate the bound parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:11:39.269 -05:00 [DBG] Attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' ...
+2022-11-10 17:11:39.270 -05:00 [DBG] Attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' using the name '' in request data ...
+2022-11-10 17:11:39.271 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-10 17:11:39.272 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-10 17:11:39.273 -05:00 [DBG] Connection id "0HMM3D02FSUBI", Request id "0HMM3D02FSUBI:00000003": started reading request body.
+2022-11-10 17:11:39.274 -05:00 [DBG] Connection id "0HMM3D02FSUBI", Request id "0HMM3D02FSUBI:00000003": done reading request body.
+2022-11-10 17:11:39.276 -05:00 [DBG] Done attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:11:39.277 -05:00 [DBG] Done attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:11:39.278 -05:00 [DBG] Attempting to validate the bound parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' ...
+2022-11-10 17:11:39.281 -05:00 [DBG] Done attempting to validate the bound parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:11:39.528 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-10 17:11:39.529 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API) in 285.8728ms
+2022-11-10 17:11:39.532 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:11:39.534 -05:00 [DBG] Connection id "0HMM3D02FSUBI" completed keep alive response.
+2022-11-10 17:11:39.535 -05:00 [INF] Request finished HTTP/1.1 PATCH https://localhost:7235/api/users/1/plants/3 application/json 110 - 204 - - 313.7775ms
+2022-11-10 17:13:21.092 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-10 17:13:21.365 -05:00 [DBG] Hosting starting
+2022-11-10 17:13:21.814 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F562FF4D3E1714315F9DB10F9C4760B87D7CC159)
+2022-11-10 17:13:22.012 -05:00 [INF] Now listening on: https://localhost:7235
+2022-11-10 17:13:22.016 -05:00 [INF] Now listening on: http://localhost:5235
+2022-11-10 17:13:22.017 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2022-11-10 17:13:22.018 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-11-10 17:13:22.021 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-11-10 17:13:22.024 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-10 17:13:22.025 -05:00 [INF] Hosting environment: Development
+2022-11-10 17:13:22.026 -05:00 [INF] Content root path: C:\Users\dortiz\source\repos\TestFolder\Plant.info.API\
+2022-11-10 17:13:22.027 -05:00 [DBG] Hosting started
+2022-11-10 17:13:22.369 -05:00 [DBG] Connection id "0HMM3D33TTG3M" accepted.
+2022-11-10 17:13:22.369 -05:00 [DBG] Connection id "0HMM3D33TTG3N" accepted.
+2022-11-10 17:13:22.373 -05:00 [DBG] Connection id "0HMM3D33TTG3M" started.
+2022-11-10 17:13:22.373 -05:00 [DBG] Connection id "0HMM3D33TTG3N" started.
+2022-11-10 17:13:22.419 -05:00 [DBG] Connection id "0HMM3D33TTG3M" received FIN.
+2022-11-10 17:13:22.419 -05:00 [DBG] Connection id "0HMM3D33TTG3N" received FIN.
+2022-11-10 17:13:22.727 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-10 17:13:22.727 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-10 17:13:22.816 -05:00 [DBG] Connection id "0HMM3D33TTG3N" stopped.
+2022-11-10 17:13:22.816 -05:00 [DBG] Connection id "0HMM3D33TTG3M" stopped.
+2022-11-10 17:13:22.822 -05:00 [DBG] Connection id "0HMM3D33TTG3N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:13:22.822 -05:00 [DBG] Connection id "0HMM3D33TTG3M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:13:32.024 -05:00 [DBG] Connection id "0HMM3D33TTG3O" accepted.
+2022-11-10 17:13:32.109 -05:00 [DBG] Connection id "0HMM3D33TTG3O" started.
+2022-11-10 17:13:32.924 -05:00 [DBG] Connection 0HMM3D33TTG3O established using the following protocol: "Tls12"
+2022-11-10 17:13:33.271 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/index.html - -
+2022-11-10 17:13:33.522 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-10 17:13:33.818 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-11-10 17:13:34.576 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - -
+2022-11-10 17:13:34.588 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-11-10 17:13:34.612 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/_vs/browserLink - -
+2022-11-10 17:13:34.642 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 1382.0284ms
+2022-11-10 17:13:34.646 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 68.9386ms
+2022-11-10 17:13:34.849 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 236.9118ms
+2022-11-10 17:13:35.103 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - -
+2022-11-10 17:13:35.717 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 614.7398ms
+2022-11-10 17:13:42.854 -05:00 [DBG] Connection id "0HMM3D33TTG3P" accepted.
+2022-11-10 17:13:42.855 -05:00 [DBG] Connection id "0HMM3D33TTG3P" received FIN.
+2022-11-10 17:13:42.858 -05:00 [DBG] Connection id "0HMM3D33TTG3P" started.
+2022-11-10 17:13:42.859 -05:00 [DBG] Connection id "0HMM3D33TTG3Q" accepted.
+2022-11-10 17:13:42.970 -05:00 [DBG] Connection id "0HMM3D33TTG3Q" started.
+2022-11-10 17:13:43.005 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-10 17:13:43.011 -05:00 [DBG] Connection id "0HMM3D33TTG3P" stopped.
+2022-11-10 17:13:43.015 -05:00 [DBG] Connection id "0HMM3D33TTG3P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 17:13:43.018 -05:00 [DBG] Connection 0HMM3D33TTG3Q established using the following protocol: "Tls12"
+2022-11-10 17:13:43.041 -05:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:7235/api/users/1/plants/3 application/json 110
+2022-11-10 17:13:43.053 -05:00 [DBG] PATCH requests are not supported
+2022-11-10 17:13:43.107 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/3'
+2022-11-10 17:13:43.116 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants/{plantId}' is valid for the request path '/api/users/1/plants/3'
+2022-11-10 17:13:43.119 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:13:43.126 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:13:43.160 -05:00 [INF] Route matched with {action = "PatchPlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PatchPlant(Int32, Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-10 17:13:43.166 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-10 17:13:43.169 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-10 17:13:43.171 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-10 17:13:43.175 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-10 17:13:43.177 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-10 17:13:43.183 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:13:43.343 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:13:43.366 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:13:43.370 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-10 17:13:43.373 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:13:43.374 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:13:43.375 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:13:43.379 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:13:43.387 -05:00 [DBG] Attempting to bind parameter 'plantId' of type 'System.Int32' ...
+2022-11-10 17:13:43.389 -05:00 [DBG] Attempting to bind parameter 'plantId' of type 'System.Int32' using the name 'plantId' in request data ...
+2022-11-10 17:13:43.391 -05:00 [DBG] Done attempting to bind parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:13:43.392 -05:00 [DBG] Done attempting to bind parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:13:43.393 -05:00 [DBG] Attempting to validate the bound parameter 'plantId' of type 'System.Int32' ...
+2022-11-10 17:13:43.396 -05:00 [DBG] Done attempting to validate the bound parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:13:43.399 -05:00 [DBG] Attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' ...
+2022-11-10 17:13:43.405 -05:00 [DBG] Attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' using the name '' in request data ...
+2022-11-10 17:13:43.409 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-10 17:13:43.411 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-10 17:13:43.443 -05:00 [DBG] Connection id "0HMM3D33TTG3Q", Request id "0HMM3D33TTG3Q:00000002": started reading request body.
+2022-11-10 17:13:43.447 -05:00 [DBG] Connection id "0HMM3D33TTG3Q", Request id "0HMM3D33TTG3Q:00000002": done reading request body.
+2022-11-10 17:13:43.768 -05:00 [DBG] Done attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:13:43.770 -05:00 [DBG] Done attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:13:43.772 -05:00 [DBG] Attempting to validate the bound parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' ...
+2022-11-10 17:13:43.782 -05:00 [DBG] Done attempting to validate the bound parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:13:47.189 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-10 17:13:47.199 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API) in 4009.312ms
+2022-11-10 17:13:47.203 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:13:47.205 -05:00 [DBG] Connection id "0HMM3D33TTG3Q" completed keep alive response.
+2022-11-10 17:13:47.220 -05:00 [INF] Request finished HTTP/1.1 PATCH https://localhost:7235/api/users/1/plants/3 application/json 110 - 204 - - 4178.7089ms
+2022-11-10 17:14:34.946 -05:00 [INF] Request starting HTTP/1.1 PATCH https://localhost:7235/api/users/1/plants/3 application/json 113
+2022-11-10 17:14:34.947 -05:00 [DBG] PATCH requests are not supported
+2022-11-10 17:14:34.948 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/3'
+2022-11-10 17:14:34.949 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants/{plantId}' is valid for the request path '/api/users/1/plants/3'
+2022-11-10 17:14:34.950 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:14:34.952 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:14:34.954 -05:00 [INF] Route matched with {action = "PatchPlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PatchPlant(Int32, Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-10 17:14:34.957 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-10 17:14:34.958 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-10 17:14:34.959 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-10 17:14:34.960 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-10 17:14:34.962 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-10 17:14:34.964 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:14:34.967 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:14:34.973 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:14:34.974 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-10 17:14:34.975 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:14:34.976 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:14:34.977 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:14:34.978 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:14:34.979 -05:00 [DBG] Attempting to bind parameter 'plantId' of type 'System.Int32' ...
+2022-11-10 17:14:34.980 -05:00 [DBG] Attempting to bind parameter 'plantId' of type 'System.Int32' using the name 'plantId' in request data ...
+2022-11-10 17:14:34.981 -05:00 [DBG] Done attempting to bind parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:14:34.982 -05:00 [DBG] Done attempting to bind parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:14:34.982 -05:00 [DBG] Attempting to validate the bound parameter 'plantId' of type 'System.Int32' ...
+2022-11-10 17:14:34.983 -05:00 [DBG] Done attempting to validate the bound parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:14:34.984 -05:00 [DBG] Attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' ...
+2022-11-10 17:14:34.987 -05:00 [DBG] Attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' using the name '' in request data ...
+2022-11-10 17:14:34.989 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-10 17:14:34.991 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-10 17:14:34.992 -05:00 [DBG] Connection id "0HMM3D33TTG3Q", Request id "0HMM3D33TTG3Q:00000003": started reading request body.
+2022-11-10 17:14:34.992 -05:00 [DBG] Connection id "0HMM3D33TTG3Q", Request id "0HMM3D33TTG3Q:00000003": done reading request body.
+2022-11-10 17:14:34.994 -05:00 [DBG] Done attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:14:34.995 -05:00 [DBG] Done attempting to bind parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:14:34.996 -05:00 [DBG] Attempting to validate the bound parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]' ...
+2022-11-10 17:14:34.997 -05:00 [DBG] Done attempting to validate the bound parameter 'patchDocument' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Plants.info.API.Data.Models.PlantCreation]'.
+2022-11-10 17:14:36.667 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-10 17:14:36.668 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API) in 1704.7643ms
+2022-11-10 17:14:36.670 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.PatchPlant (Plants.info.API)'
+2022-11-10 17:14:36.672 -05:00 [DBG] Connection id "0HMM3D33TTG3Q" completed keep alive response.
+2022-11-10 17:14:36.673 -05:00 [INF] Request finished HTTP/1.1 PATCH https://localhost:7235/api/users/1/plants/3 application/json 113 - 204 - - 1727.1685ms
+2022-11-10 17:15:54.182 -05:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7235/api/users/1/plants/3 application/json 104
+2022-11-10 17:15:54.187 -05:00 [DBG] DELETE requests are not supported
+2022-11-10 17:15:54.189 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants/3'
+2022-11-10 17:15:54.191 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.DeletePlant (Plants.info.API)' with route pattern 'api/users/{userId}/plants/{plantId}' is valid for the request path '/api/users/1/plants/3'
+2022-11-10 17:15:54.195 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.DeletePlant (Plants.info.API)'
+2022-11-10 17:15:54.199 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.DeletePlant (Plants.info.API)'
+2022-11-10 17:15:54.207 -05:00 [INF] Route matched with {action = "DeletePlant", controller = "Plants"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeletePlant(Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2022-11-10 17:15:54.211 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-10 17:15:54.212 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-10 17:15:54.213 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-10 17:15:54.215 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-10 17:15:54.217 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-10 17:15:54.218 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:15:54.220 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2022-11-10 17:15:54.221 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:15:54.222 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2022-11-10 17:15:54.223 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:15:54.224 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:15:54.225 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2022-11-10 17:15:54.226 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2022-11-10 17:15:54.226 -05:00 [DBG] Attempting to bind parameter 'plantId' of type 'System.Int32' ...
+2022-11-10 17:15:54.228 -05:00 [DBG] Attempting to bind parameter 'plantId' of type 'System.Int32' using the name 'plantId' in request data ...
+2022-11-10 17:15:54.229 -05:00 [DBG] Done attempting to bind parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:15:54.230 -05:00 [DBG] Done attempting to bind parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:15:54.232 -05:00 [DBG] Attempting to validate the bound parameter 'plantId' of type 'System.Int32' ...
+2022-11-10 17:15:54.233 -05:00 [DBG] Done attempting to validate the bound parameter 'plantId' of type 'System.Int32'.
+2022-11-10 17:15:54.306 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-10 17:15:54.308 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.DeletePlant (Plants.info.API) in 90.3182ms
+2022-11-10 17:15:54.310 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.DeletePlant (Plants.info.API)'
+2022-11-10 17:15:54.311 -05:00 [DBG] Connection id "0HMM3D33TTG3Q" completed keep alive response.
+2022-11-10 17:15:54.312 -05:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7235/api/users/1/plants/3 application/json 104 - 204 - - 136.3795ms
+2022-11-10 17:15:54.313 -05:00 [DBG] Connection id "0HMM3D33TTG3Q", Request id "0HMM3D33TTG3Q:00000004": started reading request body.
+2022-11-10 17:15:54.315 -05:00 [DBG] Connection id "0HMM3D33TTG3Q", Request id "0HMM3D33TTG3Q:00000004": done reading request body.
+2022-11-10 17:44:56.078 -05:00 [DBG] Connection id "0HMM3D33TTG3O" received FIN.
+2022-11-10 17:44:56.142 -05:00 [DBG] Connection id "0HMM3D33TTG3O" is closed. The last processed stream ID was 7.
+2022-11-10 17:44:56.169 -05:00 [DBG] Connection id "0HMM3D33TTG3O" sending FIN because: "The client closed the connection."
