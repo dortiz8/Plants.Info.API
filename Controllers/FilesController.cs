@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
 
 namespace Plants.info.API.Controllers
 {
     [Route("api/files")]
+    [Authorize]
     [ApiController]
     public class FilesController : ControllerBase
     {

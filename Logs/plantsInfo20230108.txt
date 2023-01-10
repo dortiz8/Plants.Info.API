@@ -1,0 +1,1431 @@
+2023-01-08 18:12:09.109 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-01-08 18:12:09.255 -05:00 [DBG] Hosting starting
+2023-01-08 18:12:09.288 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-08 18:12:09.294 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-01-08 18:12:09.308 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-01-08 18:12:09.323 -05:00 [DBG] Considering key {e3ab9436-a942-4129-9e05-9d85e1731fcc} with expiration date 2023-03-20 21:27:34Z as default key.
+2023-01-08 18:12:09.325 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-01-08 18:12:09.341 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-01-08 18:12:09.341 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-01-08 18:12:09.347 -05:00 [DBG] Using key {e3ab9436-a942-4129-9e05-9d85e1731fcc} as the default key.
+2023-01-08 18:12:09.348 -05:00 [DBG] Key ring with default key {e3ab9436-a942-4129-9e05-9d85e1731fcc} was loaded during application startup.
+2023-01-08 18:12:10.257 -05:00 [INF] Now listening on: https://localhost:7235
+2023-01-08 18:12:10.258 -05:00 [INF] Now listening on: http://localhost:5235
+2023-01-08 18:12:10.258 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-01-08 18:12:10.258 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-08 18:12:10.258 -05:00 [INF] Hosting environment: Development
+2023-01-08 18:12:10.258 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-01-08 18:12:10.259 -05:00 [DBG] Hosting started
+2023-01-08 18:12:10.282 -05:00 [DBG] Connection id "0HMNHPN2GNH21" accepted.
+2023-01-08 18:12:10.283 -05:00 [DBG] Connection id "0HMNHPN2GNH21" started.
+2023-01-08 18:12:11.276 -05:00 [DBG] Connection id "0HMNHPN2GNH21" received FIN.
+2023-01-08 18:12:11.284 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-08 18:12:11.363 -05:00 [DBG] Connection id "0HMNHPN2GNH21" stopped.
+2023-01-08 18:12:11.368 -05:00 [DBG] Connection id "0HMNHPN2GNH21" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:12:11.476 -05:00 [DBG] Connection id "0HMNHPN2GNH22" accepted.
+2023-01-08 18:12:11.476 -05:00 [DBG] Connection id "0HMNHPN2GNH22" started.
+2023-01-08 18:12:11.487 -05:00 [DBG] Connection id "0HMNHPN2GNH23" accepted.
+2023-01-08 18:12:11.491 -05:00 [DBG] Connection id "0HMNHPN2GNH23" started.
+2023-01-08 18:12:11.593 -05:00 [DBG] Connection 0HMNHPN2GNH22 established using the following protocol: "Tls12"
+2023-01-08 18:12:11.593 -05:00 [DBG] Connection 0HMNHPN2GNH23 established using the following protocol: "Tls12"
+2023-01-08 18:12:11.654 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-01-08 18:12:11.655 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-01-08 18:12:11.809 -05:00 [DBG] Connection id "0HMNHPN2GNH23" completed keep alive response.
+2023-01-08 18:12:11.812 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 160.0917ms
+2023-01-08 18:12:12.392 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-01-08 18:12:12.584 -05:00 [DBG] Connection id "0HMNHPN2GNH23" completed keep alive response.
+2023-01-08 18:12:12.584 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 192.2584ms
+2023-01-08 18:13:42.330 -05:00 [DBG] Connection id "0HMNHPN2GNH22" received FIN.
+2023-01-08 18:13:42.339 -05:00 [DBG] Connection id "0HMNHPN2GNH22" sending FIN because: "The client closed the connection."
+2023-01-08 18:13:42.339 -05:00 [DBG] Connection id "0HMNHPN2GNH22" disconnecting.
+2023-01-08 18:13:42.344 -05:00 [DBG] Connection id "0HMNHPN2GNH22" stopped.
+2023-01-08 18:18:41.956 -05:00 [DBG] Connection id "0HMNHPN2GNH23" received FIN.
+2023-01-08 18:18:42.029 -05:00 [DBG] Connection id "0HMNHPN2GNH23" sending FIN because: "The client closed the connection."
+2023-01-08 18:18:42.030 -05:00 [DBG] Connection id "0HMNHPN2GNH23" disconnecting.
+2023-01-08 18:18:42.033 -05:00 [DBG] Connection id "0HMNHPN2GNH23" stopped.
+2023-01-08 18:19:14.092 -05:00 [DBG] Connection id "0HMNHPN2GNH24" accepted.
+2023-01-08 18:19:14.142 -05:00 [DBG] Connection id "0HMNHPN2GNH24" started.
+2023-01-08 18:19:14.193 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 52
+2023-01-08 18:19:14.195 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:19:14.198 -05:00 [DBG] Https port '7235' discovered from server endpoints.
+2023-01-08 18:19:14.200 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/authentication/authenticate'.
+2023-01-08 18:19:14.201 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 52 - 307 0 - 7.8526ms
+2023-01-08 18:19:14.202 -05:00 [DBG] Connection id "0HMNHPN2GNH24", Request id "0HMNHPN2GNH24:00000001": started reading request body.
+2023-01-08 18:19:14.202 -05:00 [DBG] Connection id "0HMNHPN2GNH24", Request id "0HMNHPN2GNH24:00000001": done reading request body.
+2023-01-08 18:19:14.202 -05:00 [DBG] Connection id "0HMNHPN2GNH24" disconnecting.
+2023-01-08 18:19:14.202 -05:00 [DBG] Connection id "0HMNHPN2GNH24" stopped.
+2023-01-08 18:19:14.202 -05:00 [DBG] Connection id "0HMNHPN2GNH24" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:19:14.233 -05:00 [DBG] Connection id "0HMNHPN2GNH25" accepted.
+2023-01-08 18:19:14.233 -05:00 [DBG] Connection id "0HMNHPN2GNH25" started.
+2023-01-08 18:19:14.244 -05:00 [DBG] Connection 0HMNHPN2GNH25 established using the following protocol: "Tls12"
+2023-01-08 18:19:14.244 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - -
+2023-01-08 18:19:14.245 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:19:14.265 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-08 18:19:14.267 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-08 18:19:14.268 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:19:14.348 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:19:14.350 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:19:14.350 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:19:14.351 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:19:14.352 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:19:14.352 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - - - 204 - - 107.3160ms
+2023-01-08 18:19:14.354 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 52
+2023-01-08 18:19:14.354 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:19:14.355 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-08 18:19:14.355 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-08 18:19:14.355 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:19:14.467 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/7/2023 6:32:08 PM', Current time: '1/8/2023 11:19:14 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 18:19:14.469 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/7/2023 6:32:08 PM', Current time: '1/8/2023 11:19:14 PM'.
+2023-01-08 18:19:14.470 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:19:14.470 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:19:14.472 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:19:14.491 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-08 18:19:14.492 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:19:14.493 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:19:14.493 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:19:14.493 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:19:14.493 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:19:14.494 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-08 18:19:14.557 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-08 18:19:14.561 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-08 18:19:14.562 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-08 18:19:14.563 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-08 18:19:14.563 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-08 18:19:14.567 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:00000002": started reading request body.
+2023-01-08 18:19:14.567 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:00000002": done reading request body.
+2023-01-08 18:19:14.621 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:19:14.621 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:19:14.622 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-08 18:19:14.628 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:19:15.977 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:19:15.979 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:19:15.979 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:19:15.979 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:19:15.980 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:19:15.980 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-08 18:19:16.011 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 1515.0416ms
+2023-01-08 18:19:16.012 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:19:16.014 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:19:16.018 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 52 - 200 491 application/json;+charset=utf-8 1664.5729ms
+2023-01-08 18:19:16.073 -05:00 [DBG] Connection id "0HMNHPN2GNH26" accepted.
+2023-01-08 18:19:16.074 -05:00 [DBG] Connection id "0HMNHPN2GNH26" started.
+2023-01-08 18:19:16.074 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-01-08 18:19:16.075 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:19:16.076 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-01-08 18:19:16.076 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 2.0991ms
+2023-01-08 18:19:16.077 -05:00 [DBG] Connection id "0HMNHPN2GNH26" disconnecting.
+2023-01-08 18:19:16.077 -05:00 [DBG] Connection id "0HMNHPN2GNH26" stopped.
+2023-01-08 18:19:16.084 -05:00 [DBG] Connection id "0HMNHPN2GNH26" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:19:16.095 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:19:16.095 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:19:16.095 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:19:16.096 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-01-08 18:19:16.099 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:19:16.100 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:19:16.100 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:19:16.100 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:19:16.101 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:19:16.101 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 5.7224ms
+2023-01-08 18:19:16.105 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:19:16.105 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:19:16.105 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:19:16.105 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-08 18:19:16.105 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:19:16.116 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:19:16.119 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:19:16.120 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:19:16.120 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:19:16.126 -05:00 [DBG] Authorization was successful.
+2023-01-08 18:19:16.126 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:19:16.136 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-08 18:19:16.136 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:19:16.136 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:19:16.136 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:19:16.136 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:19:16.136 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:19:16.136 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:19:16.140 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:19:16.141 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:19:16.141 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-08 18:19:16.142 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:19:16.142 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:19:16.142 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:19:16.143 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:19:16.143 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-08 18:19:16.143 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:19:16.144 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-08 18:19:16.144 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:19:16.144 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:19:16.144 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-08 18:19:16.144 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-08 18:19:16.144 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:19:16.144 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:19:16.144 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-08 18:19:16.144 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:19:16.144 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:19:16.144 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:19:16.144 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-08 18:19:16.144 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:19:16.144 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:19:16.145 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:19:16.145 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:19:16.145 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:19:16.145 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:19:16.145 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:19:16.145 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:19:16.145 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:19:16.145 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:19:16.145 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:19:16.145 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:19:16.145 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:19:16.145 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:19:16.317 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:19:16.317 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:19:16.317 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:19:16.317 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:19:16.317 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:19:16.317 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-08 18:19:16.329 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 192.9335ms
+2023-01-08 18:19:16.329 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:19:16.330 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:19:16.330 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 200 430 application/json;+charset=utf-8 224.8578ms
+2023-01-08 18:19:26.642 -05:00 [DBG] Connection id "0HMNHPN2GNH27" accepted.
+2023-01-08 18:19:26.643 -05:00 [DBG] Connection id "0HMNHPN2GNH27" started.
+2023-01-08 18:19:26.644 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 45
+2023-01-08 18:19:26.644 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:19:26.644 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/authentication/authenticate'.
+2023-01-08 18:19:26.644 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 45 - 307 0 - 0.2888ms
+2023-01-08 18:19:26.644 -05:00 [DBG] Connection id "0HMNHPN2GNH27", Request id "0HMNHPN2GNH27:00000001": started reading request body.
+2023-01-08 18:19:26.644 -05:00 [DBG] Connection id "0HMNHPN2GNH27", Request id "0HMNHPN2GNH27:00000001": done reading request body.
+2023-01-08 18:19:26.644 -05:00 [DBG] Connection id "0HMNHPN2GNH27" disconnecting.
+2023-01-08 18:19:26.644 -05:00 [DBG] Connection id "0HMNHPN2GNH27" stopped.
+2023-01-08 18:19:26.644 -05:00 [DBG] Connection id "0HMNHPN2GNH27" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:19:26.647 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - -
+2023-01-08 18:19:26.647 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:19:26.647 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-08 18:19:26.647 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-08 18:19:26.647 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:19:26.648 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:19:26.648 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:19:26.648 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:19:26.648 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:19:26.648 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:19:26.648 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - - - 204 - - 0.7300ms
+2023-01-08 18:19:26.649 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 45
+2023-01-08 18:19:26.649 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:19:26.650 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-08 18:19:26.650 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-08 18:19:26.650 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:19:26.650 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:19:26.650 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:19:26.651 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:19:26.651 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:19:26.651 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:19:26.651 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-08 18:19:26.651 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:19:26.651 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:19:26.651 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:19:26.651 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:19:26.651 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:19:26.651 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-08 18:19:26.653 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-08 18:19:26.653 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-08 18:19:26.653 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-08 18:19:26.653 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-08 18:19:26.654 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-08 18:19:26.654 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:00000006": started reading request body.
+2023-01-08 18:19:26.654 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:00000006": done reading request body.
+2023-01-08 18:19:26.654 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:19:26.654 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:19:26.654 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-08 18:19:26.654 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:19:26.715 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:19:26.715 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:19:26.715 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:19:26.715 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:19:26.716 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:19:26.716 -05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-08 18:19:26.716 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 64.7006ms
+2023-01-08 18:19:26.716 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:19:26.716 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:19:26.716 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 45 - 401 99 application/json;+charset=utf-8 66.7050ms
+2023-01-08 18:23:37.530 -05:00 [DBG] Connection id "0HMNHPN2GNH28" accepted.
+2023-01-08 18:23:37.534 -05:00 [DBG] Connection id "0HMNHPN2GNH28" started.
+2023-01-08 18:23:37.534 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 45
+2023-01-08 18:23:37.534 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:23:37.534 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/authentication/authenticate'.
+2023-01-08 18:23:37.534 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 45 - 307 0 - 0.2669ms
+2023-01-08 18:23:37.534 -05:00 [DBG] Connection id "0HMNHPN2GNH28", Request id "0HMNHPN2GNH28:00000001": started reading request body.
+2023-01-08 18:23:37.534 -05:00 [DBG] Connection id "0HMNHPN2GNH28", Request id "0HMNHPN2GNH28:00000001": done reading request body.
+2023-01-08 18:23:37.534 -05:00 [DBG] Connection id "0HMNHPN2GNH28" disconnecting.
+2023-01-08 18:23:37.535 -05:00 [DBG] Connection id "0HMNHPN2GNH28" stopped.
+2023-01-08 18:23:37.557 -05:00 [DBG] Connection id "0HMNHPN2GNH28" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:23:37.582 -05:00 [DBG] Connection id "0HMNHPN2GNH28" received FIN.
+2023-01-08 18:23:37.585 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - -
+2023-01-08 18:23:37.585 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:23:37.585 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-08 18:23:37.585 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-08 18:23:37.585 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:23:37.585 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:23:37.585 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:23:37.586 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:23:37.586 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:23:37.586 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:23:37.586 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - - - 204 - - 0.6986ms
+2023-01-08 18:23:37.589 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 45
+2023-01-08 18:23:37.589 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:23:37.589 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-08 18:23:37.589 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-08 18:23:37.589 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:23:37.589 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:23:37.589 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:23:37.589 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:23:37.589 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:23:37.589 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-08 18:23:37.589 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:23:37.589 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:23:37.589 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:23:37.589 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:23:37.589 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:23:37.589 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-08 18:23:37.590 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-08 18:23:37.590 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-08 18:23:37.591 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-08 18:23:37.591 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-08 18:23:37.591 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-08 18:23:37.591 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:00000008": started reading request body.
+2023-01-08 18:23:37.591 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:00000008": done reading request body.
+2023-01-08 18:23:37.591 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:23:37.591 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:23:37.591 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-08 18:23:37.591 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:23:37.737 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:23:37.737 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:23:37.737 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:23:37.737 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:23:37.737 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:23:37.737 -05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-08 18:23:37.737 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 148.0378ms
+2023-01-08 18:23:37.738 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:23:37.738 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:23:37.738 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 45 - 401 99 application/json;+charset=utf-8 149.0987ms
+2023-01-08 18:23:48.138 -05:00 [DBG] Connection id "0HMNHPN2GNH29" accepted.
+2023-01-08 18:23:48.138 -05:00 [DBG] Connection id "0HMNHPN2GNH29" started.
+2023-01-08 18:23:48.141 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 45
+2023-01-08 18:23:48.141 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:23:48.141 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/authentication/authenticate'.
+2023-01-08 18:23:48.141 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 45 - 307 0 - 0.2901ms
+2023-01-08 18:23:48.141 -05:00 [DBG] Connection id "0HMNHPN2GNH29", Request id "0HMNHPN2GNH29:00000001": started reading request body.
+2023-01-08 18:23:48.142 -05:00 [DBG] Connection id "0HMNHPN2GNH29", Request id "0HMNHPN2GNH29:00000001": done reading request body.
+2023-01-08 18:23:48.142 -05:00 [DBG] Connection id "0HMNHPN2GNH29" disconnecting.
+2023-01-08 18:23:48.142 -05:00 [DBG] Connection id "0HMNHPN2GNH29" stopped.
+2023-01-08 18:23:48.142 -05:00 [DBG] Connection id "0HMNHPN2GNH29" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:23:48.144 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - -
+2023-01-08 18:23:48.144 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:23:48.144 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-08 18:23:48.144 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-08 18:23:48.144 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:23:48.144 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:23:48.144 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:23:48.145 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:23:48.145 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:23:48.145 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:23:48.145 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - - - 204 - - 0.5943ms
+2023-01-08 18:23:48.146 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 45
+2023-01-08 18:23:48.146 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:23:48.146 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-08 18:23:48.146 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-08 18:23:48.146 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:23:48.146 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:23:48.146 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:23:48.146 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:23:48.146 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:23:48.147 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-08 18:23:48.147 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:23:48.147 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:23:48.147 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:23:48.147 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:23:48.147 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:23:48.147 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-08 18:23:48.147 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-08 18:23:48.147 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-08 18:23:48.147 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-08 18:23:48.147 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-08 18:23:48.147 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-08 18:23:48.147 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:0000000A": started reading request body.
+2023-01-08 18:23:48.147 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:0000000A": done reading request body.
+2023-01-08 18:23:48.147 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:23:48.147 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:23:48.147 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-08 18:23:48.147 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:23:48.152 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:23:48.152 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:23:48.152 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:23:48.152 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:23:48.152 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:23:48.152 -05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-08 18:23:48.153 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 5.9969ms
+2023-01-08 18:23:48.153 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:23:48.153 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:23:48.153 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 45 - 401 99 application/json;+charset=utf-8 7.0707ms
+2023-01-08 18:25:50.486 -05:00 [DBG] Connection id "0HMNHPN2GNH2A" accepted.
+2023-01-08 18:25:50.488 -05:00 [DBG] Connection id "0HMNHPN2GNH2A" started.
+2023-01-08 18:25:50.488 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 52
+2023-01-08 18:25:50.488 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:25:50.489 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/authentication/authenticate'.
+2023-01-08 18:25:50.489 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 52 - 307 0 - 0.2688ms
+2023-01-08 18:25:50.489 -05:00 [DBG] Connection id "0HMNHPN2GNH2A", Request id "0HMNHPN2GNH2A:00000001": started reading request body.
+2023-01-08 18:25:50.489 -05:00 [DBG] Connection id "0HMNHPN2GNH2A", Request id "0HMNHPN2GNH2A:00000001": done reading request body.
+2023-01-08 18:25:50.489 -05:00 [DBG] Connection id "0HMNHPN2GNH2A" disconnecting.
+2023-01-08 18:25:50.489 -05:00 [DBG] Connection id "0HMNHPN2GNH2A" stopped.
+2023-01-08 18:25:50.489 -05:00 [DBG] Connection id "0HMNHPN2GNH2A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:25:50.509 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - -
+2023-01-08 18:25:50.509 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:25:50.509 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-08 18:25:50.509 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-08 18:25:50.510 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:25:50.510 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:25:50.510 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:25:50.510 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:25:50.510 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:25:50.510 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:25:50.510 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - - - 204 - - 0.6101ms
+2023-01-08 18:25:50.511 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 52
+2023-01-08 18:25:50.511 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:25:50.511 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-08 18:25:50.511 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-08 18:25:50.511 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:25:50.511 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:25:50.511 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:25:50.512 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:25:50.512 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:25:50.512 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-08 18:25:50.512 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:25:50.512 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:25:50.512 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:25:50.512 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:25:50.512 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:25:50.512 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-08 18:25:50.512 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-08 18:25:50.512 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-08 18:25:50.512 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-08 18:25:50.512 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-08 18:25:50.512 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-08 18:25:50.512 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:0000000C": started reading request body.
+2023-01-08 18:25:50.512 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:0000000C": done reading request body.
+2023-01-08 18:25:50.512 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:25:50.512 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:25:50.512 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-08 18:25:50.512 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-08 18:25:51.010 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:25:51.010 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:25:51.010 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:25:51.010 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:25:51.010 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:25:51.010 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-08 18:25:51.011 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 498.8114ms
+2023-01-08 18:25:51.011 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-08 18:25:51.011 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:25:51.011 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 52 - 200 491 application/json;+charset=utf-8 499.7075ms
+2023-01-08 18:25:51.068 -05:00 [DBG] Connection id "0HMNHPN2GNH2B" accepted.
+2023-01-08 18:25:51.078 -05:00 [DBG] Connection id "0HMNHPN2GNH2B" started.
+2023-01-08 18:25:51.078 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-01-08 18:25:51.079 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:25:51.097 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-01-08 18:25:51.098 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 19.8721ms
+2023-01-08 18:25:51.098 -05:00 [DBG] Connection id "0HMNHPN2GNH2B" disconnecting.
+2023-01-08 18:25:51.099 -05:00 [DBG] Connection id "0HMNHPN2GNH2B" stopped.
+2023-01-08 18:25:51.099 -05:00 [DBG] Connection id "0HMNHPN2GNH2B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:25:51.101 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:25:51.101 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:25:51.101 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:25:51.101 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-01-08 18:25:51.102 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:25:51.102 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:25:51.102 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:25:51.102 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:25:51.102 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:25:51.102 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 0.6478ms
+2023-01-08 18:25:51.103 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:25:51.103 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:25:51.103 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:25:51.104 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-08 18:25:51.104 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:25:51.104 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:25:51.104 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:25:51.104 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:25:51.104 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:25:51.106 -05:00 [DBG] Authorization was successful.
+2023-01-08 18:25:51.107 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:25:51.107 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-08 18:25:51.107 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:25:51.107 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:25:51.107 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:25:51.107 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:25:51.107 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:25:51.107 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:25:51.107 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:25:51.107 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:25:51.108 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-08 18:25:51.108 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:25:51.108 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-08 18:25:51.108 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:25:51.108 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-08 18:25:51.108 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:25:51.108 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:25:51.108 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:25:51.108 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-08 18:25:51.108 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:25:51.109 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:25:51.109 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:25:51.109 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:25:51.109 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:25:51.109 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:25:51.109 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:25:51.109 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:25:51.109 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:25:51.109 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:25:51.109 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:25:51.109 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:25:51.109 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:25:51.109 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:25:51.119 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:25:51.119 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:25:51.120 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:25:51.120 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:25:51.120 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:25:51.120 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-08 18:25:51.120 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 12.9878ms
+2023-01-08 18:25:51.120 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:25:51.120 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:25:51.120 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 200 430 application/json;+charset=utf-8 16.9736ms
+2023-01-08 18:26:08.890 -05:00 [DBG] Connection id "0HMNHPN2GNH2C" accepted.
+2023-01-08 18:26:08.890 -05:00 [DBG] Connection id "0HMNHPN2GNH2C" started.
+2023-01-08 18:26:08.891 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-01-08 18:26:08.891 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:26:08.891 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-01-08 18:26:08.891 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.4544ms
+2023-01-08 18:26:08.891 -05:00 [DBG] Connection id "0HMNHPN2GNH2C" disconnecting.
+2023-01-08 18:26:08.891 -05:00 [DBG] Connection id "0HMNHPN2GNH2C" stopped.
+2023-01-08 18:26:08.891 -05:00 [DBG] Connection id "0HMNHPN2GNH2C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:26:08.898 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:26:08.899 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:26:08.899 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:26:08.899 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-01-08 18:26:08.899 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:26:08.899 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:26:08.899 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:26:08.899 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:26:08.899 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:26:08.899 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 0.6232ms
+2023-01-08 18:26:08.901 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:26:08.902 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:26:08.902 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:26:08.902 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-08 18:26:08.902 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:26:08.902 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:26:08.902 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:26:08.903 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:26:08.903 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:26:08.905 -05:00 [DBG] Authorization was successful.
+2023-01-08 18:26:08.905 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:26:08.905 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-08 18:26:08.905 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:26:08.905 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:26:08.906 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:26:08.906 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:26:08.906 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:26:08.906 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:26:08.907 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:26:08.907 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:26:08.907 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-08 18:26:08.907 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:26:08.907 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:26:08.907 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:26:08.907 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:26:08.907 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-08 18:26:08.907 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:26:08.907 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-08 18:26:08.907 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:26:08.907 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:26:08.907 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-08 18:26:08.907 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-08 18:26:08.907 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:26:08.907 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:26:08.908 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:26:08.908 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:26:08.908 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:26:08.908 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:26:08.908 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:26:08.908 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:26:08.908 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:26:08.908 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:26:08.908 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:26:08.921 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:26:08.921 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:26:08.921 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:26:08.921 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:26:08.921 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:26:08.921 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-08 18:26:08.922 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 15.9881ms
+2023-01-08 18:26:08.922 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:26:08.922 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:26:08.922 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 200 430 application/json;+charset=utf-8 20.5911ms
+2023-01-08 18:26:15.462 -05:00 [DBG] Connection id "0HMNHPN2GNH2D" accepted.
+2023-01-08 18:26:15.463 -05:00 [DBG] Connection id "0HMNHPN2GNH2D" started.
+2023-01-08 18:26:15.464 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-01-08 18:26:15.464 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:26:15.464 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-01-08 18:26:15.464 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.4997ms
+2023-01-08 18:26:15.464 -05:00 [DBG] Connection id "0HMNHPN2GNH2D" disconnecting.
+2023-01-08 18:26:15.464 -05:00 [DBG] Connection id "0HMNHPN2GNH2D" stopped.
+2023-01-08 18:26:15.465 -05:00 [DBG] Connection id "0HMNHPN2GNH2D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:26:15.469 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:26:15.470 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:26:15.470 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:26:15.470 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-01-08 18:26:15.470 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:26:15.470 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:26:15.470 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:26:15.470 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:26:15.471 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:26:15.471 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 1.3577ms
+2023-01-08 18:26:15.475 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:26:15.475 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:26:15.475 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:26:15.476 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-08 18:26:15.476 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:26:15.476 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:26:15.476 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:26:15.476 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:26:15.476 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:26:15.476 -05:00 [DBG] Authorization was successful.
+2023-01-08 18:26:15.477 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:26:15.477 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-08 18:26:15.477 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:26:15.477 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:26:15.477 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:26:15.477 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:26:15.477 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:26:15.477 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:26:15.477 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:26:15.477 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:26:15.477 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-08 18:26:15.478 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:26:15.478 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-08 18:26:15.478 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:26:15.478 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-08 18:26:15.478 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:26:15.478 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:26:15.478 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:26:15.478 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-08 18:26:15.478 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:26:15.479 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:26:15.479 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:26:15.479 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:26:15.479 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:26:15.479 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:26:15.479 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:26:15.479 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:26:15.479 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:26:15.479 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:26:15.479 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:26:15.479 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:26:15.479 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:26:15.479 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:26:15.521 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:26:15.521 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:26:15.521 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:26:15.521 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:26:15.521 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:26:15.521 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-08 18:26:15.521 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 44.3686ms
+2023-01-08 18:26:15.522 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:26:15.522 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:26:15.522 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 200 430 application/json;+charset=utf-8 46.7126ms
+2023-01-08 18:29:38.145 -05:00 [DBG] Connection id "0HMNHPN2GNH2E" accepted.
+2023-01-08 18:29:38.152 -05:00 [DBG] Connection id "0HMNHPN2GNH2E" started.
+2023-01-08 18:29:38.152 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-01-08 18:29:38.152 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:29:38.152 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-01-08 18:29:38.153 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.4857ms
+2023-01-08 18:29:38.153 -05:00 [DBG] Connection id "0HMNHPN2GNH2E" disconnecting.
+2023-01-08 18:29:38.153 -05:00 [DBG] Connection id "0HMNHPN2GNH2E" stopped.
+2023-01-08 18:29:38.157 -05:00 [DBG] Connection id "0HMNHPN2GNH2E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:29:38.436 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:29:38.436 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:29:38.436 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:29:38.436 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-01-08 18:29:38.436 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:29:38.436 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:29:38.436 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:29:38.436 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:29:38.437 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:29:38.437 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 0.6596ms
+2023-01-08 18:29:38.438 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:29:38.439 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:29:38.439 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:29:38.439 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-08 18:29:38.439 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:29:38.439 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:29:38.439 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:29:38.439 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:29:38.439 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:29:38.439 -05:00 [DBG] Authorization was successful.
+2023-01-08 18:29:38.440 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:29:38.440 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-08 18:29:38.440 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:29:38.440 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:29:38.440 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:29:38.440 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:29:38.440 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:29:38.440 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:29:38.440 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:29:38.440 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:29:38.440 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-08 18:29:38.440 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:29:38.440 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:29:38.440 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:29:38.440 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:29:38.440 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:29:38.441 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:38.441 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:29:38.442 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:38.513 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:29:38.513 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:29:38.513 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:29:38.513 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:29:38.513 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:29:38.513 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-08 18:29:38.514 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 73.6568ms
+2023-01-08 18:29:38.514 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:29:38.514 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:29:38.514 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 200 430 application/json;+charset=utf-8 75.3642ms
+2023-01-08 18:29:40.737 -05:00 [DBG] Connection id "0HMNHPN2GNH2F" accepted.
+2023-01-08 18:29:40.737 -05:00 [DBG] Connection id "0HMNHPN2GNH2F" started.
+2023-01-08 18:29:40.738 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-01-08 18:29:40.738 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:29:40.738 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-01-08 18:29:40.738 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.2830ms
+2023-01-08 18:29:40.738 -05:00 [DBG] Connection id "0HMNHPN2GNH2F" disconnecting.
+2023-01-08 18:29:40.738 -05:00 [DBG] Connection id "0HMNHPN2GNH2F" stopped.
+2023-01-08 18:29:40.739 -05:00 [DBG] Connection id "0HMNHPN2GNH2F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:29:40.754 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:29:40.754 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:29:40.754 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:29:40.754 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-08 18:29:40.754 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:29:40.755 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:29:40.755 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:29:40.755 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:29:40.755 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:29:40.755 -05:00 [DBG] Authorization was successful.
+2023-01-08 18:29:40.755 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:29:40.755 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-08 18:29:40.755 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:29:40.755 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:29:40.755 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:29:40.755 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:29:40.756 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:29:40.756 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:29:40.756 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:29:40.756 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:29:40.756 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-08 18:29:40.756 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:29:40.756 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:29:40.756 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:29:40.756 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:29:40.756 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-08 18:29:40.756 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:29:40.756 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-08 18:29:40.756 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:29:40.756 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-08 18:29:40.757 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:29:40.757 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:29:40.757 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:29:40.757 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:29:40.757 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:29:40.757 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:29:40.757 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:29:40.757 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:29:40.757 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:40.757 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:29:40.758 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:40.886 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:29:40.886 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:29:40.887 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:29:40.887 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:29:40.887 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:29:40.887 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-08 18:29:40.887 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 131.5942ms
+2023-01-08 18:29:40.887 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:29:40.887 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:29:40.887 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 200 430 application/json;+charset=utf-8 133.3172ms
+2023-01-08 18:29:46.584 -05:00 [DBG] Connection id "0HMNHPN2GNH2G" accepted.
+2023-01-08 18:29:46.584 -05:00 [DBG] Connection id "0HMNHPN2GNH2G" started.
+2023-01-08 18:29:46.607 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-01-08 18:29:46.607 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:29:46.607 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-01-08 18:29:46.608 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.2643ms
+2023-01-08 18:29:46.608 -05:00 [DBG] Connection id "0HMNHPN2GNH2G" disconnecting.
+2023-01-08 18:29:46.608 -05:00 [DBG] Connection id "0HMNHPN2GNH2G" stopped.
+2023-01-08 18:29:46.608 -05:00 [DBG] Connection id "0HMNHPN2GNH2G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:29:46.866 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:29:46.866 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:29:46.866 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:29:46.866 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-01-08 18:29:46.866 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:29:46.866 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:29:46.866 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:29:46.866 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:29:46.866 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:29:46.867 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 0.9794ms
+2023-01-08 18:29:46.870 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-08 18:29:46.870 -05:00 [DBG] The request path  does not match the path filter
+2023-01-08 18:29:46.870 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-08 18:29:46.870 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-08 18:29:46.870 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:29:46.870 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:29:46.870 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:29:46.870 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:29:46.870 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:29:46.870 -05:00 [DBG] Authorization was successful.
+2023-01-08 18:29:46.870 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:29:46.871 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-08 18:29:46.871 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-08 18:29:46.871 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-08 18:29:46.871 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-08 18:29:46.871 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-08 18:29:46.871 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-08 18:29:46.871 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:29:46.871 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-08 18:29:46.871 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:29:46.871 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-08 18:29:46.871 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:29:46.871 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:29:46.871 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-08 18:29:46.871 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-08 18:29:46.871 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-08 18:29:46.871 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:29:46.871 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-08 18:29:46.871 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:29:46.871 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-08 18:29:46.871 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-08 18:29:46.872 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:29:46.872 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-08 18:29:46.872 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-08 18:29:46.872 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:29:46.872 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:29:46.872 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-08 18:29:46.872 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:29:46.872 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-08 18:29:46.872 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:46.872 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-08 18:29:46.872 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-08 18:29:46.888 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-08 18:29:46.888 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-08 18:29:46.888 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-08 18:29:46.888 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-08 18:29:46.888 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-08 18:29:46.888 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-08 18:29:46.888 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 17.4878ms
+2023-01-08 18:29:46.888 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-08 18:29:46.888 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:29:46.888 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 200 430 application/json;+charset=utf-8 18.7621ms
+2023-01-08 18:32:25.016 -05:00 [DBG] Connection id "0HMNHPN2GNH2H" accepted.
+2023-01-08 18:32:25.023 -05:00 [DBG] Connection id "0HMNHPN2GNH2H" started.
+2023-01-08 18:32:25.045 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 18:32:25.046 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:32:25.046 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 18:32:25.046 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.5253ms
+2023-01-08 18:32:25.046 -05:00 [DBG] Connection id "0HMNHPN2GNH2H", Request id "0HMNHPN2GNH2H:00000001": started reading request body.
+2023-01-08 18:32:25.046 -05:00 [DBG] Connection id "0HMNHPN2GNH2H", Request id "0HMNHPN2GNH2H:00000001": done reading request body.
+2023-01-08 18:32:25.046 -05:00 [DBG] Connection id "0HMNHPN2GNH2H" disconnecting.
+2023-01-08 18:32:25.046 -05:00 [DBG] Connection id "0HMNHPN2GNH2H" stopped.
+2023-01-08 18:32:25.047 -05:00 [DBG] Connection id "0HMNHPN2GNH2H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:32:25.219 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - -
+2023-01-08 18:32:25.219 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:32:25.220 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:32:25.220 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:32:25.221 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:32:25.221 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:32:25.221 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:32:25.221 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:32:25.221 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:32:25.221 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - - - 204 - - 1.9571ms
+2023-01-08 18:32:25.224 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 18:32:25.224 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:32:25.224 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:32:25.224 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:32:25.224 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:32:25.224 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:32:25.224 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:32:25.224 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:32:25.225 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:32:25.225 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.3653ms
+2023-01-08 18:32:25.225 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:00000019": started reading request body.
+2023-01-08 18:32:25.225 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:00000019": done reading request body.
+2023-01-08 18:32:33.221 -05:00 [DBG] Connection id "0HMNHPN2GNH2I" accepted.
+2023-01-08 18:32:33.222 -05:00 [DBG] Connection id "0HMNHPN2GNH2I" started.
+2023-01-08 18:32:33.222 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 18:32:33.222 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:32:33.222 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 18:32:33.222 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.2801ms
+2023-01-08 18:32:33.222 -05:00 [DBG] Connection id "0HMNHPN2GNH2I", Request id "0HMNHPN2GNH2I:00000001": started reading request body.
+2023-01-08 18:32:33.222 -05:00 [DBG] Connection id "0HMNHPN2GNH2I", Request id "0HMNHPN2GNH2I:00000001": done reading request body.
+2023-01-08 18:32:33.222 -05:00 [DBG] Connection id "0HMNHPN2GNH2I" disconnecting.
+2023-01-08 18:32:33.223 -05:00 [DBG] Connection id "0HMNHPN2GNH2I" stopped.
+2023-01-08 18:32:33.223 -05:00 [DBG] Connection id "0HMNHPN2GNH2I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:32:33.252 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - -
+2023-01-08 18:32:33.252 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:32:33.252 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:32:33.252 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:32:33.253 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:32:33.253 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:32:33.253 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:32:33.253 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:32:33.253 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:32:33.253 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - - - 204 - - 0.7410ms
+2023-01-08 18:32:33.255 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 18:32:33.255 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:32:33.255 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:32:33.255 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:32:33.256 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:32:33.256 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:32:33.256 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:32:33.256 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:32:33.256 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:32:33.256 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.3323ms
+2023-01-08 18:32:33.256 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:0000001B": started reading request body.
+2023-01-08 18:32:33.256 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:0000001B": done reading request body.
+2023-01-08 18:32:34.993 -05:00 [DBG] Connection id "0HMNHPN2GNH2J" accepted.
+2023-01-08 18:32:34.993 -05:00 [DBG] Connection id "0HMNHPN2GNH2J" started.
+2023-01-08 18:32:34.993 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 18:32:34.993 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:32:34.993 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 18:32:34.993 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.2996ms
+2023-01-08 18:32:34.994 -05:00 [DBG] Connection id "0HMNHPN2GNH2J", Request id "0HMNHPN2GNH2J:00000001": started reading request body.
+2023-01-08 18:32:34.994 -05:00 [DBG] Connection id "0HMNHPN2GNH2J", Request id "0HMNHPN2GNH2J:00000001": done reading request body.
+2023-01-08 18:32:34.994 -05:00 [DBG] Connection id "0HMNHPN2GNH2J" disconnecting.
+2023-01-08 18:32:34.994 -05:00 [DBG] Connection id "0HMNHPN2GNH2J" stopped.
+2023-01-08 18:32:34.994 -05:00 [DBG] Connection id "0HMNHPN2GNH2J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:32:35.023 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 18:32:35.023 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:32:35.023 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:32:35.023 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:32:35.024 -05:00 [DBG] Successfully validated the token.
+2023-01-08 18:32:35.024 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-08 18:32:35.024 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:32:35.024 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:32:35.024 -05:00 [DBG] Connection id "0HMNHPN2GNH25" completed keep alive response.
+2023-01-08 18:32:35.024 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.4497ms
+2023-01-08 18:32:35.024 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:0000001C": started reading request body.
+2023-01-08 18:32:35.025 -05:00 [DBG] Connection id "0HMNHPN2GNH25", Request id "0HMNHPN2GNH25:0000001C": done reading request body.
+2023-01-08 18:38:28.624 -05:00 [DBG] Connection id "0HMNHPN2GNH25" received FIN.
+2023-01-08 18:38:28.629 -05:00 [DBG] Connection id "0HMNHPN2GNH25" sending FIN because: "The client closed the connection."
+2023-01-08 18:38:28.629 -05:00 [DBG] Connection id "0HMNHPN2GNH25" disconnecting.
+2023-01-08 18:38:28.630 -05:00 [DBG] Connection id "0HMNHPN2GNH25" stopped.
+2023-01-08 18:40:07.128 -05:00 [DBG] Connection id "0HMNHPN2GNH2K" accepted.
+2023-01-08 18:40:07.134 -05:00 [DBG] Connection id "0HMNHPN2GNH2K" started.
+2023-01-08 18:40:07.137 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 18:40:07.137 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:40:07.138 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 18:40:07.138 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.3271ms
+2023-01-08 18:40:07.138 -05:00 [DBG] Connection id "0HMNHPN2GNH2K", Request id "0HMNHPN2GNH2K:00000001": started reading request body.
+2023-01-08 18:40:07.138 -05:00 [DBG] Connection id "0HMNHPN2GNH2K", Request id "0HMNHPN2GNH2K:00000001": done reading request body.
+2023-01-08 18:40:07.138 -05:00 [DBG] Connection id "0HMNHPN2GNH2K" disconnecting.
+2023-01-08 18:40:07.138 -05:00 [DBG] Connection id "0HMNHPN2GNH2K" stopped.
+2023-01-08 18:40:07.138 -05:00 [DBG] Connection id "0HMNHPN2GNH2K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:40:07.145 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" accepted.
+2023-01-08 18:40:07.168 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" started.
+2023-01-08 18:40:07.205 -05:00 [DBG] Connection 0HMNHPN2GNH2L established using the following protocol: "Tls12"
+2023-01-08 18:40:07.205 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - -
+2023-01-08 18:40:07.205 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:40:07.206 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:40:07.206 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:40:07.206 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:40:07.206 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:40:07.206 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:40:07.206 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:40:07.206 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" completed keep alive response.
+2023-01-08 18:40:07.206 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - - - 204 - - 0.8344ms
+2023-01-08 18:40:07.208 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 18:40:07.208 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:40:07.208 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:40:07.208 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:40:07.209 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/8/2023 11:40:07 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 18:40:07.209 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/8/2023 11:40:07 PM'.
+2023-01-08 18:40:07.209 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:40:07.209 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:40:07.209 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" completed keep alive response.
+2023-01-08 18:40:07.209 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.4913ms
+2023-01-08 18:40:07.209 -05:00 [DBG] Connection id "0HMNHPN2GNH2L", Request id "0HMNHPN2GNH2L:00000002": started reading request body.
+2023-01-08 18:40:07.209 -05:00 [DBG] Connection id "0HMNHPN2GNH2L", Request id "0HMNHPN2GNH2L:00000002": done reading request body.
+2023-01-08 18:40:08.528 -05:00 [DBG] Connection id "0HMNHPN2GNH2M" accepted.
+2023-01-08 18:40:08.530 -05:00 [DBG] Connection id "0HMNHPN2GNH2M" started.
+2023-01-08 18:40:08.531 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 18:40:08.531 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:40:08.531 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 18:40:08.531 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.2569ms
+2023-01-08 18:40:08.531 -05:00 [DBG] Connection id "0HMNHPN2GNH2M", Request id "0HMNHPN2GNH2M:00000001": started reading request body.
+2023-01-08 18:40:08.531 -05:00 [DBG] Connection id "0HMNHPN2GNH2M", Request id "0HMNHPN2GNH2M:00000001": done reading request body.
+2023-01-08 18:40:08.531 -05:00 [DBG] Connection id "0HMNHPN2GNH2M" disconnecting.
+2023-01-08 18:40:08.531 -05:00 [DBG] Connection id "0HMNHPN2GNH2M" stopped.
+2023-01-08 18:40:08.533 -05:00 [DBG] Connection id "0HMNHPN2GNH2M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:40:08.538 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 18:40:08.538 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:40:08.538 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:40:08.538 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:40:08.539 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/8/2023 11:40:08 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 18:40:08.539 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/8/2023 11:40:08 PM'.
+2023-01-08 18:40:08.539 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:40:08.539 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:40:08.539 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" completed keep alive response.
+2023-01-08 18:40:08.539 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.3832ms
+2023-01-08 18:40:08.539 -05:00 [DBG] Connection id "0HMNHPN2GNH2L", Request id "0HMNHPN2GNH2L:00000003": started reading request body.
+2023-01-08 18:40:08.539 -05:00 [DBG] Connection id "0HMNHPN2GNH2L", Request id "0HMNHPN2GNH2L:00000003": done reading request body.
+2023-01-08 18:43:44.938 -05:00 [DBG] Connection id "0HMNHPN2GNH2N" accepted.
+2023-01-08 18:43:44.941 -05:00 [DBG] Connection id "0HMNHPN2GNH2N" started.
+2023-01-08 18:43:44.944 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 18:43:44.944 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:43:44.944 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 18:43:44.944 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.3358ms
+2023-01-08 18:43:44.944 -05:00 [DBG] Connection id "0HMNHPN2GNH2N", Request id "0HMNHPN2GNH2N:00000001": started reading request body.
+2023-01-08 18:43:44.944 -05:00 [DBG] Connection id "0HMNHPN2GNH2N", Request id "0HMNHPN2GNH2N:00000001": done reading request body.
+2023-01-08 18:43:44.945 -05:00 [DBG] Connection id "0HMNHPN2GNH2N" disconnecting.
+2023-01-08 18:43:44.945 -05:00 [DBG] Connection id "0HMNHPN2GNH2N" stopped.
+2023-01-08 18:43:44.945 -05:00 [DBG] Connection id "0HMNHPN2GNH2N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:43:45.220 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - -
+2023-01-08 18:43:45.220 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:43:45.220 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:43:45.220 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:43:45.220 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:43:45.220 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:43:45.220 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:43:45.220 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:43:45.220 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" completed keep alive response.
+2023-01-08 18:43:45.221 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - - - 204 - - 0.3756ms
+2023-01-08 18:43:45.229 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 18:43:45.229 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:43:45.229 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:43:45.229 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:43:45.230 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/8/2023 11:43:45 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 18:43:45.230 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/8/2023 11:43:45 PM'.
+2023-01-08 18:43:45.230 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:43:45.230 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:43:45.230 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" completed keep alive response.
+2023-01-08 18:43:45.230 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.1324ms
+2023-01-08 18:43:45.230 -05:00 [DBG] Connection id "0HMNHPN2GNH2L", Request id "0HMNHPN2GNH2L:00000005": started reading request body.
+2023-01-08 18:43:45.230 -05:00 [DBG] Connection id "0HMNHPN2GNH2L", Request id "0HMNHPN2GNH2L:00000005": done reading request body.
+2023-01-08 18:48:36.797 -05:00 [DBG] Connection id "0HMNHPN2GNH2O" accepted.
+2023-01-08 18:48:36.824 -05:00 [DBG] Connection id "0HMNHPN2GNH2O" started.
+2023-01-08 18:48:36.827 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 18:48:36.827 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:48:36.827 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 18:48:36.827 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.3652ms
+2023-01-08 18:48:36.827 -05:00 [DBG] Connection id "0HMNHPN2GNH2O", Request id "0HMNHPN2GNH2O:00000001": started reading request body.
+2023-01-08 18:48:36.827 -05:00 [DBG] Connection id "0HMNHPN2GNH2O", Request id "0HMNHPN2GNH2O:00000001": done reading request body.
+2023-01-08 18:48:36.827 -05:00 [DBG] Connection id "0HMNHPN2GNH2O" disconnecting.
+2023-01-08 18:48:36.828 -05:00 [DBG] Connection id "0HMNHPN2GNH2O" stopped.
+2023-01-08 18:48:36.828 -05:00 [DBG] Connection id "0HMNHPN2GNH2O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 18:48:37.139 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - -
+2023-01-08 18:48:37.145 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 18:48:37.145 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:48:37.145 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:48:37.145 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 18:48:37.145 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:48:37.145 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:48:37.145 -05:00 [DBG] The request is a preflight request.
+2023-01-08 18:48:37.145 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" completed keep alive response.
+2023-01-08 18:48:37.145 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - - - 204 - - 6.8039ms
+2023-01-08 18:48:37.148 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 18:48:37.148 -05:00 [DBG] POST requests are not supported
+2023-01-08 18:48:37.148 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 18:48:37.148 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 18:48:37.149 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/8/2023 11:48:37 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 18:48:37.149 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/8/2023 11:48:37 PM'.
+2023-01-08 18:48:37.149 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 18:48:37.149 -05:00 [INF] CORS policy execution successful.
+2023-01-08 18:48:37.149 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" completed keep alive response.
+2023-01-08 18:48:37.149 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.2077ms
+2023-01-08 18:48:37.149 -05:00 [DBG] Connection id "0HMNHPN2GNH2L", Request id "0HMNHPN2GNH2L:00000007": started reading request body.
+2023-01-08 18:48:37.150 -05:00 [DBG] Connection id "0HMNHPN2GNH2L", Request id "0HMNHPN2GNH2L:00000007": done reading request body.
+2023-01-08 18:53:42.362 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" received FIN.
+2023-01-08 18:53:42.387 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" disconnecting.
+2023-01-08 18:53:42.387 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" stopped.
+2023-01-08 18:53:42.412 -05:00 [DBG] Connection id "0HMNHPN2GNH2L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 19:15:20.999 -05:00 [DBG] Connection id "0HMNHPN2GNH2P" accepted.
+2023-01-08 19:15:21.023 -05:00 [DBG] Connection id "0HMNHPN2GNH2P" started.
+2023-01-08 19:15:21.044 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 19:15:21.044 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:15:21.045 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 19:15:21.045 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.3466ms
+2023-01-08 19:15:21.045 -05:00 [DBG] Connection id "0HMNHPN2GNH2P", Request id "0HMNHPN2GNH2P:00000001": started reading request body.
+2023-01-08 19:15:21.045 -05:00 [DBG] Connection id "0HMNHPN2GNH2P", Request id "0HMNHPN2GNH2P:00000001": done reading request body.
+2023-01-08 19:15:21.045 -05:00 [DBG] Connection id "0HMNHPN2GNH2P" disconnecting.
+2023-01-08 19:15:21.045 -05:00 [DBG] Connection id "0HMNHPN2GNH2P" stopped.
+2023-01-08 19:15:21.045 -05:00 [DBG] Connection id "0HMNHPN2GNH2P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 19:15:21.249 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" accepted.
+2023-01-08 19:15:21.250 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" started.
+2023-01-08 19:15:21.268 -05:00 [DBG] Connection 0HMNHPN2GNH2Q established using the following protocol: "Tls12"
+2023-01-08 19:15:21.316 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - -
+2023-01-08 19:15:21.319 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 19:15:21.319 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:15:21.319 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:15:21.319 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 19:15:21.319 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:15:21.319 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:15:21.320 -05:00 [DBG] The request is a preflight request.
+2023-01-08 19:15:21.320 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:15:21.320 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - - - 204 - - 3.3250ms
+2023-01-08 19:15:21.321 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 19:15:21.322 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:15:21.322 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:15:21.322 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:15:21.322 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:15:21 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 19:15:21.323 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:15:21 AM'.
+2023-01-08 19:15:21.323 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:15:21.323 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:15:21.323 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:15:21.323 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.3250ms
+2023-01-08 19:15:21.323 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:00000002": started reading request body.
+2023-01-08 19:15:21.323 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:00000002": done reading request body.
+2023-01-08 19:15:26.879 -05:00 [DBG] Connection id "0HMNHPN2GNH2R" accepted.
+2023-01-08 19:15:26.879 -05:00 [DBG] Connection id "0HMNHPN2GNH2R" started.
+2023-01-08 19:15:26.880 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 19:15:26.880 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:15:26.880 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 19:15:26.880 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.3400ms
+2023-01-08 19:15:26.880 -05:00 [DBG] Connection id "0HMNHPN2GNH2R", Request id "0HMNHPN2GNH2R:00000001": started reading request body.
+2023-01-08 19:15:26.880 -05:00 [DBG] Connection id "0HMNHPN2GNH2R", Request id "0HMNHPN2GNH2R:00000001": done reading request body.
+2023-01-08 19:15:26.880 -05:00 [DBG] Connection id "0HMNHPN2GNH2R" disconnecting.
+2023-01-08 19:15:26.880 -05:00 [DBG] Connection id "0HMNHPN2GNH2R" stopped.
+2023-01-08 19:15:26.881 -05:00 [DBG] Connection id "0HMNHPN2GNH2R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 19:15:27.110 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - -
+2023-01-08 19:15:27.110 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 19:15:27.110 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:15:27.110 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:15:27.110 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 19:15:27.111 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:15:27.111 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:15:27.111 -05:00 [DBG] The request is a preflight request.
+2023-01-08 19:15:27.111 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:15:27.111 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - - - 204 - - 0.4991ms
+2023-01-08 19:15:27.112 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 19:15:27.112 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:15:27.113 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:15:27.113 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:15:27.113 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:15:27 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 19:15:27.113 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:15:27 AM'.
+2023-01-08 19:15:27.113 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:15:27.113 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:15:27.113 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:15:27.113 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.2444ms
+2023-01-08 19:15:27.114 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:00000004": started reading request body.
+2023-01-08 19:15:27.114 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:00000004": done reading request body.
+2023-01-08 19:17:02.702 -05:00 [DBG] Connection id "0HMNHPN2GNH2S" accepted.
+2023-01-08 19:17:02.705 -05:00 [DBG] Connection id "0HMNHPN2GNH2S" started.
+2023-01-08 19:17:02.707 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 19:17:02.710 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:17:02.710 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 19:17:02.711 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 2.4375ms
+2023-01-08 19:17:02.711 -05:00 [DBG] Connection id "0HMNHPN2GNH2S", Request id "0HMNHPN2GNH2S:00000001": started reading request body.
+2023-01-08 19:17:02.711 -05:00 [DBG] Connection id "0HMNHPN2GNH2S", Request id "0HMNHPN2GNH2S:00000001": done reading request body.
+2023-01-08 19:17:02.711 -05:00 [DBG] Connection id "0HMNHPN2GNH2S" disconnecting.
+2023-01-08 19:17:02.712 -05:00 [DBG] Connection id "0HMNHPN2GNH2S" received FIN.
+2023-01-08 19:17:02.711 -05:00 [DBG] Connection id "0HMNHPN2GNH2S" stopped.
+2023-01-08 19:17:02.737 -05:00 [DBG] Connection id "0HMNHPN2GNH2S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 19:17:02.904 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - -
+2023-01-08 19:17:02.904 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 19:17:02.904 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:17:02.904 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:17:02.904 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 19:17:02.904 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:17:02.904 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:17:02.904 -05:00 [DBG] The request is a preflight request.
+2023-01-08 19:17:02.904 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:17:02.904 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - - - 204 - - 0.5531ms
+2023-01-08 19:17:02.909 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 19:17:02.909 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:17:02.909 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:17:02.909 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:17:02.910 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:17:02 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 19:17:02.911 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:17:02 AM'.
+2023-01-08 19:17:02.911 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:17:02.911 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:17:02.911 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:17:02.911 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 2.1751ms
+2023-01-08 19:17:02.911 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:00000006": started reading request body.
+2023-01-08 19:17:02.912 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:00000006": done reading request body.
+2023-01-08 19:18:41.285 -05:00 [DBG] Connection id "0HMNHPN2GNH2T" accepted.
+2023-01-08 19:18:41.287 -05:00 [DBG] Connection id "0HMNHPN2GNH2T" started.
+2023-01-08 19:18:41.310 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 19:18:41.310 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:18:41.310 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 19:18:41.310 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.2421ms
+2023-01-08 19:18:41.310 -05:00 [DBG] Connection id "0HMNHPN2GNH2T", Request id "0HMNHPN2GNH2T:00000001": started reading request body.
+2023-01-08 19:18:41.310 -05:00 [DBG] Connection id "0HMNHPN2GNH2T", Request id "0HMNHPN2GNH2T:00000001": done reading request body.
+2023-01-08 19:18:41.310 -05:00 [DBG] Connection id "0HMNHPN2GNH2T" disconnecting.
+2023-01-08 19:18:41.310 -05:00 [DBG] Connection id "0HMNHPN2GNH2T" stopped.
+2023-01-08 19:18:41.342 -05:00 [DBG] Connection id "0HMNHPN2GNH2T" received FIN.
+2023-01-08 19:18:41.346 -05:00 [DBG] Connection id "0HMNHPN2GNH2T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 19:18:41.612 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - -
+2023-01-08 19:18:41.612 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 19:18:41.612 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:18:41.612 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:18:41.612 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 19:18:41.613 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:18:41.613 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:18:41.613 -05:00 [DBG] The request is a preflight request.
+2023-01-08 19:18:41.613 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:18:41.613 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - - - 204 - - 0.8562ms
+2023-01-08 19:18:41.639 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 19:18:41.639 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:18:41.639 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:18:41.639 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:18:41.640 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:18:41 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 19:18:41.641 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:18:41 AM'.
+2023-01-08 19:18:41.641 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:18:41.641 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:18:41.641 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:18:41.641 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 2.2526ms
+2023-01-08 19:18:41.641 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:00000008": started reading request body.
+2023-01-08 19:18:41.641 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:00000008": done reading request body.
+2023-01-08 19:18:46.379 -05:00 [DBG] Connection id "0HMNHPN2GNH2U" accepted.
+2023-01-08 19:18:46.379 -05:00 [DBG] Connection id "0HMNHPN2GNH2U" started.
+2023-01-08 19:18:46.380 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 19:18:46.380 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:18:46.380 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 19:18:46.380 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.3013ms
+2023-01-08 19:18:46.380 -05:00 [DBG] Connection id "0HMNHPN2GNH2U", Request id "0HMNHPN2GNH2U:00000001": started reading request body.
+2023-01-08 19:18:46.380 -05:00 [DBG] Connection id "0HMNHPN2GNH2U", Request id "0HMNHPN2GNH2U:00000001": done reading request body.
+2023-01-08 19:18:46.380 -05:00 [DBG] Connection id "0HMNHPN2GNH2U" disconnecting.
+2023-01-08 19:18:46.380 -05:00 [DBG] Connection id "0HMNHPN2GNH2U" stopped.
+2023-01-08 19:18:46.410 -05:00 [DBG] Connection id "0HMNHPN2GNH2U" received FIN.
+2023-01-08 19:18:46.410 -05:00 [DBG] Connection id "0HMNHPN2GNH2U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 19:18:46.415 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 19:18:46.415 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:18:46.415 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:18:46.415 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:18:46.415 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:18:46 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 19:18:46.416 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:18:46 AM'.
+2023-01-08 19:18:46.416 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:18:46.416 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:18:46.416 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:18:46.416 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.0708ms
+2023-01-08 19:18:46.416 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:00000009": started reading request body.
+2023-01-08 19:18:46.416 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:00000009": done reading request body.
+2023-01-08 19:18:51.304 -05:00 [DBG] Connection id "0HMNHPN2GNH2V" accepted.
+2023-01-08 19:18:51.305 -05:00 [DBG] Connection id "0HMNHPN2GNH2V" started.
+2023-01-08 19:18:51.307 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 19:18:51.307 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:18:51.307 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 19:18:51.307 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.3651ms
+2023-01-08 19:18:51.307 -05:00 [DBG] Connection id "0HMNHPN2GNH2V", Request id "0HMNHPN2GNH2V:00000001": started reading request body.
+2023-01-08 19:18:51.307 -05:00 [DBG] Connection id "0HMNHPN2GNH2V", Request id "0HMNHPN2GNH2V:00000001": done reading request body.
+2023-01-08 19:18:51.307 -05:00 [DBG] Connection id "0HMNHPN2GNH2V" disconnecting.
+2023-01-08 19:18:51.307 -05:00 [DBG] Connection id "0HMNHPN2GNH2V" stopped.
+2023-01-08 19:18:51.311 -05:00 [DBG] Connection id "0HMNHPN2GNH2V" received FIN.
+2023-01-08 19:18:51.312 -05:00 [DBG] Connection id "0HMNHPN2GNH2V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 19:18:51.329 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - -
+2023-01-08 19:18:51.330 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-08 19:18:51.330 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:18:51.330 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:18:51.330 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-08 19:18:51.330 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:18:51.330 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:18:51.330 -05:00 [DBG] The request is a preflight request.
+2023-01-08 19:18:51.331 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:18:51.331 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/refresh - - - 204 - - 1.2467ms
+2023-01-08 19:18:51.334 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 19:18:51.334 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:18:51.334 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:18:51.334 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:18:51.335 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:18:51 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 19:18:51.335 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:18:51 AM'.
+2023-01-08 19:18:51.335 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:18:51.335 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:18:51.335 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:18:51.335 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 0.9905ms
+2023-01-08 19:18:51.335 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:0000000B": started reading request body.
+2023-01-08 19:18:51.335 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:0000000B": done reading request body.
+2023-01-08 19:18:54.303 -05:00 [DBG] Connection id "0HMNHPN2GNH30" accepted.
+2023-01-08 19:18:54.303 -05:00 [DBG] Connection id "0HMNHPN2GNH30" started.
+2023-01-08 19:18:54.322 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447
+2023-01-08 19:18:54.322 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:18:54.322 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/refresh'.
+2023-01-08 19:18:54.323 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/refresh text/plain 447 - 307 0 - 0.6148ms
+2023-01-08 19:18:54.323 -05:00 [DBG] Connection id "0HMNHPN2GNH30", Request id "0HMNHPN2GNH30:00000001": started reading request body.
+2023-01-08 19:18:54.323 -05:00 [DBG] Connection id "0HMNHPN2GNH30", Request id "0HMNHPN2GNH30:00000001": done reading request body.
+2023-01-08 19:18:54.323 -05:00 [DBG] Connection id "0HMNHPN2GNH30" disconnecting.
+2023-01-08 19:18:54.323 -05:00 [DBG] Connection id "0HMNHPN2GNH30" stopped.
+2023-01-08 19:18:54.327 -05:00 [DBG] Connection id "0HMNHPN2GNH30" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-08 19:18:54.332 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447
+2023-01-08 19:18:54.332 -05:00 [DBG] POST requests are not supported
+2023-01-08 19:18:54.332 -05:00 [DBG] No candidates found for the request path '/api/refresh'
+2023-01-08 19:18:54.332 -05:00 [DBG] Request did not match any endpoints
+2023-01-08 19:18:54.332 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:18:54 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-08 19:18:54.333 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/8/2023 11:30:50 PM', Current time: '1/9/2023 12:18:54 AM'.
+2023-01-08 19:18:54.333 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-08 19:18:54.333 -05:00 [INF] CORS policy execution successful.
+2023-01-08 19:18:54.333 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" completed keep alive response.
+2023-01-08 19:18:54.333 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/refresh text/plain 447 - 404 0 - 1.1230ms
+2023-01-08 19:18:54.333 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:0000000C": started reading request body.
+2023-01-08 19:18:54.333 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q", Request id "0HMNHPN2GNH2Q:0000000C": done reading request body.
+2023-01-08 19:23:06.617 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" received FIN.
+2023-01-08 19:23:06.621 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" disconnecting.
+2023-01-08 19:23:06.621 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" stopped.
+2023-01-08 19:23:06.621 -05:00 [DBG] Connection id "0HMNHPN2GNH2Q" sending FIN because: "The Socket transport's send loop completed gracefully."

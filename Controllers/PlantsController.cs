@@ -8,10 +8,12 @@ using System.Xml.Linq;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Plants.info.API.Controllers
 {
     [Route("api/users/{userId}/plants")] // Since we need to gather user information to get plants we reflect the URL as such and set plants as a child resource of Users. 
+    [Authorize] //we have no way to pass down id values to this policy, therefore a custom attribute needs to be created but it is not recommended.
     [ApiController]
     public class PlantsController : ControllerBase
     {
@@ -34,8 +36,11 @@ namespace Plants.info.API.Controllers
         {
             try
             {
+                // Verify user Id matches with the user Id specified in the token
+                if(IdsDoNotMatch(userId)) return Forbid(); // returns 403 code
+
                 // Default pagination
-                if(pageSize > maxPageSizeForPlants)
+                if (pageSize > maxPageSizeForPlants)
                 {
                     pageSize = maxPageSizeForPlants; 
                 }
@@ -64,6 +69,9 @@ namespace Plants.info.API.Controllers
         {
             try
             {
+                // Verify user Id matches with the user Id specified in the token
+                if (IdsDoNotMatch(userId)) return Forbid(); // returns 403 code
+
                 var user = await _userRepo.UserExistsAsync(userId);
                 if (!user) return NotFound();
                 var plant = await _repo.GetSinglePlantByIdAsync(userId, plantId);
@@ -88,8 +96,14 @@ namespace Plants.info.API.Controllers
             //}
             try
             {
+                // Verify user Id matches with the user Id specified in the token
+                if (IdsDoNotMatch(userId)) return Forbid(); // returns 403 code
+
                 var user = await _userRepo.UserExistsAsync(userId);
                 if (!user) return NotFound();
+
+                // Verify if the plant already exists by checking the name and genus
+                if (await _repo.DoesPlantExists(userId, plantObject.Name, plantObject.Genus)) return Conflict(); 
 
                 // Map our creation model to the real Plants model 
                 var finalPlant = new Plant()
@@ -126,6 +140,9 @@ namespace Plants.info.API.Controllers
         {
             try
             {
+                // Verify user Id matches with the user Id specified in the token
+                if (IdsDoNotMatch(userId)) return Forbid(); // returns 403 code
+
                 var user = await _userRepo.UserExistsAsync(userId); ;
                 if (!user) return NotFound();
 
@@ -157,6 +174,9 @@ namespace Plants.info.API.Controllers
         {
             try
             {
+                // Verify user Id matches with the user Id specified in the token
+                if (IdsDoNotMatch(userId)) return Forbid(); // returns 403 code
+
                 var user = await _userRepo.UserExistsAsync(userId);
                 if (!user) return NotFound();
 
@@ -208,6 +228,9 @@ namespace Plants.info.API.Controllers
         {
             try
             {
+                // Verify user Id matches with the user Id specified in the token
+                if (IdsDoNotMatch(userId)) return Forbid(); // returns 403 code
+
                 var user = await _userRepo.UserExistsAsync(userId);
                 if (!user) return NotFound();
 
@@ -224,6 +247,13 @@ namespace Plants.info.API.Controllers
                 return StatusCode(500, "A problem occurred while handling your request");
             }
            
+        }
+
+        private Boolean IdsDoNotMatch(int userId)
+        {
+            var tokenUserId = User.Claims.FirstOrDefault(c => c.Type == "userId")?.Value;
+
+            return (tokenUserId == null || (tokenUserId != null && userId != Int32.Parse(tokenUserId))); 
         }
     }
 }

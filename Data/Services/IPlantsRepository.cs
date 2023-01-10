@@ -13,6 +13,7 @@ namespace Plants.info.API.Data.Repository
         Task CreatePlantAsync(Plant plantObject);
         //Task UpdatePlantAsync(Plant plant); 
 
-        Task DeletePlantAsync(int userId, int id);    
+        Task DeletePlantAsync(int userId, int id);
+        Task<Boolean> DoesPlantExists(int userId, string name, string genus); 
     }
 }

@@ -1,0 +1,1299 @@
+2023-01-02 09:07:17.935 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-01-02 09:07:18.113 -05:00 [DBG] Hosting starting
+2023-01-02 09:07:18.142 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-02 09:07:18.146 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-01-02 09:07:18.155 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-01-02 09:07:18.164 -05:00 [DBG] Considering key {e3ab9436-a942-4129-9e05-9d85e1731fcc} with expiration date 2023-03-20 21:27:34Z as default key.
+2023-01-02 09:07:18.166 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-01-02 09:07:18.179 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-01-02 09:07:18.179 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-01-02 09:07:18.183 -05:00 [DBG] Using key {e3ab9436-a942-4129-9e05-9d85e1731fcc} as the default key.
+2023-01-02 09:07:18.184 -05:00 [DBG] Key ring with default key {e3ab9436-a942-4129-9e05-9d85e1731fcc} was loaded during application startup.
+2023-01-02 09:07:18.994 -05:00 [INF] Now listening on: https://localhost:7235
+2023-01-02 09:07:18.994 -05:00 [INF] Now listening on: http://localhost:5235
+2023-01-02 09:07:18.994 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-01-02 09:07:18.995 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 09:07:18.995 -05:00 [INF] Hosting environment: Development
+2023-01-02 09:07:18.995 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-01-02 09:07:18.995 -05:00 [DBG] Hosting started
+2023-01-02 09:07:19.012 -05:00 [DBG] Connection id "0HMNCPAKGQRE9" accepted.
+2023-01-02 09:07:19.013 -05:00 [DBG] Connection id "0HMNCPAKGQRE9" started.
+2023-01-02 09:07:20.008 -05:00 [DBG] Connection id "0HMNCPAKGQRE9" received FIN.
+2023-01-02 09:07:20.016 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-02 09:07:20.078 -05:00 [DBG] Connection id "0HMNCPAKGQRE9" stopped.
+2023-01-02 09:07:20.083 -05:00 [DBG] Connection id "0HMNCPAKGQRE9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 09:07:20.310 -05:00 [DBG] Connection id "0HMNCPAKGQREA" accepted.
+2023-01-02 09:07:20.323 -05:00 [DBG] Connection id "0HMNCPAKGQREA" started.
+2023-01-02 09:07:20.323 -05:00 [DBG] Connection id "0HMNCPAKGQREB" accepted.
+2023-01-02 09:07:20.324 -05:00 [DBG] Connection id "0HMNCPAKGQREB" started.
+2023-01-02 09:07:20.453 -05:00 [DBG] Connection 0HMNCPAKGQREA established using the following protocol: "Tls12"
+2023-01-02 09:07:20.453 -05:00 [DBG] Connection 0HMNCPAKGQREB established using the following protocol: "Tls12"
+2023-01-02 09:07:20.527 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-01-02 09:07:20.531 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-01-02 09:07:20.663 -05:00 [DBG] Connection id "0HMNCPAKGQREB" completed keep alive response.
+2023-01-02 09:07:20.665 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 139.7261ms
+2023-01-02 09:07:21.419 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-01-02 09:07:21.731 -05:00 [DBG] Connection id "0HMNCPAKGQREB" completed keep alive response.
+2023-01-02 09:07:21.731 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 311.9461ms
+2023-01-02 09:08:48.532 -05:00 [DBG] Connection id "0HMNCPAKGQREA" received FIN.
+2023-01-02 09:08:48.539 -05:00 [DBG] Connection id "0HMNCPAKGQREA" sending FIN because: "The client closed the connection."
+2023-01-02 09:08:48.539 -05:00 [DBG] Connection id "0HMNCPAKGQREA" disconnecting.
+2023-01-02 09:08:48.544 -05:00 [DBG] Connection id "0HMNCPAKGQREA" stopped.
+2023-01-02 09:09:11.708 -05:00 [DBG] Connection id "0HMNCPAKGQREC" received FIN.
+2023-01-02 09:09:11.737 -05:00 [DBG] Connection id "0HMNCPAKGQREC" accepted.
+2023-01-02 09:09:11.740 -05:00 [DBG] Connection id "0HMNCPAKGQREC" started.
+2023-01-02 09:09:11.761 -05:00 [DBG] Connection id "0HMNCPAKGQRED" accepted.
+2023-01-02 09:09:11.761 -05:00 [DBG] Connection id "0HMNCPAKGQRED" started.
+2023-01-02 09:09:11.840 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-02 09:09:11.841 -05:00 [DBG] Connection id "0HMNCPAKGQREC" stopped.
+2023-01-02 09:09:11.841 -05:00 [DBG] Connection id "0HMNCPAKGQREC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 09:09:11.855 -05:00 [DBG] Connection 0HMNCPAKGQRED established using the following protocol: "Tls12"
+2023-01-02 09:09:11.856 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:09:11.858 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:09:11.883 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:09:11.886 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:09:11.886 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:09:12.105 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/1/2023 9:53:09 PM', Current time: '1/2/2023 2:09:12 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-02 09:09:12.107 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/1/2023 9:53:09 PM', Current time: '1/2/2023 2:09:12 PM'.
+2023-01-02 09:09:12.114 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-02 09:09:12.119 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-01-02 09:09:12.119 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:09:12.119 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 263.5994ms
+2023-01-02 09:09:18.527 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 65
+2023-01-02 09:09:18.527 -05:00 [DBG] POST requests are not supported
+2023-01-02 09:09:18.528 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-02 09:09:18.528 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-02 09:09:18.529 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:09:18.531 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 09:09:18.532 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:09:18.555 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-02 09:09:18.557 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:09:18.557 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:09:18.557 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:09:18.557 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:09:18.557 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:09:18.559 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 09:09:18.641 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 09:09:18.646 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 09:09:18.648 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-02 09:09:18.649 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-02 09:09:18.650 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-02 09:09:18.655 -05:00 [DBG] Connection id "0HMNCPAKGQRED", Request id "0HMNCPAKGQRED:00000002": started reading request body.
+2023-01-02 09:09:18.655 -05:00 [DBG] Connection id "0HMNCPAKGQRED", Request id "0HMNCPAKGQRED:00000002": done reading request body.
+2023-01-02 09:09:18.725 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:09:18.725 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:09:18.725 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 09:09:18.733 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:09:20.175 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:09:20.177 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:09:20.177 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:09:20.177 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:09:20.178 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-02 09:09:20.178 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-02 09:09:20.212 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 1651.082ms
+2023-01-02 09:09:20.213 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:09:20.214 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:09:20.218 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 65 - 200 343 application/json;+charset=utf-8 1691.4640ms
+2023-01-02 09:09:28.226 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:09:28.227 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:09:28.227 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:09:28.227 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:09:28.227 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:09:28.235 -05:00 [DBG] Successfully validated the token.
+2023-01-02 09:09:28.237 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-02 09:09:28.240 -05:00 [DBG] Authorization was successful.
+2023-01-02 09:09:28.240 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:09:28.250 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-02 09:09:28.250 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:09:28.250 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:09:28.250 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:09:28.250 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:09:28.250 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:09:28.250 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:09:28.254 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:09:28.255 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:09:28.255 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-02 09:09:28.256 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:09:28.256 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:09:28.256 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:09:28.257 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:09:28.257 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-02 09:09:28.258 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:09:28.258 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-02 09:09:28.258 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:09:28.258 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:09:28.259 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-02 09:09:28.259 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-02 09:09:28.259 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:09:28.259 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:09:28.259 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-02 09:09:28.259 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:09:28.259 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:09:28.259 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:09:28.259 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-02 09:09:28.259 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:09:28.259 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:09:28.260 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:09:28.260 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:09:28.260 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:09:28.260 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:09:28.260 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:09:28.260 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:09:28.260 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:09:28.260 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:09:28.260 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:09:28.260 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:09:28.260 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:09:28.260 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:11:27.143 -05:00 [FTL] Exception while getting plants for user id 1
+2023-01-02 09:11:27.146 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:11:27.147 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:11:27.147 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:11:27.147 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:11:27.147 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-01-02 09:11:27.147 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-01-02 09:11:27.147 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 118897.793ms
+2023-01-02 09:11:27.148 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:11:27.148 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:11:27.154 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 500 - text/plain;+charset=utf-8 118925.0715ms
+2023-01-02 09:11:30.767 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:11:30.767 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:11:30.767 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:11:30.767 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:11:30.767 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:11:30.767 -05:00 [DBG] Successfully validated the token.
+2023-01-02 09:11:30.768 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-02 09:11:30.769 -05:00 [DBG] Authorization was successful.
+2023-01-02 09:11:30.769 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:11:30.769 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-02 09:11:30.770 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:11:30.770 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:11:30.770 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:11:30.770 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:11:30.770 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:11:30.770 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:11:30.772 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:11:30.772 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:11:30.772 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-02 09:11:30.772 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:11:30.772 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:11:30.772 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:11:30.772 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:11:30.772 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-02 09:11:30.772 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:11:30.772 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-02 09:11:30.772 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:11:30.772 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:11:30.772 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-02 09:11:30.772 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-02 09:11:30.772 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:11:30.772 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:11:30.772 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:11:30.773 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:11:30.773 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:11:30.773 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:11:30.773 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:11:30.773 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:11:30.773 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:11:30.773 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:11:30.773 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:13:14.403 -05:00 [DBG] Connection id "0HMNCPAKGQREB" received FIN.
+2023-01-02 09:13:14.428 -05:00 [DBG] Connection id "0HMNCPAKGQREB" disconnecting.
+2023-01-02 09:13:14.452 -05:00 [DBG] Connection id "0HMNCPAKGQREB" stopped.
+2023-01-02 09:13:14.473 -05:00 [DBG] Connection id "0HMNCPAKGQREB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 09:13:14.654 -05:00 [FTL] Exception while getting plants for user id 1
+2023-01-02 09:13:14.654 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:13:14.654 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:13:14.654 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:13:14.654 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:13:14.654 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-01-02 09:13:14.654 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-01-02 09:13:14.655 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 103885.1863ms
+2023-01-02 09:13:14.655 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:13:14.655 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:13:14.655 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 500 - text/plain;+charset=utf-8 103888.4842ms
+2023-01-02 09:22:25.342 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:22:25.369 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:22:25.369 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:22:25.369 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:22:25.369 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:22:25.370 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:14:20 PM', Current time: '1/2/2023 2:22:25 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-02 09:22:25.370 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:14:20 PM', Current time: '1/2/2023 2:22:25 PM'.
+2023-01-02 09:22:25.371 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-02 09:22:25.372 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-01-02 09:22:25.372 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:22:25.372 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 30.8585ms
+2023-01-02 09:22:31.383 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:22:31.383 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:22:31.383 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:22:31.383 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:22:31.383 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:22:31.384 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:14:20 PM', Current time: '1/2/2023 2:22:31 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-02 09:22:31.384 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:14:20 PM', Current time: '1/2/2023 2:22:31 PM'.
+2023-01-02 09:22:31.384 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-02 09:22:31.384 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-01-02 09:22:31.384 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:22:31.385 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.5103ms
+2023-01-02 09:22:38.089 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 65
+2023-01-02 09:22:38.089 -05:00 [DBG] POST requests are not supported
+2023-01-02 09:22:38.089 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-02 09:22:38.089 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-02 09:22:38.089 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:22:38.089 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 09:22:38.089 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:22:38.089 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-02 09:22:38.089 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:22:38.090 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:22:38.090 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:22:38.090 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:22:38.090 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:22:38.090 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 09:22:38.090 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 09:22:38.090 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 09:22:38.090 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-02 09:22:38.091 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-02 09:22:38.091 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-02 09:22:38.091 -05:00 [DBG] Connection id "0HMNCPAKGQRED", Request id "0HMNCPAKGQRED:00000007": started reading request body.
+2023-01-02 09:22:38.091 -05:00 [DBG] Connection id "0HMNCPAKGQRED", Request id "0HMNCPAKGQRED:00000007": done reading request body.
+2023-01-02 09:22:38.092 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:22:38.092 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:22:38.092 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 09:22:38.092 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:22:38.208 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:22:38.208 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:22:38.208 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:22:38.208 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:22:38.208 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-02 09:22:38.208 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-02 09:22:38.209 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 118.9139ms
+2023-01-02 09:22:38.209 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:22:38.209 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:22:38.209 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 65 - 200 343 application/json;+charset=utf-8 120.2094ms
+2023-01-02 09:22:41.013 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:22:41.013 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:22:41.013 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:22:41.013 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:22:41.013 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:22:41.013 -05:00 [DBG] Successfully validated the token.
+2023-01-02 09:22:41.013 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-02 09:22:41.014 -05:00 [DBG] Authorization was successful.
+2023-01-02 09:22:41.014 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:22:41.014 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-02 09:22:41.014 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:22:41.014 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:22:41.014 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:22:41.014 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:22:41.014 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:22:41.014 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:22:41.015 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:22:41.015 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:22:41.016 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-02 09:22:41.016 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:22:41.016 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:22:41.016 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:22:41.016 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:22:41.016 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-02 09:22:41.016 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:22:41.016 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-02 09:22:41.016 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:22:41.016 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:22:41.016 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-02 09:22:41.016 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-02 09:22:41.016 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:22:41.016 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:22:41.017 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:22:41.017 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:22:41.017 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:22:41.017 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:22:41.017 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:22:41.017 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:22:41.017 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:22:41.017 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:22:41.017 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:25:11.077 -05:00 [FTL] Exception while getting plants for user id 1
+2023-01-02 09:25:11.078 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:25:11.078 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:25:11.078 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:25:11.078 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:25:11.078 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-01-02 09:25:11.078 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-01-02 09:25:11.078 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 150064.4107ms
+2023-01-02 09:25:11.078 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:25:11.078 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:25:11.078 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 500 - text/plain;+charset=utf-8 150066.2090ms
+2023-01-02 09:25:59.488 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:25:59.488 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:25:59.488 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:25:59.488 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:25:59.488 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:25:59.489 -05:00 [DBG] Successfully validated the token.
+2023-01-02 09:25:59.489 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-02 09:25:59.489 -05:00 [DBG] Authorization was successful.
+2023-01-02 09:25:59.489 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:25:59.489 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-02 09:25:59.489 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:25:59.489 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:25:59.489 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:25:59.489 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:25:59.489 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:25:59.489 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:25:59.490 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-02 09:25:59.490 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:25:59.490 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:25:59.490 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-02 09:25:59.490 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:25:59.490 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:25:59.490 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:25:59.490 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:25:59.491 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:25:59.491 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:25:59.491 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:25:59.491 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:25:59.491 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:25:59.491 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:25:59.491 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:25:59.491 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:25:59.491 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:25:59.491 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:25:59.491 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:25:59.491 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:29:02.323 -05:00 [FTL] Exception while getting plants for user id 1
+2023-01-02 09:29:02.350 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:29:02.350 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:29:02.350 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:29:02.350 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:29:02.350 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-01-02 09:29:02.350 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-01-02 09:29:02.350 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 182861.6596ms
+2023-01-02 09:29:02.351 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:29:02.351 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:29:02.351 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 500 - text/plain;+charset=utf-8 182863.6164ms
+2023-01-02 09:29:05.106 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:29:05.106 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:29:05.106 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:29:05.106 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:29:05.106 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:29:05.107 -05:00 [DBG] Successfully validated the token.
+2023-01-02 09:29:05.107 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-02 09:29:05.107 -05:00 [DBG] Authorization was successful.
+2023-01-02 09:29:05.107 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:29:05.107 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-02 09:29:05.107 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:29:05.107 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:29:05.107 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:29:05.107 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:29:05.107 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:29:05.107 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:29:05.107 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:29:05.108 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:29:05.108 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:29:05.109 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:29:05.109 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:29:05.109 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:29:05.109 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:29:05.109 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:29:05.109 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:29:05.109 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:29:05.109 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:29:05.109 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:29:05.109 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:32:16.697 -05:00 [FTL] Exception while getting plants for user id 1
+2023-01-02 09:32:16.698 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:32:16.698 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:32:16.698 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:32:16.698 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:32:16.698 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-01-02 09:32:16.698 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-01-02 09:32:16.699 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 191598.5471ms
+2023-01-02 09:32:16.699 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:32:16.699 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:32:16.699 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 500 - text/plain;+charset=utf-8 191600.2598ms
+2023-01-02 09:41:38.775 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:41:38.775 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:41:38.775 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:41:38.776 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:41:38.776 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:41:38.776 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:27:38 PM', Current time: '1/2/2023 2:41:38 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-02 09:41:38.776 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:27:38 PM', Current time: '1/2/2023 2:41:38 PM'.
+2023-01-02 09:41:38.776 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-02 09:41:38.776 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-01-02 09:41:38.777 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:41:38.777 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.6392ms
+2023-01-02 09:41:55.265 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 65
+2023-01-02 09:41:55.265 -05:00 [DBG] POST requests are not supported
+2023-01-02 09:41:55.265 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-02 09:41:55.265 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-02 09:41:55.265 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:41:55.265 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 09:41:55.265 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:41:55.266 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-02 09:41:55.266 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:41:55.266 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:41:55.266 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:41:55.266 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:41:55.266 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:41:55.266 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 09:41:55.267 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 09:41:55.267 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 09:41:55.267 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-02 09:41:55.267 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-02 09:41:55.267 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-02 09:41:55.267 -05:00 [DBG] Connection id "0HMNCPAKGQRED", Request id "0HMNCPAKGQRED:0000000C": started reading request body.
+2023-01-02 09:41:55.267 -05:00 [DBG] Connection id "0HMNCPAKGQRED", Request id "0HMNCPAKGQRED:0000000C": done reading request body.
+2023-01-02 09:41:55.267 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:41:55.267 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:41:55.267 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 09:41:55.267 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:41:55.373 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:41:55.373 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:41:55.373 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:41:55.373 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:41:55.373 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-02 09:41:55.373 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-02 09:41:55.373 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 107.5732ms
+2023-01-02 09:41:55.373 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:41:55.374 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:41:55.374 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 65 - 200 343 application/json;+charset=utf-8 110.6242ms
+2023-01-02 09:42:00.378 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:42:00.378 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:42:00.378 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:42:00.378 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:42:00.378 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:42:00.378 -05:00 [DBG] Successfully validated the token.
+2023-01-02 09:42:00.378 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-02 09:42:00.379 -05:00 [DBG] Authorization was successful.
+2023-01-02 09:42:00.379 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:42:00.379 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-02 09:42:00.379 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:42:00.379 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:42:00.379 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:42:00.379 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:42:00.379 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:42:00.379 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:42:00.379 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:42:00.379 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:42:00.379 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-02 09:42:00.379 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:42:00.379 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:42:00.379 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:42:00.379 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:42:00.379 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-02 09:42:00.379 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:42:00.379 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-02 09:42:00.379 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:42:00.379 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:42:00.379 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-02 09:42:00.379 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:42:00.380 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:42:00.380 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:42:00.380 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:42:00.380 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:42:00.380 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:42:00.380 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:42:00.380 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:42:00.380 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:42:00.380 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:42:00.380 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:45:30.442 -05:00 [FTL] Exception while getting plants for user id 1
+2023-01-02 09:45:30.442 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:45:30.442 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:45:30.442 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:45:30.442 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:45:30.442 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-01-02 09:45:30.442 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-01-02 09:45:30.443 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 210065.8518ms
+2023-01-02 09:45:30.443 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:45:30.443 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:45:30.443 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 500 - text/plain;+charset=utf-8 210067.2924ms
+2023-01-02 09:51:15.167 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:51:15.168 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:51:15.168 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:51:15.168 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:51:15.168 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:51:15.168 -05:00 [DBG] Successfully validated the token.
+2023-01-02 09:51:15.168 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-02 09:51:15.168 -05:00 [DBG] Authorization was successful.
+2023-01-02 09:51:15.168 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:51:15.168 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-02 09:51:15.169 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:51:15.169 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:51:15.169 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:51:15.169 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:51:15.169 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:51:15.169 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:51:15.169 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:51:15.169 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:51:15.169 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-02 09:51:15.169 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:51:15.169 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:51:15.169 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:51:15.170 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-02 09:51:15.170 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:51:15.170 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-02 09:51:15.170 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:51:15.170 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:51:15.170 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:51:15.170 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:51:15.170 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:51:15.170 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:51:15.170 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:51:15.170 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:51:15.171 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:51:15.171 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:51:15.171 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:51:15.171 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:51:15.171 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:51:15.171 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:51:15.171 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:53:33.558 -05:00 [FTL] Exception while getting plants for user id 1
+2023-01-02 09:53:33.559 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:53:33.560 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:53:33.560 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:53:33.560 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:53:33.560 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-01-02 09:53:33.560 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-01-02 09:53:33.560 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 138392.529ms
+2023-01-02 09:53:33.560 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:53:33.560 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:53:33.560 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 500 - text/plain;+charset=utf-8 138395.0650ms
+2023-01-02 09:53:38.997 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:53:38.997 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:53:38.997 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:53:38.997 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:53:38.997 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:53:38.998 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:46:55 PM', Current time: '1/2/2023 2:53:38 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-02 09:53:38.998 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:46:55 PM', Current time: '1/2/2023 2:53:38 PM'.
+2023-01-02 09:53:38.998 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-02 09:53:38.998 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-01-02 09:53:38.998 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:53:38.999 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.6564ms
+2023-01-02 09:53:43.996 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:53:43.997 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:53:43.997 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:53:43.997 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:53:43.997 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:53:43.997 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:46:55 PM', Current time: '1/2/2023 2:53:43 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-02 09:53:43.998 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:46:55 PM', Current time: '1/2/2023 2:53:43 PM'.
+2023-01-02 09:53:43.998 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-02 09:53:43.998 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-01-02 09:53:43.998 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:53:43.998 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.5971ms
+2023-01-02 09:53:44.798 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:53:44.798 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:53:44.798 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:53:44.798 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:53:44.798 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:53:44.799 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:46:55 PM', Current time: '1/2/2023 2:53:44 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-02 09:53:44.799 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:46:55 PM', Current time: '1/2/2023 2:53:44 PM'.
+2023-01-02 09:53:44.799 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-02 09:53:44.799 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-01-02 09:53:44.799 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:53:44.799 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.1765ms
+2023-01-02 09:53:45.486 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:53:45.486 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:53:45.486 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:53:45.486 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:53:45.486 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:53:45.486 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:46:55 PM', Current time: '1/2/2023 2:53:45 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-02 09:53:45.487 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 2:46:55 PM', Current time: '1/2/2023 2:53:45 PM'.
+2023-01-02 09:53:45.487 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-02 09:53:45.487 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-01-02 09:53:45.487 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:53:45.487 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 1.0887ms
+2023-01-02 09:53:48.967 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 65
+2023-01-02 09:53:48.968 -05:00 [DBG] POST requests are not supported
+2023-01-02 09:53:48.968 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-02 09:53:48.968 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-02 09:53:48.968 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:53:48.968 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 09:53:48.968 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:53:48.968 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-02 09:53:48.968 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:53:48.968 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:53:48.968 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:53:48.968 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:53:48.968 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:53:48.968 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 09:53:48.968 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 09:53:48.969 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 09:53:48.969 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-02 09:53:48.969 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-02 09:53:48.969 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-02 09:53:48.969 -05:00 [DBG] Connection id "0HMNCPAKGQRED", Request id "0HMNCPAKGQRED:00000013": started reading request body.
+2023-01-02 09:53:48.969 -05:00 [DBG] Connection id "0HMNCPAKGQRED", Request id "0HMNCPAKGQRED:00000013": done reading request body.
+2023-01-02 09:53:48.969 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:53:48.969 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:53:48.969 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 09:53:48.969 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 09:53:49.042 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 09:53:49.042 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 09:53:49.042 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 09:53:49.042 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 09:53:49.042 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-02 09:53:49.042 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-02 09:53:49.042 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 73.8349ms
+2023-01-02 09:53:49.042 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 09:53:49.042 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 09:53:49.042 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 65 - 200 343 application/json;+charset=utf-8 75.6119ms
+2023-01-02 09:53:50.829 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 09:53:50.829 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 09:53:50.829 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 09:53:50.829 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 09:53:50.829 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:53:50.829 -05:00 [DBG] Successfully validated the token.
+2023-01-02 09:53:50.830 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-02 09:53:50.830 -05:00 [DBG] Authorization was successful.
+2023-01-02 09:53:50.830 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 09:53:50.830 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-02 09:53:50.830 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 09:53:50.830 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 09:53:50.830 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 09:53:50.830 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 09:53:50.830 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 09:53:50.830 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:53:50.831 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 09:53:50.831 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:53:50.831 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-02 09:53:50.831 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-02 09:53:50.831 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-02 09:53:50.831 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:53:50.831 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-02 09:53:50.831 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:53:50.831 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-02 09:53:50.831 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-02 09:53:50.831 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-02 09:53:50.831 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:53:50.832 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:53:50.832 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:53:50.832 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:53:50.832 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:53:50.832 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 09:53:50.832 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 09:53:50.832 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:53:50.832 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 09:53:50.832 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:53:50.832 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:53:50.832 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 09:53:50.832 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 09:53:50.832 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 10:02:44.298 -05:00 [FTL] Exception while getting plants for user id 1
+2023-01-02 10:02:44.302 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 10:02:44.302 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 10:02:44.302 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 10:02:44.303 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 10:02:44.303 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-01-02 10:02:44.303 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-01-02 10:02:44.305 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 533478.0868ms
+2023-01-02 10:02:44.306 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 10:02:44.306 -05:00 [DBG] Connection id "0HMNCPAKGQRED" completed keep alive response.
+2023-01-02 10:02:44.308 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 500 - text/plain;+charset=utf-8 533482.1214ms
+2023-01-02 10:15:24.692 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-01-02 10:15:24.776 -05:00 [DBG] Hosting starting
+2023-01-02 10:15:24.785 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-02 10:15:24.789 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-01-02 10:15:24.795 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-01-02 10:15:24.804 -05:00 [DBG] Considering key {e3ab9436-a942-4129-9e05-9d85e1731fcc} with expiration date 2023-03-20 21:27:34Z as default key.
+2023-01-02 10:15:24.805 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-01-02 10:15:24.806 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-01-02 10:15:24.806 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-01-02 10:15:24.808 -05:00 [DBG] Using key {e3ab9436-a942-4129-9e05-9d85e1731fcc} as the default key.
+2023-01-02 10:15:24.808 -05:00 [DBG] Key ring with default key {e3ab9436-a942-4129-9e05-9d85e1731fcc} was loaded during application startup.
+2023-01-02 10:15:25.237 -05:00 [INF] Now listening on: https://localhost:58894
+2023-01-02 10:15:25.238 -05:00 [INF] Now listening on: http://localhost:23910
+2023-01-02 10:15:25.238 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-01-02 10:15:25.238 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 10:15:25.239 -05:00 [INF] Hosting environment: Development
+2023-01-02 10:15:25.239 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-01-02 10:15:25.239 -05:00 [DBG] Hosting started
+2023-01-02 10:15:25.269 -05:00 [DBG] Connection id "0HMNCQGMAD9HT" accepted.
+2023-01-02 10:15:25.269 -05:00 [DBG] Connection id "0HMNCQGMAD9HT" started.
+2023-01-02 10:15:26.262 -05:00 [DBG] Connection id "0HMNCQGMAD9HT" received FIN.
+2023-01-02 10:15:26.269 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-02 10:15:26.295 -05:00 [DBG] Connection id "0HMNCQGMAD9HT" stopped.
+2023-01-02 10:15:26.301 -05:00 [DBG] Connection id "0HMNCQGMAD9HT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 10:15:26.514 -05:00 [DBG] Connection id "0HMNCQGMAD9HU" accepted.
+2023-01-02 10:15:26.514 -05:00 [DBG] Connection id "0HMNCQGMAD9HV" accepted.
+2023-01-02 10:15:26.515 -05:00 [DBG] Connection id "0HMNCQGMAD9HU" started.
+2023-01-02 10:15:26.515 -05:00 [DBG] Connection id "0HMNCQGMAD9HV" started.
+2023-01-02 10:15:26.626 -05:00 [DBG] Connection 0HMNCQGMAD9HU established using the following protocol: "Tls12"
+2023-01-02 10:15:26.626 -05:00 [DBG] Connection 0HMNCQGMAD9HV established using the following protocol: "Tls12"
+2023-01-02 10:15:26.672 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:58894/ - -
+2023-01-02 10:15:26.673 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-01-02 10:15:26.695 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 10:15:26.725 -05:00 [DBG] No candidates found for the request path '/'
+2023-01-02 10:15:26.725 -05:00 [DBG] Request did not match any endpoints
+2023-01-02 10:15:26.757 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 10:15:26.761 -05:00 [DBG] Connection id "0HMNCQGMAD9HU" completed keep alive response.
+2023-01-02 10:15:26.766 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:58894/ - - - 404 0 - 92.6687ms
+2023-01-02 10:15:30.663 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:58894/ - -
+2023-01-02 10:15:30.664 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 10:15:30.664 -05:00 [DBG] No candidates found for the request path '/'
+2023-01-02 10:15:30.664 -05:00 [DBG] Request did not match any endpoints
+2023-01-02 10:15:30.665 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 10:15:30.666 -05:00 [DBG] Connection id "0HMNCQGMAD9HU" completed keep alive response.
+2023-01-02 10:15:30.666 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:58894/ - - - 404 0 - 3.4724ms
+2023-01-02 10:17:17.357 -05:00 [DBG] Connection id "0HMNCQGMAD9HV" received FIN.
+2023-01-02 10:17:17.358 -05:00 [DBG] Connection id "0HMNCQGMAD9HV" sending FIN because: "The client closed the connection."
+2023-01-02 10:17:17.358 -05:00 [DBG] Connection id "0HMNCQGMAD9HV" disconnecting.
+2023-01-02 10:17:17.359 -05:00 [DBG] Connection id "0HMNCQGMAD9HV" stopped.
+2023-01-02 10:17:40.923 -05:00 [DBG] Connection id "0HMNCQGMAD9HU" disconnecting.
+2023-01-02 10:17:40.923 -05:00 [DBG] Connection id "0HMNCQGMAD9HU" stopped.
+2023-01-02 10:17:40.923 -05:00 [DBG] Connection id "0HMNCQGMAD9HU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 10:22:29.669 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-01-02 10:22:29.747 -05:00 [DBG] Hosting starting
+2023-01-02 10:22:29.757 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-02 10:22:29.760 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-01-02 10:22:29.766 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-01-02 10:22:29.774 -05:00 [DBG] Considering key {e3ab9436-a942-4129-9e05-9d85e1731fcc} with expiration date 2023-03-20 21:27:34Z as default key.
+2023-01-02 10:22:29.775 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-01-02 10:22:29.776 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-01-02 10:22:29.777 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-01-02 10:22:29.778 -05:00 [DBG] Using key {e3ab9436-a942-4129-9e05-9d85e1731fcc} as the default key.
+2023-01-02 10:22:29.778 -05:00 [DBG] Key ring with default key {e3ab9436-a942-4129-9e05-9d85e1731fcc} was loaded during application startup.
+2023-01-02 10:22:30.201 -05:00 [INF] Now listening on: https://localhost:38949
+2023-01-02 10:22:30.201 -05:00 [INF] Now listening on: http://localhost:53481
+2023-01-02 10:22:30.201 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-01-02 10:22:30.202 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 10:22:30.202 -05:00 [INF] Hosting environment: Development
+2023-01-02 10:22:30.202 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-01-02 10:22:30.202 -05:00 [DBG] Hosting started
+2023-01-02 10:22:30.210 -05:00 [DBG] Connection id "0HMNCQKKUV3ED" accepted.
+2023-01-02 10:22:30.211 -05:00 [DBG] Connection id "0HMNCQKKUV3ED" started.
+2023-01-02 10:22:31.208 -05:00 [DBG] Connection id "0HMNCQKKUV3ED" received FIN.
+2023-01-02 10:22:31.215 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-02 10:22:31.240 -05:00 [DBG] Connection id "0HMNCQKKUV3ED" stopped.
+2023-01-02 10:22:31.245 -05:00 [DBG] Connection id "0HMNCQKKUV3ED" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 10:22:31.344 -05:00 [DBG] Connection id "0HMNCQKKUV3EE" accepted.
+2023-01-02 10:22:31.345 -05:00 [DBG] Connection id "0HMNCQKKUV3EF" accepted.
+2023-01-02 10:22:31.345 -05:00 [DBG] Connection id "0HMNCQKKUV3EE" started.
+2023-01-02 10:22:31.346 -05:00 [DBG] Connection id "0HMNCQKKUV3EF" started.
+2023-01-02 10:22:31.441 -05:00 [DBG] Connection 0HMNCQKKUV3EE established using the following protocol: "Tls12"
+2023-01-02 10:22:31.446 -05:00 [DBG] Connection 0HMNCQKKUV3EF established using the following protocol: "Tls12"
+2023-01-02 10:22:31.501 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:38949/ - -
+2023-01-02 10:22:31.503 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-01-02 10:22:31.527 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 10:22:31.564 -05:00 [DBG] No candidates found for the request path '/'
+2023-01-02 10:22:31.564 -05:00 [DBG] Request did not match any endpoints
+2023-01-02 10:22:31.598 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 10:22:31.603 -05:00 [DBG] Connection id "0HMNCQKKUV3EE" completed keep alive response.
+2023-01-02 10:22:31.605 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:38949/ - - - 404 0 - 108.9348ms
+2023-01-02 10:24:41.959 -05:00 [DBG] Connection id "0HMNCQKKUV3EE" disconnecting.
+2023-01-02 10:24:41.959 -05:00 [DBG] Connection id "0HMNCQKKUV3EF" disconnecting.
+2023-01-02 10:24:41.961 -05:00 [DBG] Connection id "0HMNCQKKUV3EF" stopped.
+2023-01-02 10:24:41.961 -05:00 [DBG] Connection id "0HMNCQKKUV3EE" stopped.
+2023-01-02 10:24:41.961 -05:00 [DBG] Connection id "0HMNCQKKUV3EF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 10:24:41.961 -05:00 [DBG] Connection id "0HMNCQKKUV3EE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 10:25:24.650 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-01-02 10:25:24.803 -05:00 [DBG] Hosting starting
+2023-01-02 10:25:24.836 -05:00 [INF] User profile is available. Using '/Users/dortiz/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-01-02 10:25:24.840 -05:00 [DBG] Reading data from file '/Users/dortiz/.aspnet/DataProtection-Keys/key-e3ab9436-a942-4129-9e05-9d85e1731fcc.xml'.
+2023-01-02 10:25:24.850 -05:00 [DBG] Found key {e3ab9436-a942-4129-9e05-9d85e1731fcc}.
+2023-01-02 10:25:24.861 -05:00 [DBG] Considering key {e3ab9436-a942-4129-9e05-9d85e1731fcc} with expiration date 2023-03-20 21:27:34Z as default key.
+2023-01-02 10:25:24.863 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-01-02 10:25:24.873 -05:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-01-02 10:25:24.874 -05:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-01-02 10:25:24.877 -05:00 [DBG] Using key {e3ab9436-a942-4129-9e05-9d85e1731fcc} as the default key.
+2023-01-02 10:25:24.878 -05:00 [DBG] Key ring with default key {e3ab9436-a942-4129-9e05-9d85e1731fcc} was loaded during application startup.
+2023-01-02 10:25:25.423 -05:00 [INF] Now listening on: https://localhost:7235
+2023-01-02 10:25:25.423 -05:00 [INF] Now listening on: http://localhost:5235
+2023-01-02 10:25:25.423 -05:00 [DBG] Loaded hosting startup assembly Plants.info.API
+2023-01-02 10:25:25.423 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 10:25:25.423 -05:00 [INF] Hosting environment: Development
+2023-01-02 10:25:25.424 -05:00 [INF] Content root path: /Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API
+2023-01-02 10:25:25.424 -05:00 [DBG] Hosting started
+2023-01-02 10:25:25.443 -05:00 [DBG] Connection id "0HMNCQM963UA5" accepted.
+2023-01-02 10:25:25.444 -05:00 [DBG] Connection id "0HMNCQM963UA5" started.
+2023-01-02 10:25:26.417 -05:00 [DBG] Connection id "0HMNCQM963UA5" received FIN.
+2023-01-02 10:25:26.425 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-02 10:25:26.486 -05:00 [DBG] Connection id "0HMNCQM963UA5" stopped.
+2023-01-02 10:25:26.492 -05:00 [DBG] Connection id "0HMNCQM963UA5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 10:25:26.592 -05:00 [DBG] Connection id "0HMNCQM963UA6" accepted.
+2023-01-02 10:25:26.603 -05:00 [DBG] Connection id "0HMNCQM963UA6" started.
+2023-01-02 10:25:26.607 -05:00 [DBG] Connection id "0HMNCQM963UA7" accepted.
+2023-01-02 10:25:26.609 -05:00 [DBG] Connection id "0HMNCQM963UA7" started.
+2023-01-02 10:25:26.663 -05:00 [DBG] Connection 0HMNCQM963UA6 established using the following protocol: "Tls12"
+2023-01-02 10:25:26.666 -05:00 [DBG] Connection 0HMNCQM963UA7 established using the following protocol: "Tls12"
+2023-01-02 10:25:26.740 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/index.html - -
+2023-01-02 10:25:26.742 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-01-02 10:25:26.871 -05:00 [DBG] Connection id "0HMNCQM963UA6" completed keep alive response.
+2023-01-02 10:25:26.873 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/index.html - - - 200 - text/html;charset=utf-8 137.5027ms
+2023-01-02 10:25:27.428 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - -
+2023-01-02 10:25:27.659 -05:00 [DBG] Connection id "0HMNCQM963UA6" completed keep alive response.
+2023-01-02 10:25:27.659 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 231.3294ms
+2023-01-02 10:25:34.225 -05:00 [DBG] Connection id "0HMNCQM963UA8" received FIN.
+2023-01-02 10:25:34.226 -05:00 [DBG] Connection id "0HMNCQM963UA8" accepted.
+2023-01-02 10:25:34.226 -05:00 [DBG] Connection id "0HMNCQM963UA8" started.
+2023-01-02 10:25:34.226 -05:00 [DBG] Connection id "0HMNCQM963UA9" accepted.
+2023-01-02 10:25:34.227 -05:00 [DBG] Connection id "0HMNCQM963UA9" started.
+2023-01-02 10:25:34.227 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-02 10:25:34.228 -05:00 [DBG] Connection id "0HMNCQM963UA8" stopped.
+2023-01-02 10:25:34.252 -05:00 [DBG] Connection id "0HMNCQM963UA8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 10:25:34.254 -05:00 [DBG] Connection 0HMNCQM963UA9 established using the following protocol: "Tls12"
+2023-01-02 10:25:34.257 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 65
+2023-01-02 10:25:34.259 -05:00 [DBG] POST requests are not supported
+2023-01-02 10:25:34.282 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-02 10:25:34.285 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-02 10:25:34.286 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 10:25:34.369 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 10:25:34.373 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 10:25:34.398 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-02 10:25:34.399 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 10:25:34.399 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 10:25:34.400 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 10:25:34.400 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 10:25:34.400 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 10:25:34.402 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 10:25:34.475 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 10:25:34.480 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 10:25:34.482 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-02 10:25:34.483 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-02 10:25:34.483 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-02 10:25:34.489 -05:00 [DBG] Connection id "0HMNCQM963UA9", Request id "0HMNCQM963UA9:00000001": started reading request body.
+2023-01-02 10:25:34.489 -05:00 [DBG] Connection id "0HMNCQM963UA9", Request id "0HMNCQM963UA9:00000001": done reading request body.
+2023-01-02 10:25:34.591 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 10:25:34.591 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 10:25:34.591 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 10:25:34.599 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 10:25:36.041 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 10:25:36.042 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 10:25:36.042 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 10:25:36.043 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 10:25:36.043 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-02 10:25:36.044 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-02 10:25:36.076 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 1673.1842ms
+2023-01-02 10:25:36.077 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 10:25:36.079 -05:00 [DBG] Connection id "0HMNCQM963UA9" completed keep alive response.
+2023-01-02 10:25:36.083 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 65 - 200 343 application/json;+charset=utf-8 1826.1262ms
+2023-01-02 10:25:39.597 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 10:25:39.597 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 10:25:39.599 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 10:25:39.599 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 10:25:39.599 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 10:25:39.654 -05:00 [DBG] Successfully validated the token.
+2023-01-02 10:25:39.657 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-02 10:25:39.664 -05:00 [DBG] Authorization was successful.
+2023-01-02 10:25:39.664 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 10:25:39.676 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-02 10:25:39.676 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 10:25:39.676 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 10:25:39.676 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 10:25:39.676 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 10:25:39.676 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 10:25:39.676 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 10:25:39.680 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 10:25:39.681 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-02 10:25:39.681 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-02 10:25:39.682 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 10:25:39.682 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 10:25:39.682 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-02 10:25:39.683 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-02 10:25:39.683 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-02 10:25:39.683 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-02 10:25:39.684 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-02 10:25:39.684 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 10:25:39.684 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 10:25:39.684 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-02 10:25:39.684 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-02 10:25:39.685 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-02 10:25:39.685 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-02 10:25:39.685 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-02 10:25:39.685 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 10:25:39.685 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 10:25:39.685 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-02 10:25:39.685 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-02 10:25:39.685 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 10:25:39.685 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 10:25:39.686 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 10:25:39.686 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 10:25:39.686 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 10:25:39.686 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 10:25:39.686 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 10:25:39.686 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 10:25:39.686 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 10:25:39.687 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 10:25:39.687 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 10:25:39.687 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 10:25:39.687 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 10:25:39.687 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 10:25:54.399 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 10:25:54.399 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 10:25:54.399 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 10:25:54.399 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 10:25:54.400 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-02 10:25:54.400 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-02 10:25:54.416 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 14740.0336ms
+2023-01-02 10:25:54.417 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 10:25:54.417 -05:00 [DBG] Connection id "0HMNCQM963UA9" completed keep alive response.
+2023-01-02 10:25:54.417 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 200 430 application/json;+charset=utf-8 14820.1472ms
+2023-01-02 10:26:42.667 -05:00 [DBG] Connection id "0HMNCQM963UA7" received FIN.
+2023-01-02 10:26:42.679 -05:00 [DBG] Connection id "0HMNCQM963UA7" sending FIN because: "The client closed the connection."
+2023-01-02 10:26:42.680 -05:00 [DBG] Connection id "0HMNCQM963UA7" disconnecting.
+2023-01-02 10:26:42.693 -05:00 [DBG] Connection id "0HMNCQM963UA7" stopped.
+2023-01-02 10:27:00.630 -05:00 [DBG] Connection id "0HMNCQM963UAA" accepted.
+2023-01-02 10:27:00.631 -05:00 [DBG] Connection id "0HMNCQM963UAA" started.
+2023-01-02 10:27:00.631 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 52
+2023-01-02 10:27:00.631 -05:00 [DBG] POST requests are not supported
+2023-01-02 10:27:00.635 -05:00 [DBG] Https port '7235' discovered from server endpoints.
+2023-01-02 10:27:00.639 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/authentication/authenticate'.
+2023-01-02 10:27:00.639 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:4200/api/authentication/authenticate application/json 52 - 307 0 - 7.9209ms
+2023-01-02 10:27:00.639 -05:00 [DBG] Connection id "0HMNCQM963UAA", Request id "0HMNCQM963UAA:00000001": started reading request body.
+2023-01-02 10:27:00.639 -05:00 [DBG] Connection id "0HMNCQM963UAA", Request id "0HMNCQM963UAA:00000001": done reading request body.
+2023-01-02 10:27:00.639 -05:00 [DBG] Connection id "0HMNCQM963UAA" disconnecting.
+2023-01-02 10:27:00.640 -05:00 [DBG] Connection id "0HMNCQM963UAA" stopped.
+2023-01-02 10:27:00.640 -05:00 [DBG] Connection id "0HMNCQM963UAA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 10:27:00.645 -05:00 [DBG] Connection id "0HMNCQM963UAB" accepted.
+2023-01-02 10:27:00.669 -05:00 [DBG] Connection id "0HMNCQM963UAB" started.
+2023-01-02 10:27:00.681 -05:00 [DBG] Connection 0HMNCQM963UAB established using the following protocol: "Tls12"
+2023-01-02 10:27:00.682 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - -
+2023-01-02 10:27:00.683 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-02 10:27:00.683 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-02 10:27:00.683 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-02 10:27:00.683 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 10:27:00.686 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 10:27:00.688 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-02 10:27:00.688 -05:00 [INF] CORS policy execution successful.
+2023-01-02 10:27:00.689 -05:00 [DBG] The request is a preflight request.
+2023-01-02 10:27:00.690 -05:00 [DBG] Connection id "0HMNCQM963UAB" completed keep alive response.
+2023-01-02 10:27:00.690 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/authentication/authenticate - - - 204 - - 7.3710ms
+2023-01-02 10:27:00.691 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 52
+2023-01-02 10:27:00.691 -05:00 [DBG] POST requests are not supported
+2023-01-02 10:27:00.691 -05:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2023-01-02 10:27:00.691 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2023-01-02 10:27:00.691 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 10:27:00.691 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 10:27:00.692 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-02 10:27:00.692 -05:00 [INF] CORS policy execution successful.
+2023-01-02 10:27:00.692 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 10:27:00.692 -05:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Authenticate(AuthenticationRequestBody) on controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API).
+2023-01-02 10:27:00.692 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 10:27:00.692 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 10:27:00.692 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 10:27:00.692 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 10:27:00.692 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 10:27:00.692 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 10:27:00.694 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.AuthenticationController (Plants.info.API)
+2023-01-02 10:27:00.694 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 10:27:00.694 -05:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2023-01-02 10:27:00.694 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2023-01-02 10:27:00.694 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2023-01-02 10:27:00.694 -05:00 [DBG] Connection id "0HMNCQM963UAB", Request id "0HMNCQM963UAB:00000002": started reading request body.
+2023-01-02 10:27:00.695 -05:00 [DBG] Connection id "0HMNCQM963UAB", Request id "0HMNCQM963UAB:00000002": done reading request body.
+2023-01-02 10:27:00.695 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 10:27:00.695 -05:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 10:27:00.695 -05:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2023-01-02 10:27:00.695 -05:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'Plants.info.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2023-01-02 10:27:00.843 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 10:27:00.843 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 10:27:00.843 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 10:27:00.843 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 10:27:00.843 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-02 10:27:00.843 -05:00 [INF] Executing OkObjectResult, writing value of type 'Plants.info.API.Controllers.AuthenticationController+AuthResponseBody'.
+2023-01-02 10:27:00.844 -05:00 [INF] Executed action Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API) in 151.5956ms
+2023-01-02 10:27:00.844 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.AuthenticationController.Authenticate (Plants.info.API)'
+2023-01-02 10:27:00.844 -05:00 [DBG] Connection id "0HMNCQM963UAB" completed keep alive response.
+2023-01-02 10:27:00.844 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7235/api/authentication/authenticate application/json 52 - 200 343 application/json;+charset=utf-8 153.1283ms
+2023-01-02 10:27:00.893 -05:00 [DBG] Connection id "0HMNCQM963UAC" accepted.
+2023-01-02 10:27:00.893 -05:00 [DBG] Connection id "0HMNCQM963UAC" started.
+2023-01-02 10:27:00.913 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-01-02 10:27:00.914 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 10:27:00.914 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-01-02 10:27:00.914 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 0.8861ms
+2023-01-02 10:27:00.915 -05:00 [DBG] Connection id "0HMNCQM963UAC" disconnecting.
+2023-01-02 10:27:00.915 -05:00 [DBG] Connection id "0HMNCQM963UAC" stopped.
+2023-01-02 10:27:00.916 -05:00 [DBG] Connection id "0HMNCQM963UAC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 10:27:00.922 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-01-02 10:27:00.922 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-02 10:27:00.922 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 10:27:00.922 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-01-02 10:27:00.922 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 10:27:00.923 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-02 10:27:00.923 -05:00 [INF] CORS policy execution successful.
+2023-01-02 10:27:00.923 -05:00 [DBG] The request is a preflight request.
+2023-01-02 10:27:00.923 -05:00 [DBG] Connection id "0HMNCQM963UAB" completed keep alive response.
+2023-01-02 10:27:00.923 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 0.8561ms
+2023-01-02 10:27:00.924 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 10:27:00.924 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 10:27:00.925 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 10:27:00.925 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 10:27:00.925 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 10:27:00.925 -05:00 [DBG] Successfully validated the token.
+2023-01-02 10:27:00.926 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-01-02 10:27:00.926 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-02 10:27:00.926 -05:00 [INF] CORS policy execution successful.
+2023-01-02 10:27:00.928 -05:00 [DBG] Authorization was successful.
+2023-01-02 10:27:00.928 -05:00 [INF] Executing endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 10:27:00.928 -05:00 [INF] Route matched with {action = "GetPlantsById", controller = "Plants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Plants.info.API.Models.Plant]]] GetPlantsByIdAsync(Int32, System.String, System.String, Int32, Int32) on controller Plants.info.API.Controllers.PlantsController (Plants.info.API).
+2023-01-02 10:27:00.928 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-02 10:27:00.928 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-02 10:27:00.928 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-02 10:27:00.929 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-02 10:27:00.929 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-02 10:27:00.929 -05:00 [DBG] Executing controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 10:27:00.929 -05:00 [DBG] Executed controller factory for controller Plants.info.API.Controllers.PlantsController (Plants.info.API)
+2023-01-02 10:27:00.929 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' ...
+2023-01-02 10:27:00.929 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.Int32' using the name 'userId' in request data ...
+2023-01-02 10:27:00.929 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 10:27:00.929 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.Int32'.
+2023-01-02 10:27:00.929 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.Int32' ...
+2023-01-02 10:27:00.929 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.Int32'.
+2023-01-02 10:27:00.929 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2023-01-02 10:27:00.929 -05:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2023-01-02 10:27:00.930 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2023-01-02 10:27:00.930 -05:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' ...
+2023-01-02 10:27:00.930 -05:00 [DBG] Attempting to bind parameter 'queryString' of type 'System.String' using the name '' in request data ...
+2023-01-02 10:27:00.930 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'queryString' of type 'System.String'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Done attempting to bind parameter 'queryString' of type 'System.String'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Attempting to validate the bound parameter 'queryString' of type 'System.String' ...
+2023-01-02 10:27:00.930 -05:00 [DBG] Done attempting to validate the bound parameter 'queryString' of type 'System.String'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 10:27:00.930 -05:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 10:27:00.930 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2023-01-02 10:27:00.930 -05:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2023-01-02 10:27:00.930 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 10:27:00.930 -05:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2023-01-02 10:27:00.930 -05:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 10:27:00.931 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 10:27:00.931 -05:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 10:27:00.931 -05:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2023-01-02 10:27:00.931 -05:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2023-01-02 10:27:04.471 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-02 10:27:04.471 -05:00 [DBG] No information found on request to perform content negotiation.
+2023-01-02 10:27:04.471 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-01-02 10:27:04.471 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-01-02 10:27:04.471 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-02 10:27:04.471 -05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Plants.info.API.Models.Plant, Plants.info.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-02 10:27:04.472 -05:00 [INF] Executed action Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API) in 3543.2855ms
+2023-01-02 10:27:04.472 -05:00 [INF] Executed endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 10:27:04.473 -05:00 [DBG] Connection id "0HMNCQM963UAB" completed keep alive response.
+2023-01-02 10:27:04.473 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 200 430 application/json;+charset=utf-8 3548.4037ms
+2023-01-02 10:30:29.298 -05:00 [DBG] Connection id "0HMNCQM963UA6" received FIN.
+2023-01-02 10:30:29.303 -05:00 [DBG] Connection id "0HMNCQM963UA6" disconnecting.
+2023-01-02 10:30:29.303 -05:00 [DBG] Connection id "0HMNCQM963UA6" sending FIN because: "The client closed the connection."
+2023-01-02 10:30:29.309 -05:00 [DBG] Connection id "0HMNCQM963UA6" stopped.
+2023-01-02 10:32:06.585 -05:00 [DBG] Connection id "0HMNCQM963UAB" received FIN.
+2023-01-02 10:32:06.585 -05:00 [DBG] Connection id "0HMNCQM963UAB" sending FIN because: "The client closed the connection."
+2023-01-02 10:32:06.585 -05:00 [DBG] Connection id "0HMNCQM963UAB" disconnecting.
+2023-01-02 10:32:06.586 -05:00 [DBG] Connection id "0HMNCQM963UAB" stopped.
+2023-01-02 13:12:26.195 -05:00 [DBG] Connection id "0HMNCQM963UAD" accepted.
+2023-01-02 13:12:26.196 -05:00 [DBG] Connection id "0HMNCQM963UAD" started.
+2023-01-02 13:12:26.245 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:4200/api/users/1/plants - -
+2023-01-02 13:12:26.245 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 13:12:26.245 -05:00 [DBG] Redirecting to 'https://localhost:7235/api/users/1/plants'.
+2023-01-02 13:12:26.245 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:4200/api/users/1/plants - - - 307 0 - 23.4341ms
+2023-01-02 13:12:26.245 -05:00 [DBG] Connection id "0HMNCQM963UAD" disconnecting.
+2023-01-02 13:12:26.245 -05:00 [DBG] Connection id "0HMNCQM963UAD" stopped.
+2023-01-02 13:12:26.246 -05:00 [DBG] Connection id "0HMNCQM963UAD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-02 13:12:26.318 -05:00 [DBG] Connection id "0HMNCQM963UAE" accepted.
+2023-01-02 13:12:26.318 -05:00 [DBG] Connection id "0HMNCQM963UAE" started.
+2023-01-02 13:12:26.359 -05:00 [DBG] Connection 0HMNCQM963UAE established using the following protocol: "Tls12"
+2023-01-02 13:12:26.359 -05:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - -
+2023-01-02 13:12:26.359 -05:00 [DBG] OPTIONS requests are not supported
+2023-01-02 13:12:26.360 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 13:12:26.360 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-01-02 13:12:26.361 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-02 13:12:26.361 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-02 13:12:26.361 -05:00 [INF] CORS policy execution successful.
+2023-01-02 13:12:26.361 -05:00 [DBG] The request is a preflight request.
+2023-01-02 13:12:26.361 -05:00 [DBG] Connection id "0HMNCQM963UAE" completed keep alive response.
+2023-01-02 13:12:26.361 -05:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7235/api/users/1/plants - - - 204 - - 1.8683ms
+2023-01-02 13:12:26.363 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7235/api/users/1/plants - -
+2023-01-02 13:12:26.363 -05:00 [DBG] The request path  does not match the path filter
+2023-01-02 13:12:26.363 -05:00 [DBG] 1 candidate(s) found for the request path '/api/users/1/plants'
+2023-01-02 13:12:26.363 -05:00 [DBG] Endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)' with route pattern 'api/users/{userId}/plants' is valid for the request path '/api/users/1/plants'
+2023-01-02 13:12:26.363 -05:00 [DBG] Request matched endpoint 'Plants.info.API.Controllers.PlantsController.GetPlantsByIdAsync (Plants.info.API)'
+2023-01-02 13:12:26.373 -05:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 3:32:00 PM', Current time: '1/2/2023 6:12:26 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-01-02 13:12:26.380 -05:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '1/2/2023 3:32:00 PM', Current time: '1/2/2023 6:12:26 PM'.
+2023-01-02 13:12:26.380 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2023-01-02 13:12:26.380 -05:00 [INF] CORS policy execution successful.
+2023-01-02 13:12:26.384 -05:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-02 13:12:26.390 -05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-01-02 13:12:26.390 -05:00 [DBG] Connection id "0HMNCQM963UAE" completed keep alive response.
+2023-01-02 13:12:26.390 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7235/api/users/1/plants - - - 401 0 - 27.6899ms
+2023-01-02 13:17:29.542 -05:00 [DBG] Connection id "0HMNCQM963UAE" received FIN.
+2023-01-02 13:17:29.573 -05:00 [DBG] Connection id "0HMNCQM963UAE" sending FIN because: "The client closed the connection."
+2023-01-02 13:17:29.594 -05:00 [DBG] Connection id "0HMNCQM963UAE" disconnecting.
+2023-01-02 13:17:29.595 -05:00 [DBG] Connection id "0HMNCQM963UAE" stopped.

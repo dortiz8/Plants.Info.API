@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  plants.info.api:
+    image: ${DOCKER_REGISTRY-}plantsinfo
+    build:
+      context: .
+      dockerfile: ./Dockerfile

@@ -1,4 +1,5 @@
 ﻿using Plants.info.API.Data.Contexts;
+using Plants.info.API.Data.Models;
 using Plants.info.API.Models;
 using System.Text.Json;
 
@@ -37,11 +38,15 @@ namespace Plants.info.API.Data
                     _ctx.Plants.AddRange(samplePlants);
                 }
 
-                var sampleUser = new User(); 
-                sampleUser.UserName = "dortiz";
-                //sampleUser.Id = 1; 
-                sampleUser.PlantList = new List<Plant>((IEnumerable<Plant>)samplePlants); 
-               
+                var sampleUser = new PlantInfoUser();
+                
+                sampleUser.UserName = "dortiz8";
+                sampleUser.Password = "RandomPassWord12";
+                sampleUser.Email = "dort08@gmail.com";
+                sampleUser.CreatedDate = DateTime.Now; 
+                sampleUser.PlantList = new List<Plant>((IEnumerable<Plant>)samplePlants);
+
+                Console.WriteLine(samplePlants); 
                 _ctx.Users.Add(sampleUser);
                 _ctx.SaveChanges(); 
             }

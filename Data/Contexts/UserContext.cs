@@ -13,7 +13,7 @@ namespace Plants.info.API.Data.Contexts
         }
 
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<PlantInfoUser> Users { get; set; }
         public DbSet<Plant> Plants { get; set; }
 
         // Configure the context to a specific database = UserDb

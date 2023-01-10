@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Serilog;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Plants.info.API.Data.Services.JwtFeatures;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
@@ -20,8 +23,39 @@ var connectionString = builder.Configuration.GetConnectionString("UserContextDb"
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-builder.Services.AddTransient<UserSeeder>(); 
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddTransient<UserSeeder>(); // new instance is created per request
+builder.Services.AddScoped<IUserRepository, UserRepository>(); // one instance per request
+
+// Authentication services 
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new()
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Authentication:Issuer"],
+            ValidAudience = builder.Configuration["Authentication:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration["Authentication:SecretForKey"]))
+        };
+    });
+
+// Authentication policies
+builder.Services.AddAuthorization(options =>
+{
+    //options.AddPolicy("IdsMustMatch", policy =>
+    //{
+    //    policy.RequireAuthenticatedUser();
+    //    policy.RequireClaim("userId", "1");
+    //});
+    options.AddPolicy("RoleMustBeAdmin", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.RequireClaim("access_role", "9");
+    }); 
+});
 
 #if DEBUG
     builder.Services.AddScoped<IPlantsRepository, PlantsRepository>();
@@ -31,7 +65,10 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddCors(option =>
 {
     option.AddPolicy("CorsPolicy",
-        builder => builder.WithOrigins("*")
+        builder => builder.WithOrigins("http://localhost:4200")
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowCredentials()
         ); 
 }); 
 
@@ -43,12 +80,14 @@ builder.Services.AddControllers( options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<FileExtensionContentTypeProvider>(); 
-builder.Services.AddDbContext<UserContext>(options => options.UseSqlServer(connectionString)); 
+builder.Services.AddDbContext<UserContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddScoped<IJwtHandler, JwtHandler>(); 
 // Once all services are built and configured, then the web app can be built. 
 var app = builder.Build();
 
 if (args.Length == 1 && args[0].ToLower() == "/seed")
-    RunSeeding(app);
+    //if (args.Length == 0)
+        RunSeeding(app);
 
 void RunSeeding(IHost app)
 {
@@ -72,7 +111,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 // Enable enpoint routing 
 app.UseRouting(); 
-app.UseCors("CorsPolicy"); 
+app.UseAuthentication(); 
+app.UseCors("CorsPolicy");
 app.UseAuthorization();
 
 

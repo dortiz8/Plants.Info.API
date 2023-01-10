@@ -30,6 +30,12 @@ namespace Plants.info.API.Data.Repository
             }
         }
 
+        public async Task<bool> DoesPlantExists(int userId, string name, string genus)
+        {
+            var count = await _ctx.Plants.CountAsync(x => x.UserId == userId && x.Name == name && x.Genus == genus);
+            return (count > 0); 
+        }
+
         public async Task<IEnumerable<Plant>> GetAllPlantsAsync()
         {
             return await _ctx.Plants.OrderBy(x => x.UserId).ToListAsync();
@@ -44,7 +50,10 @@ namespace Plants.info.API.Data.Repository
             //{
             //    return await GetPlantsByIdAsync(userId);
             //}
-            var collection = _ctx.Plants as IQueryable<Plant>; 
+            var collection = _ctx.Plants as IQueryable<Plant>;
+             collection = collection.Where(x => x.UserId == userId);
+
+            // Unsure as to what this line is looking for? 
             if (!string.IsNullOrWhiteSpace(name))
             {
                 name = name.Trim();

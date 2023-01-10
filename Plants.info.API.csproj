@@ -1,9 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <DockerComposeProjectPath>docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>9af719e2-9ef2-4c6b-8cec-ed57f765f0a8</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,12 +20,22 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <None Remove="Data\Services\JwtFeatures\" />
+    <None Remove="Migrations\" />
+  </ItemGroup>
   <ItemGroup>
     <None Update="Data\Files\sampleFile.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Services\JwtFeatures\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
 </Project>
