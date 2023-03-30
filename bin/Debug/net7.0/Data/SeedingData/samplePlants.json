@@ -1,7 +1,9 @@
 [
   {
     "Name": "Pink Princess",
-    "Genus": "Philodendron",
+    "Genus": {
+      "Name": "Philodendron"
+    },
     "DateAdded": "2022-05-11T00:00:00",
     "DateWatered": "2022-03-11T00:00:00",
     "DateFertilized": "2022-02-11T00:00:00",
@@ -11,12 +13,14 @@
   },
   {
     "Name": "Monstera Albo",
-    "Genus": "Monstera",
-    "DateAdded": "2022-03-11T00:00:00",
-    "DateWatered": "2022-03-11T00:00:00",
-    "DateFertilized": "2022-01-11T00:00:00",
-    "WaterInterval": 10,
-    "FertilizeInterval": 20,
-    "UserId": 1
-  }
+    "Genus": {
+      "Name": "Monstera"
+    },
+      "DateAdded": "2022-03-11T00:00:00",
+      "DateWatered": "2022-03-11T00:00:00",
+      "DateFertilized": "2022-01-11T00:00:00",
+      "WaterInterval": 10,
+      "FertilizeInterval": 20,
+      "UserId": 1
+    }
 ]

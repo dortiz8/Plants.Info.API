@@ -8,6 +8,7 @@ using Serilog;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Plants.info.API.Data.Services.JwtFeatures;
+using Plants.info.API.Data.Services;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
@@ -25,6 +26,7 @@ var connectionString = builder.Configuration.GetConnectionString("UserContextDb"
 
 builder.Services.AddTransient<UserSeeder>(); // new instance is created per request
 builder.Services.AddScoped<IUserRepository, UserRepository>(); // one instance per request
+builder.Services.AddScoped<IMenusRepository, MenusRepository>(); // one instance per request
 
 // Authentication services 
 builder.Services.AddAuthentication("Bearer")

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Plants.info.API.Data.Contexts;
+using Plants.info.API.Data.Models;
 using Plants.info.API.Data.Services;
 using Plants.info.API.Models;
 
@@ -30,11 +31,12 @@ namespace Plants.info.API.Data.Repository
             }
         }
 
-        public async Task<bool> DoesPlantExists(int userId, string name, string genus)
+        public async Task<bool> DoesPlantExists(int userId, string name, int genus)
         {
-            var count = await _ctx.Plants.CountAsync(x => x.UserId == userId && x.Name == name && x.Genus == genus);
+            var count = await _ctx.Plants.CountAsync(x => x.UserId == userId && x.Name == name && x.GenusId == genus);
             return (count > 0); 
         }
+
 
         public async Task<IEnumerable<Plant>> GetAllPlantsAsync()
         {
@@ -62,7 +64,8 @@ namespace Plants.info.API.Data.Repository
             if (!string.IsNullOrWhiteSpace(queryString))
             {
                 queryString = queryString.Trim();
-                collection = collection.Where(x => (x.UserId == userId) && (x.Name.Contains(queryString) || (x.Genus != null && x.Genus.Contains(queryString))));
+                // Figure how to filter by Genus
+                //collection = collection.Where(x => (x.UserId == userId) && (x.Name.Contains(queryString) || (x.Genus != null && x.Genus.Contains(queryString))));
             }
 
             // Begin constructing Pagination metadata
@@ -84,9 +87,39 @@ namespace Plants.info.API.Data.Repository
             return (await _ctx.SaveChangesAsync() >= 0);
         }
 
-        //public async Task UpdatePlantAsync(Plant plantObject)
-        //{
-        //    return await _ctx.Plants.Update(plantObject);
-        //}
+        public async Task<(IEnumerable<PlantNote>, PaginationMetadata)> GetPlantNotesAsync(int userId, int plantId, int pageNumber, int pageSize)
+        {
+            var collection = _ctx.PlantNotes as IQueryable<PlantNote>;
+            collection = collection.Where(x => x.UserId == userId && x.PlantId == plantId);
+
+            // Pagination
+            var paginationTotalItemCount = await collection.CountAsync();
+            var paginationMetadata = new PaginationMetadata(paginationTotalItemCount, pageSize, pageNumber);
+            //Filtering
+            var collectionToReturn = await collection.OrderBy(x => x.DateEdited).Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToListAsync(); // Wait until paging because we want to apply it on the filtered and searched data.
+
+            return (collectionToReturn, paginationMetadata);
+        }
+
+        public async Task DeletePlantNoteAsync(int userId, int plantId, int noteId)
+        {
+            var noteToRemove = await _ctx.PlantNotes.Where(x => x.UserId == userId && x.PlantId == plantId && x.Id == noteId).FirstOrDefaultAsync();
+
+            if(noteToRemove != null)
+            {
+                _ctx.PlantNotes.Remove((PlantNote)noteToRemove); 
+            }
+            
+        }
+
+        public async Task CreatePlantNoteAsync(PlantNote plantNoteObject)
+        {
+            await _ctx.PlantNotes.AddAsync(plantNoteObject);
+        }
+
+        public async Task<PlantNote?> GetSinglePlantNoteAsync(int userId, int plantId, int noteId)
+        {
+           return await _ctx.PlantNotes.Where(x => x.UserId == userId && x.PlantId == plantId && x.Id == noteId).FirstOrDefaultAsync();
+        }
     }
 }

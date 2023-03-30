@@ -32,7 +32,7 @@ namespace Plants.info.API.Controllers
 
         [HttpPost]
         [Route("refresh")]
-        public async Task<ActionResult<string>> Refresh(RefreshTokenRequestBody refreshTokenRequestBody)
+        public async Task<ActionResult<string>> Refresh([FromBody] RefreshTokenRequestBody refreshTokenRequestBody)
 		{
 			var oldAccessToken = refreshTokenRequestBody.Token;
 			var refreshToken = refreshTokenRequestBody.RefreshToken;
@@ -57,7 +57,7 @@ namespace Plants.info.API.Controllers
 			user.RefreshToken = newRefreshToken;
 			await _userRepo.SaveAllChangesAsync();
 
-			return Ok(new AuthResponseBody { Token = newAccessToken, RefreshToken = newRefreshToken, IsAuthSuccessful = true }); 
+			return Ok(new AuthResponseBody { Token = newAccessToken, RefreshToken = newRefreshToken, IsAuthSuccessful = true, UserId = user.Id }); 
 		}
 
 		[HttpPost, Authorize]

@@ -9,6 +9,8 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Plants.info.API.Data.Services;
 
 namespace Plants.info.API.Controllers
 {
@@ -20,12 +22,14 @@ namespace Plants.info.API.Controllers
         private readonly IPlantsRepository _repo;
         private readonly IUserRepository _userRepo;
         private readonly ILogger<PlantsController> _log;
+        private readonly IMenusRepository _menusRepository;
         const int maxPageSizeForPlants = 20; 
-        public PlantsController(IPlantsRepository repo, IUserRepository userRepo, ILogger<PlantsController> logger)
+        public PlantsController(IPlantsRepository repo, IUserRepository userRepo, ILogger<PlantsController> logger, IMenusRepository menusRepository)
         {
             _repo = repo;
             _userRepo = userRepo;
             _log = logger ?? throw new ArgumentNullException(nameof(logger)); // Null check in case the container changes and it returns a null value
+            _menusRepository = menusRepository;
         }
 
 
@@ -64,8 +68,10 @@ namespace Plants.info.API.Controllers
             }
         }
 
+       
+
         [HttpGet("{plantId}", Name = "GetPlantById")] // Name the method to easily refer to it when calling into CreatedAtRoute. 
-        public async Task<ActionResult<Plant>> GetPlantByIdAsync(int userId, int plantId) // Make sure parameter names match when dealing with multiple parameters. 
+        public async Task<ActionResult<Plant>> GetPlantByIdAsync(int userId, int plantId, [FromQuery] bool info = false) // Make sure parameter names match when dealing with multiple parameters. 
         {
             try
             {
@@ -76,6 +82,25 @@ namespace Plants.info.API.Controllers
                 if (!user) return NotFound();
                 var plant = await _repo.GetSinglePlantByIdAsync(userId, plantId);
                 if (plant == null) return NotFound();
+
+                if (info)
+                {
+                    var genusName = await _menusRepository.getGenusById(plant.GenusId); 
+                    var plantInfo = new PlantInfo()
+                    {
+                        Id = plant.Id,
+                        Name = plant.Name,
+                        GenusId = plant.GenusId,
+                        GenusName = genusName != null ? genusName.Name : "", 
+                        DateAdded = DateTime.Now,
+                        DateWatered = Convert.ToDateTime(plant.DateWatered),
+                        DateFertilized = Convert.ToDateTime(plant.DateFertilized),
+                        WaterInterval = plant.WaterInterval,
+                        FertilizeInterval = plant.FertilizeInterval,
+                        UserId = userId,
+                    };
+                    return Ok(plantInfo); 
+                }
                 return Ok(plant);
             }
             catch (Exception ex)
@@ -103,13 +128,13 @@ namespace Plants.info.API.Controllers
                 if (!user) return NotFound();
 
                 // Verify if the plant already exists by checking the name and genus
-                if (await _repo.DoesPlantExists(userId, plantObject.Name, plantObject.Genus)) return Conflict(); 
+                if (await _repo.DoesPlantExists(userId, plantObject.Name, plantObject.GenusId)) return Conflict(); 
 
                 // Map our creation model to the real Plants model 
                 var finalPlant = new Plant()
                 {
                     Name = plantObject.Name,
-                    Genus = plantObject.Genus,
+                    GenusId = plantObject.GenusId,
                     DateAdded = DateTime.Now,
                     DateWatered = Convert.ToDateTime(plantObject.DateWatered),
                     DateFertilized = Convert.ToDateTime(plantObject.DateFertilized),
@@ -136,7 +161,7 @@ namespace Plants.info.API.Controllers
            
         }
         [HttpPut("{plantId}")]
-        public async Task<ActionResult> UpdatePlant(int userId, int plantId, [FromBody] PlantCreation plantObject) // Return type of ActionResult because nothing will be returned. 
+        public async Task<ActionResult> UpdatePlant(int userId, int plantId, [FromBody] PlantEdit plantObject) // Return type of ActionResult because nothing will be returned. 
         {
             try
             {
@@ -146,17 +171,29 @@ namespace Plants.info.API.Controllers
                 var user = await _userRepo.UserExistsAsync(userId); ;
                 if (!user) return NotFound();
 
-                var finalPlant = new Plant()
-                {
-                    Name = plantObject.Name,
-                    Genus = plantObject.Genus,
-                    DateAdded = DateTime.Now,
-                    DateWatered = plantObject.DateWatered,
-                    DateFertilized = plantObject.DateFertilized,
-                    WaterInterval = plantObject.WaterInterval,
-                    FertilizeInterval = plantObject.FertilizeInterval,
-                    UserId = userId,
-                };
+                var plant = await _repo.GetSinglePlantByIdAsync(userId, plantId);
+                if (plant == null) return NotFound();
+
+                plant.Name = plantObject.Name;
+                plant.GenusId = plantObject.GenusId;
+                plant.DateWatered = plantObject.DateWatered;
+                plant.DateFertilized = plantObject.DateFertilized;
+                plant.WaterInterval = plantObject.WaterInterval;
+                plant.FertilizeInterval = plantObject.FertilizeInterval;
+
+                //var finalPlant = new Plant()
+                //{
+                //    Name = plantObject.Name,
+                //    GenusId = plantObject.GenusId,
+                //    DateAdded = DateTime.Now,
+                //    DateWatered = plantObject.DateWatered,
+                //    DateFertilized = plantObject.DateFertilized,
+                //    WaterInterval = plantObject.WaterInterval,
+                //    FertilizeInterval = plantObject.FertilizeInterval,
+                //    UserId = userId,
+                //};
+
+                //plant = finalPlant; 
 
                 await _repo.SaveAllChangesAsync();
                 return NoContent();
@@ -170,7 +207,7 @@ namespace Plants.info.API.Controllers
         }
 
         [HttpPatch("{plantId}")]
-        public async  Task<ActionResult> PatchPlant(int userId, int plantId, [FromBody] JsonPatchDocument<PlantCreation> patchDocument) // Return type of ActionResult because nothing will be returned. 
+        public async  Task<ActionResult<Plant>> PatchPlant(int userId, int plantId, [FromBody] JsonPatchDocument<PlantCreation> patchDocument) // Return type of ActionResult because nothing will be returned. 
         {
             try
             {
@@ -188,8 +225,8 @@ namespace Plants.info.API.Controllers
                 var plantToPatch = new PlantCreation()
                 {
                     Name = plant.Name,
-                    Genus = plant.Genus,
-                    DateAdded = DateTime.Now,
+                    GenusId = plant.GenusId,
+                    DateAdded = plant.DateAdded,
                     DateWatered = plant.DateWatered,
                     DateFertilized = plant.DateFertilized,
                     WaterInterval = plant.WaterInterval,
@@ -202,7 +239,7 @@ namespace Plants.info.API.Controllers
                 if (!TryValidateModel(plantToPatch)) return BadRequest(ModelState); // Catches any validation errors applied to the patched object of type PlantCreation. 
 
                 plant.Name = plantToPatch.Name;
-                plant.Genus = plantToPatch.Genus;
+                plant.GenusId = plantToPatch.GenusId;
                 plant.DateAdded = plantToPatch.DateAdded;
                 plant.DateWatered = plantToPatch.DateWatered;
                 plant.DateFertilized = plantToPatch.DateFertilized;
@@ -212,7 +249,7 @@ namespace Plants.info.API.Controllers
 
                 await _repo.SaveAllChangesAsync();
 
-                return NoContent();
+                return plant;
             }
             catch (Exception ex)
             {
@@ -249,11 +286,188 @@ namespace Plants.info.API.Controllers
            
         }
 
+        [HttpGet("{plantId}/notes", Name = "GetPlantNotes")]
+        public async Task<ActionResult<IEnumerable<PlantNote>>> GetPlantNotes(int userId, int plantId, [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
+        {
+            try
+            {
+                if (IdsDoNotMatch(userId)) return Forbid();
+
+                var plant = await _repo.GetSinglePlantByIdAsync(userId, plantId);
+                if (plant == null) return NotFound();
+
+                // Default pagination
+                if (pageSize > maxPageSizeForPlants)
+                {
+                    pageSize = maxPageSizeForPlants;
+                }
+
+                if (!await _userRepo.UserExistsAsync(userId))
+                {
+                    _log.LogInformation($"The user with id {userId} was not found.");
+                    return NotFound();
+                }
+
+                var (plantNotes, paginationMetadata) = await _repo.GetPlantNotesAsync(userId, plantId, pageNumber, pageSize);
+
+                Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationMetadata));
+
+                return Ok(plantNotes);
+            }
+            catch (Exception ex)
+            {
+                _log.LogCritical($"Exception while getting plant notes for user id {userId} and plant id {plantId}", ex);
+                return StatusCode(500, "A problem occurred while handling your request");
+            }
+        }
+
+        [HttpGet("{plantId}/notes/{noteId}", Name = "GetPlantNoteById")]
+        public async Task<ActionResult<PlantNote>> GetPlantNoteById(int userId, int plantId, int noteId)
+        {
+            try
+            {
+                if (IdsDoNotMatch(userId)) return Forbid();
+
+                if (!await _userRepo.UserExistsAsync(userId))
+                {
+                    _log.LogInformation($"The user with id {userId} was not found.");
+                    return NotFound();
+                }
+
+                var plant = await _repo.GetSinglePlantByIdAsync(userId, plantId);
+                if (plant == null) return NotFound();
+
+                var plantNote = await _repo.GetSinglePlantNoteAsync(userId, plantId, noteId);
+                if (plantNote == null) return NotFound();
+
+                return Ok(plantNote);
+            }
+            catch (Exception ex)
+            {
+                _log.LogCritical($"Exception while getting plant note for user id {userId}, plant id {plantId}, and note id {noteId}", ex);
+                return StatusCode(500, "A problem occurred while handling your request");
+            }
+        }
+
+        [HttpDelete("{plantId}/notes/{noteId}", Name = "DeletePlantNote")]
+        public async Task<ActionResult> DeletePlantNote(int userId, int plantId, int noteId)
+        {
+            try
+            {
+                if (IdsDoNotMatch(userId)) return Forbid();
+
+                if (!await _userRepo.UserExistsAsync(userId))
+                {
+                    _log.LogInformation($"The user with id {userId} was not found.");
+                    return NotFound();
+                }
+
+                var plant = await _repo.GetSinglePlantByIdAsync(userId, plantId);
+                if (plant == null) return NotFound();
+
+                await _repo.DeletePlantNoteAsync(userId, plantId, noteId);
+
+                await _repo.SaveAllChangesAsync();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _log.LogCritical($"Exception while getting plant notes for user id {userId} and plant id {plantId}", ex);
+                return StatusCode(500, "A problem occurred while handling your request");
+            }
+        }
+
+        [HttpPost("{plantId}/notes", Name = "CreatePlantNote")]
+        public async Task<ActionResult<PlantNote>> CreatePlantNote(int userId, int plantId, [FromBody] PlantNoteCreation plantNoteObject)
+        {
+            try
+            {
+                if (IdsDoNotMatch(userId)) return Forbid();
+
+                if (!await _userRepo.UserExistsAsync(userId))
+                {
+                    _log.LogInformation($"The user with id {userId} was not found.");
+                    return NotFound();
+                }
+
+                var plant = await _repo.GetSinglePlantByIdAsync(userId, plantId);
+                if (plant == null) return NotFound();
+
+                var finalPlantNote = new PlantNote()
+                {
+                    UserId = userId,
+                    PlantId = plantId,
+                    Description = plantNoteObject.Description,
+                    DateAdded = DateTime.Now,
+                    DateEdited = null
+                }; 
+
+                await _repo.CreatePlantNoteAsync(finalPlantNote);
+                await _repo.SaveAllChangesAsync();
+
+                return CreatedAtRoute("GetPlantNoteById", new
+                {
+                    userId = userId,
+                    plantId = plantId,
+                    noteId = finalPlantNote.Id
+                },
+                finalPlantNote); // Returns a 201 Created status code if successful
+            }
+            catch (Exception ex)
+            {
+                _log.LogCritical($"Exception while getting plant notes for user id {userId} and plant id {plantId}", ex);
+                return StatusCode(500, "A problem occurred while handling your request");
+            }
+        }
+
         private Boolean IdsDoNotMatch(int userId)
         {
             var tokenUserId = User.Claims.FirstOrDefault(c => c.Type == "userId")?.Value;
 
             return (tokenUserId == null || (tokenUserId != null && userId != Int32.Parse(tokenUserId))); 
+        }
+
+        [HttpPatch("{plantId}/notes/{noteId}")]
+        public async Task<ActionResult<PlantNote>> PatchPlantNote(int userId, int plantId, int noteId, [FromBody] JsonPatchDocument<PlantNoteCreation> patchDocument) // Return type of ActionResult because nothing will be returned. 
+        {
+            try
+            {
+                // Verify user Id matches with the user Id specified in the token
+                if (IdsDoNotMatch(userId)) return Forbid(); // returns 403 code
+
+                var user = await _userRepo.UserExistsAsync(userId);
+                if (!user) return NotFound();
+
+                // Get the original plant note to patch
+                var plantNote = await _repo.GetSinglePlantNoteAsync(userId, plantId, noteId);
+                if (plantNote == null) return NotFound();
+
+                // Map it to a PlantCreation model
+                var plantNoteToPatch = new PlantNoteCreation()
+                {
+                    Description = plantNote.Description
+                };
+
+                patchDocument.ApplyTo(plantNoteToPatch, ModelState);
+
+                if (!ModelState.IsValid) return BadRequest(ModelState);
+                if (!TryValidateModel(plantNoteToPatch)) return BadRequest(ModelState); // Catches any validation errors applied to the patched object of type PlantCreation. 
+
+                plantNote.Description = plantNoteToPatch.Description;
+                plantNote.DateEdited = DateAndTime.Now; 
+
+
+                await _repo.SaveAllChangesAsync();
+
+                return plantNote;
+            }
+            catch (Exception ex)
+            {
+                _log.LogCritical($"Exception while getting plants for user id {userId}", ex);
+                return StatusCode(500, "A problem occurred while handling your request");
+            }
+
+
         }
     }
 }

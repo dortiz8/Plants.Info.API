@@ -1,4 +1,5 @@
-﻿using Plants.info.API.Data.Services;
+﻿using Plants.info.API.Data.Models;
+using Plants.info.API.Data.Services;
 using Plants.info.API.Models;
 
 namespace Plants.info.API.Data.Repository
@@ -14,6 +15,11 @@ namespace Plants.info.API.Data.Repository
         //Task UpdatePlantAsync(Plant plant); 
 
         Task DeletePlantAsync(int userId, int id);
-        Task<Boolean> DoesPlantExists(int userId, string name, string genus); 
+        Task<Boolean> DoesPlantExists(int userId, string name, int genus);
+        Task<(IEnumerable<PlantNote>, PaginationMetadata)> GetPlantNotesAsync(int userId, int plantId, int pageNumber, int pageSize);
+        Task<PlantNote?> GetSinglePlantNoteAsync(int userId, int plantId, int noteId);
+        Task DeletePlantNoteAsync(int userId, int plantId, int noteId);
+        Task CreatePlantNoteAsync(PlantNote plantNoteObject); 
+
     }
 }

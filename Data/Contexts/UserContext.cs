@@ -1,5 +1,6 @@
 ﻿using Plants.info.API.Models;
 using Microsoft.EntityFrameworkCore;
+using Plants.info.API.Data.Models;
 
 namespace Plants.info.API.Data.Contexts
 {
@@ -15,6 +16,8 @@ namespace Plants.info.API.Data.Contexts
 
         public DbSet<PlantInfoUser> Users { get; set; }
         public DbSet<Plant> Plants { get; set; }
+        public DbSet<Genus> Genus { get; set; }
+        public DbSet<PlantNote> PlantNotes { get; set; }
 
         // Configure the context to a specific database = UserDb
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

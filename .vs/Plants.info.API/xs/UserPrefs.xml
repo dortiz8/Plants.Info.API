@@ -1,13 +1,19 @@
 ﻿<Properties StartupConfiguration="{D0337BA2-FEDB-4F7C-93A6-B6385E687615}|Default">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AuthenticationController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API/Data/UserSeeder.cs" relfile="Data/UserSeeder.cs" line="49" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Plants.info.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PlantsController.cs">
     <Files>
-      <File FileName="Controllers/TokenController.cs" Line="35" Column="65" IsPinned="True" />
-      <File FileName="Controllers/AuthenticationController.cs" Line="85" Column="62" IsPinned="True" />
+      <File FileName="Controllers/TokenController.cs" Line="42" Column="1" IsPinned="True" />
+      <File FileName="Controllers/AuthenticationController.cs" Line="55" Column="22" IsPinned="True" />
       <File FileName="Data/Services/UserRepository.cs" />
       <File FileName="Controllers/UsersController.cs" />
       <File FileName="Data/Services/JwtFeatures/JwtHandler.cs" />
-      <File FileName="Controllers/PlantsController.cs" />
+      <File FileName="Controllers/PlantsController.cs" Line="69" Column="1" />
       <File FileName="Data/Services/PlantsRepository.cs" />
       <File FileName="appsettings.json" />
       <File FileName="Data/Services/IUserRepository.cs" />
@@ -15,47 +21,37 @@
       <File FileName="Data/Services/IDbActions.cs" />
       <File FileName="Data/Services/JwtFeatures/IJwtHandler.cs" />
       <File FileName="Program.cs" />
+      <File FileName="Controllers/FilesController.cs" />
+      <File FileName="appsettings.Production.json" />
+      <File FileName="appsettings.Development.json" />
+      <File FileName="Data/Models/Plant.cs" />
+      <File FileName="Data/Models/PlantCreation.cs" />
+      <File FileName="Data/Models/User.cs" />
+      <File FileName="Data/Models/UserCreation.cs" />
+      <File FileName="Data/Models/UserOnly.cs" />
+      <File FileName="Data/Models/Genus.cs" />
+      <File FileName="Data/SeedingData/samplePlants.json" />
+      <File FileName="Data/UserSeeder.cs" />
+      <File FileName="Data/Contexts/UserContext.cs" />
+      <File FileName="Data/Services/IMenusRepository.cs" />
+      <File FileName="Data/Services/MenusRepository.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Plants.info.API" expanded="True">
             <Node name="Plants.info.API" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="AuthenticationController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True">
-                <Node name="Services" expanded="True">
-                  <Node name="JwtFeatures" expanded="True" />
-                </Node>
+                <Node name="Contexts" expanded="True" />
+                <Node name="Models" expanded="True" />
+                <Node name="Services" expanded="True" />
               </Node>
-              <Node name="Migrations" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="Plants.info.API" expanded="True" />
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>User</Value>
-          <Value>collection</Value>
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Plants.info.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API/Data/UserSeeder.cs" relfile="Data/UserSeeder.cs" line="49" column="1" />
-      <Breakpoint file="/Users/dortiz/Desktop/Development/PersonalProjects/Plants.Info.API/Data/UserSeeder.cs" relfile="Data/UserSeeder.cs" line="25" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

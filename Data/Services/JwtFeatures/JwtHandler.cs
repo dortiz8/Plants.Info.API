@@ -67,8 +67,11 @@ namespace Plants.info.API.Data.Services.JwtFeatures
                 ValidateAudience = true,
                 ValidateIssuer = true,
                 ValidateIssuerSigningKey = true,
+                ValidateLifetime = false,
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Authentication:SecretForKey"])),
-                ValidateLifetime = false
+                ValidIssuer = _config["Authentication:Issuer"],
+                ValidAudience = _config["Authentication:Audience"]
+
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();

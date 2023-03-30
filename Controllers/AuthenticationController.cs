@@ -49,6 +49,7 @@ namespace Plants.info.API.Controllers
             public string? ErrorMessage { get; set; }
             public string? Token { get; set; }
             public string? RefreshToken { get; set; }
+            public int? UserId { get; set; }
         }
 
         public class RefreshTokenRequestBody
@@ -76,13 +77,13 @@ namespace Plants.info.API.Controllers
             var refreshToken = _jwtHandler.GenerateRefreshToken();
 
             user.RefreshToken = refreshToken;
-            user.RefreshTokenExiryTime = DateTime.Now.AddDays(7);
+            user.RefreshTokenExiryTime = DateTime.Now.AddDays(2);
 
             await _userRepo.SaveAllChangesAsync(); 
 
 
             // Return a response body with the token included
-            return Ok(new AuthResponseBody { IsAuthSuccessful = true, Token = token, RefreshToken = refreshToken }); 
+            return Ok(new AuthResponseBody { IsAuthSuccessful = true, Token = token, RefreshToken = refreshToken, UserId = user.Id }); 
 
         }
 
