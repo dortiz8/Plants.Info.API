@@ -64,10 +64,16 @@ namespace Plants.info.API.Controllers
         {
             // Step #1 Validate user credentials
             var user = await _userRepo.FindUserByUsernameAsync(authenticationRequestBody.UserName);
-            if(user == null || ValidateUserCreds(user, authenticationRequestBody.Password))
-            {
-                return Unauthorized(new AuthResponseBody { ErrorMessage = "Invalid Authentication" }); 
-            }
+
+            
+            if(user == null) return NotFound(new AuthResponseBody { ErrorMessage = "No account found" });
+
+            var psw1 = user.Password;
+            var psw2 = authenticationRequestBody.Password;
+            var valid = ValidateUserCreds(psw1, psw2); 
+
+            if (valid != 0) return Unauthorized(new AuthResponseBody { ErrorMessage = "Invalid credentials" }); 
+           
 
             // Step #2 & #3 create a security key and signing credentials
 
@@ -87,8 +93,8 @@ namespace Plants.info.API.Controllers
 
         }
 
-        private bool ValidateUserCreds(PlantInfoUser user, string? password) => (user.Password == password); 
-     
+        private int ValidateUserCreds(string? psw1, string? psw2) => psw1 != null ? String.Compare(psw1, psw2) : -1; 
+    
     }
 }
 

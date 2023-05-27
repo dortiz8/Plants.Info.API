@@ -92,7 +92,7 @@ namespace Plants.info.API.Controllers
                         Name = plant.Name,
                         GenusId = plant.GenusId,
                         GenusName = genusName != null ? genusName.Name : "", 
-                        DateAdded = DateTime.Now,
+                        DateAdded = plant.DateAdded,
                         DateWatered = Convert.ToDateTime(plant.DateWatered),
                         DateFertilized = Convert.ToDateTime(plant.DateFertilized),
                         WaterInterval = plant.WaterInterval,
@@ -238,6 +238,8 @@ namespace Plants.info.API.Controllers
                 if (!ModelState.IsValid) return BadRequest(ModelState);
                 if (!TryValidateModel(plantToPatch)) return BadRequest(ModelState); // Catches any validation errors applied to the patched object of type PlantCreation. 
 
+             
+
                 plant.Name = plantToPatch.Name;
                 plant.GenusId = plantToPatch.GenusId;
                 plant.DateAdded = plantToPatch.DateAdded;
@@ -249,7 +251,24 @@ namespace Plants.info.API.Controllers
 
                 await _repo.SaveAllChangesAsync();
 
-                return plant;
+                var genusName = await _menusRepository.getGenusById(plant.GenusId);
+
+
+                var plantInfo = new PlantInfo()
+                {
+                    Id = plant.Id,
+                    Name = plant.Name,
+                    GenusId = plant.GenusId,
+                    GenusName = genusName != null ? genusName.Name : "",
+                    DateAdded = plant.DateAdded,
+                    DateWatered = Convert.ToDateTime(plant.DateWatered),
+                    DateFertilized = Convert.ToDateTime(plant.DateFertilized),
+                    WaterInterval = plant.WaterInterval,
+                    FertilizeInterval = plant.FertilizeInterval,
+                    UserId = userId,
+                };
+
+                return plantInfo;
             }
             catch (Exception ex)
             {
@@ -468,6 +487,32 @@ namespace Plants.info.API.Controllers
             }
 
 
+        }
+
+        [HttpGet("stats")] 
+        public async Task<ActionResult<PlantsStats>> GetPlantsStatsByIdAsync(int userId)
+        {
+            try
+            {
+                // Verify user Id matches with the user Id specified in the token
+                if (IdsDoNotMatch(userId)) return Forbid(); // returns 403 code
+
+
+                if (!await _userRepo.UserExistsAsync(userId))
+                {
+                    _log.LogInformation($"The user with id {userId} was not found.");
+                    return NotFound();
+                }
+
+                var stats = await _repo.GetPlantsStatsByIdAsync(userId);
+               
+                return Ok(stats);
+            }
+            catch (Exception ex)
+            {
+                _log.LogCritical($"Exception while getting plants stats for user id {userId}", ex);
+                return StatusCode(500, "A problem occurred while handling your request");
+            }
         }
     }
 }

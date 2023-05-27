@@ -8,7 +8,8 @@ namespace Plants.info.API.Data.Repository
     {
         Task<IEnumerable<Plant>> GetAllPlantsAsync();
         Task<IEnumerable<Plant>> GetPlantsByIdAsync(int Id);
-        Task<(IEnumerable<Plant>, PaginationMetadata)> GetPlantsByIdAsync(int Id, string? name, string? queryString, int pageNumber, int pageSize); 
+        Task<(IEnumerable<Plant>, PaginationMetadata)> GetPlantsByIdAsync(int Id, string? name, string? queryString, int pageNumber, int pageSize);
+        Task<PlantsStats> GetPlantsStatsByIdAsync(int Id);
         Task<Plant?> GetSinglePlantByIdAsync(int userId, int Id);
 
         Task CreatePlantAsync(Plant plantObject);

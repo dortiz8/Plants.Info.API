@@ -74,7 +74,28 @@ namespace Plants.info.API.Data.Repository
 
             var collectionToReturn = await collection.OrderBy(x => x.Name).Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToListAsync(); // Wait until paging because we want to apply it on the filtered and searched data.
             return (collectionToReturn, paginationMetadata); 
-           
+        }
+
+        public async Task<PlantsStats> GetPlantsStatsByIdAsync(int userId)
+        {
+            var collection = _ctx.Plants as IQueryable<Plant>;
+            collection = collection.Where(x => x.UserId == userId);
+
+            var plantsStats = new PlantsStats() { };
+
+            if(collection != null)
+            {
+                plantsStats.totalPlants = await collection.CountAsync();
+                plantsStats.totalPlantsThatNeedWatering = await _ctx.Plants.FromSqlInterpolated($"SELECT * FROM dbo.Plants p WHERE p.UserId = {userId} AND DATEDIFF(day, p.DateWatered, GETDATE()) > p.WaterInterval")
+                    .CountAsync();
+                plantsStats.totalPlantsThatNeedFertilizing = await _ctx.Plants.FromSqlInterpolated($"SELECT * FROM dbo.Plants p WHERE p.UserId = {userId} AND DATEDIFF(day, p.DateFertilized, GETDATE()) > p.FertilizeInterval")
+                    .CountAsync();
+                plantsStats.genusList = await _ctx.GenusStat.FromSqlInterpolated($"SELECT DISTINCT GenusId AS genusId, g.Name AS genusName, (SELECT COUNT(*) from dbo.Plants o WHERE GenusId = p.GenusId AND o.UserId = {userId}) AS total FROM dbo.Plants p INNER JOIN dbo.Genus g ON g.Id = p.GenusId WHERE UserId = {userId}")
+                    .ToListAsync(); 
+            }
+
+           // Wait until paging because we want to apply it on the filtered and searched data.
+            return plantsStats;
         }
 
         public async Task<Plant?> GetSinglePlantByIdAsync(int userId, int Id)
