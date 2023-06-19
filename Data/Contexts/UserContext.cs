@@ -19,6 +19,7 @@ namespace Plants.info.API.Data.Contexts
         public DbSet<Genus> Genus { get; set; }
         public DbSet<PlantNote> PlantNotes { get; set; }
         public DbSet<GenusStat> GenusStat { get; set; }
+        public DbSet<PlantImage> PlantImage { get; set; }
 
         // Configure the context to a specific database = UserDb
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

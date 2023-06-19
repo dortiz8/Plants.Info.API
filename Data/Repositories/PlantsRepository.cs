@@ -142,5 +142,16 @@ namespace Plants.info.API.Data.Repository
         {
            return await _ctx.PlantNotes.Where(x => x.UserId == userId && x.PlantId == plantId && x.Id == noteId).FirstOrDefaultAsync();
         }
+
+        public async Task<PlantImage?> GetPlantImage(int userId, int plantId)
+        {
+            return await _ctx.PlantImage.Where(x => x.UserId == userId && x.PlantId == plantId).FirstOrDefaultAsync(); 
+        }
+
+        public async Task CreatePlantImageAsync(PlantImage plantImage)
+        {
+            await _ctx.PlantImage.AddAsync(plantImage); 
+        }
+
     }
 }

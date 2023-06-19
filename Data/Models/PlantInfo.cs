@@ -7,6 +7,7 @@ namespace Plants.info.API.Data.Models
 	public class PlantInfo : Plant 
 	{
         public string GenusName { get; set; }
+        public PlantImage? Image { get; set; }
     }
 }
 

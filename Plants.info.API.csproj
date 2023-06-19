@@ -27,6 +27,15 @@
     <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
     <None Remove="Data\Services\JwtFeatures\" />
     <None Remove="Migrations\" />
+    <None Remove="Data\Repositories\" />
+    <None Remove="Data\Repositories\Interfaces\" />
+    <None Remove="Data\Services\DataSeeder\" />
+    <None Remove="Data\Services\PlantServices\" />
+    <None Remove="Data\Services\PlantServices\Interfaces\" />
+    <None Remove="Data\Services\Extensions\" />
+    <None Remove="Data\Services\UserService\Interfaces\" />
+    <None Remove="Data\Services\JwtFeatures\Interfaces\" />
+    <None Remove="Data\Services\Utils\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Data\Files\sampleFile.txt">
@@ -37,5 +46,14 @@
   <ItemGroup>
     <Folder Include="Data\Services\JwtFeatures\" />
     <Folder Include="Migrations\" />
+    <Folder Include="Data\Repositories\" />
+    <Folder Include="Data\Repositories\Interfaces\" />
+    <Folder Include="Data\Services\DataSeeder\" />
+    <Folder Include="Data\Services\PlantServices\" />
+    <Folder Include="Data\Services\PlantServices\Interfaces\" />
+    <Folder Include="Data\Services\Extensions\" />
+    <Folder Include="Data\Services\UserServices\Interfaces\" />
+    <Folder Include="Data\Services\JwtFeatures\Interfaces\" />
+    <Folder Include="Data\Services\Utils\" />
   </ItemGroup>
 </Project>

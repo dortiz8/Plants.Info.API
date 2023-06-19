@@ -20,7 +20,10 @@ namespace Plants.info.API.Data.Repository
         Task<(IEnumerable<PlantNote>, PaginationMetadata)> GetPlantNotesAsync(int userId, int plantId, int pageNumber, int pageSize);
         Task<PlantNote?> GetSinglePlantNoteAsync(int userId, int plantId, int noteId);
         Task DeletePlantNoteAsync(int userId, int plantId, int noteId);
-        Task CreatePlantNoteAsync(PlantNote plantNoteObject); 
+        Task CreatePlantNoteAsync(PlantNote plantNoteObject);
+
+        Task<PlantImage?> GetPlantImage(int userId, int plantId);
+        Task CreatePlantImageAsync(PlantImage plantImage); 
 
     }
 }

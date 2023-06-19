@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Plants.info.API.Data.Services.JwtFeatures;
 using Plants.info.API.Data.Services;
+using Plants.info.API.Data.Services.Extensions;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
@@ -81,9 +82,11 @@ builder.Services.AddControllers( options =>
     .AddXmlDataContractSerializerFormatters(); // Adds support for returning XML
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.MyServicesGroup(); 
 builder.Services.AddSingleton<FileExtensionContentTypeProvider>(); 
 builder.Services.AddDbContext<UserContext>(options => options.UseSqlServer(connectionString));
-builder.Services.AddScoped<IJwtHandler, JwtHandler>(); 
+//builder.Services.AddScoped<IJwtHandler, JwtHandler>(); 
 // Once all services are built and configured, then the web app can be built. 
 var app = builder.Build();
 

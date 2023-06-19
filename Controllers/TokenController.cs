@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Authorization;
 using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
 using static Plants.info.API.Controllers.AuthenticationController;
+using Plants.info.API.Data.Services.UserServices;
 
 namespace Plants.info.API.Controllers
 {
@@ -20,13 +21,13 @@ namespace Plants.info.API.Controllers
 	public class TokenController: Controller
 	{
         private readonly IConfiguration _config;
-        private readonly IUserRepository _userRepo;
+        private readonly IUserService _userService;
         public IJwtHandler _jwtHandler { get; }
 
-        public TokenController(IConfiguration configuration, IUserRepository userRepository, IJwtHandler jwtHandler)
+        public TokenController(IConfiguration configuration, IUserService userService, IJwtHandler jwtHandler)
 		{
 			_config = configuration;
-			_userRepo = userRepository;
+			_userService = userService;
 			_jwtHandler = jwtHandler;
 		}
 
@@ -44,7 +45,7 @@ namespace Plants.info.API.Controllers
 
 			if (userId == null) return BadRequest("Invalid client Id");
 
-			var user = await _userRepo.GetUserByIdAsync(Int32.Parse(userId));
+			var user = await _userService.GetUserByIdAsync(Int32.Parse(userId));
 
 			if (user == null || user.RefreshToken != refreshToken || user.RefreshTokenExiryTime <= DateTime.Now)
 			{
@@ -55,7 +56,7 @@ namespace Plants.info.API.Controllers
 			var newRefreshToken = _jwtHandler.GenerateRefreshToken();
 
 			user.RefreshToken = newRefreshToken;
-			await _userRepo.SaveAllChangesAsync();
+			await _userService.SaveAllChangesAsync();
 
 			return Ok(new AuthResponseBody { Token = newAccessToken, RefreshToken = newRefreshToken, IsAuthSuccessful = true, UserId = user.Id }); 
 		}
@@ -68,12 +69,12 @@ namespace Plants.info.API.Controllers
 
             if (userId == null) return BadRequest("Invalid client Id");
 
-            var user = await _userRepo.GetUserByIdAsync(Int32.Parse(userId));
+            var user = await _userService.GetUserByIdAsync(Int32.Parse(userId));
 
             if (user == null) return BadRequest();
 
 			user.RefreshToken = null;
-			await _userRepo.SaveAllChangesAsync();
+			await _userService.SaveAllChangesAsync();
 			
             return NoContent(); 
 		}
