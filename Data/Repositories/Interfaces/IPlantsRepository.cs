@@ -22,6 +22,8 @@ namespace Plants.info.API.Data.Repository
         Task DeletePlantNoteAsync(int userId, int plantId, int noteId);
         Task CreatePlantNoteAsync(PlantNote plantNoteObject);
 
+        Task DeleteAllPlantNotesByUserIdAsync(int userId, int plantId); 
+
         Task<PlantImage?> GetPlantImage(int userId, int plantId);
         Task CreatePlantImageAsync(PlantImage plantImage); 
 

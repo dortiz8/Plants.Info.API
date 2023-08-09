@@ -42,6 +42,15 @@ namespace Plants.info.API.Controllers
             public string? Password { get; set; }
         }
 
+        // Request body expected when a user sends a request to the above endpoint
+        public class AuthenticationRequestBodyEncrypted
+        {
+            [Required(ErrorMessage = "Username is required.")]
+            public string? UserName { get; set; }
+            [Required(ErrorMessage = "Password is required.")]
+            public byte[]? Password { get; set; }
+        }
+
         // Authentication Response
         public class AuthResponseBody
         {
@@ -93,8 +102,16 @@ namespace Plants.info.API.Controllers
 
         }
 
-        private int ValidateUserCreds(string? psw1, string? psw2) => psw1 != null ? String.Compare(psw1, psw2) : -1; 
-    
+        [HttpPost("googleAuthenticate")]
+        public ActionResult<string> GoogleAuthenticate(object token)
+        {
+            Console.WriteLine(token);
+            return Ok(); 
+        }
+
+        private int ValidateUserCreds(string? psw1, string? psw2) => psw1 != null ? String.Compare(psw1, psw2) : -1;
+       
+
     }
 }
 
