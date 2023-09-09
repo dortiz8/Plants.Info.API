@@ -33,6 +33,11 @@ namespace Plants.info.API.Data.Repository
             return await _ctx.Users.FirstOrDefaultAsync(x => x.UserName == userName); 
         }
 
+        public async Task<PlantInfoUser?> FindUserByEmailAsync(string email)
+        {
+            return await _ctx.Users.FirstOrDefaultAsync(x => x.Email == email);
+        }
+
         public async Task<IEnumerable<PlantInfoUser>> GetAllUsersAsync()
         {
            return await _ctx.Users.OrderBy(x => x.UserName).ToListAsync(); 

@@ -81,7 +81,7 @@ namespace Plants.info.API.Controllers
             }
       
         }
-        [Authorize(Policy = "RoleMustBeAdmin")] // Makes sure we are authenticated with a token before accessing this endpoint
+        //[Authorize(Policy = "RoleMustBeAdmin")] // Makes sure we are authenticated with a token before accessing this endpoint
         [HttpPost]
         public async Task<ActionResult<PlantInfoUser>> CreateUser( UserCreation userCreationObject)
         {
@@ -95,14 +95,15 @@ namespace Plants.info.API.Controllers
                 
                 var newUser = new PlantInfoUser()
                 {
-                    FirstName = userCreationObject.FirstName,
-                    LastName = userCreationObject.LastName,
+                    FirstName = userCreationObject.Name,
+                    LastName = userCreationObject.Lname,
                     UserName = userCreationObject.UserName,
                     Password = userCreationObject.Password,
                     Email = userCreationObject.Email,
                     CreatedDate = DateTime.Now,
-                    UserRole = userCreationObject.UserRole
                 };
+
+
 
                 await _repo.CreateUserAsync(newUser);
                 await _repo.SaveAllChangesAsync();
@@ -111,8 +112,8 @@ namespace Plants.info.API.Controllers
                 {
                     Id = newUser.Id,
                     UserName = userCreationObject.UserName,
-                    FirstName = userCreationObject.FirstName,
-                    LastName = userCreationObject.LastName
+                    FirstName = userCreationObject.Name,
+                    LastName = userCreationObject.Lname
                 }; 
 
                 return CreatedAtRoute("getUser", new

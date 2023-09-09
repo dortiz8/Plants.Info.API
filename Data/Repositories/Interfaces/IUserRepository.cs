@@ -13,7 +13,9 @@ namespace Plants.info.API.Data.Repository
 
         Task<bool> ValidateUserAsync(string userName, string password);
 
-        Task<PlantInfoUser?> FindUserByUsernameAsync(string userName); 
+        Task<PlantInfoUser?> FindUserByUsernameAsync(string userName);
+        Task<PlantInfoUser?> FindUserByEmailAsync(string email);
+
 
         Task CreateUserAsync(PlantInfoUser userObject);
 

@@ -1,21 +1,26 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
+using Plants.info.API.Data.Models;
 using Plants.info.API.Models;
+
 
 namespace Plants.info.API.Data.Services.JwtFeatures
 {
 	public class JwtHandler: IJwtHandler
     {
         private readonly IConfiguration _config;
+        private readonly IConfigurationSection _googleSettings; 
 
         public JwtHandler(IConfiguration config)
 		{
             _config = config;
+            _googleSettings = _config.GetSection("GoogleAuthSettings"); 
         }
         public SigningCredentials GetSigningCredentials()
         {

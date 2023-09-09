@@ -7,7 +7,8 @@ namespace Plants.info.API.Data.Services.UserServices
 	{
         Task<bool> UserExistsAsync(int userId);
         Task<PlantInfoUser?> GetUserByIdAsync(int userId);
-        Task<bool> SaveAllChangesAsync(); 
+        Task<bool> SaveAllChangesAsync();
+        Task<PlantInfoUser?> FindUserByEmailAsync(string email);
     }
 }
 

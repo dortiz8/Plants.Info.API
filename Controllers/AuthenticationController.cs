@@ -6,13 +6,18 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Google.Apis.Auth;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Plants.info.API.Data.Models;
+using Plants.info.API.Data.Models.Authentication;
 using Plants.info.API.Data.Repository;
 using Plants.info.API.Data.Services.JwtFeatures;
+using Plants.info.API.Data.Services.JwtFeatures.Interfaces;
+using Plants.info.API.Data.Services.UserServices;
 using Plants.info.API.Models;
+using static Plants.info.API.Controllers.AuthenticationController;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -24,89 +29,73 @@ namespace Plants.info.API.Controllers
     public class AuthenticationController : Controller
     {
         private readonly IConfiguration _config;
-        private readonly IUserRepository _userRepo;
+        private readonly IUserService _userService;
+        private readonly IJwtService _jwtService;
+
         public IJwtHandler _jwtHandler { get; }
 
-        public AuthenticationController(IConfiguration configuration, IUserRepository userRepository, IJwtHandler jwtHandler)
+        public AuthenticationController(IConfiguration configuration, IUserService userService, IJwtHandler jwtHandler, IJwtService jwtService)
         {
             _config = configuration ?? throw new ArgumentNullException(nameof(configuration));
-            _userRepo = userRepository;
+            _userService = userService;
             _jwtHandler = jwtHandler;
-        }
-        // Request body expected when a user sends a request to the above endpoint
-        public class AuthenticationRequestBody
-        {
-            [Required(ErrorMessage = "Username is required.")]
-            public string? UserName { get; set; }
-            [Required(ErrorMessage = "Password is required.")]
-            public string? Password { get; set; }
-        }
-
-        // Request body expected when a user sends a request to the above endpoint
-        public class AuthenticationRequestBodyEncrypted
-        {
-            [Required(ErrorMessage = "Username is required.")]
-            public string? UserName { get; set; }
-            [Required(ErrorMessage = "Password is required.")]
-            public byte[]? Password { get; set; }
-        }
-
-        // Authentication Response
-        public class AuthResponseBody
-        {
-            public bool IsAuthSuccessful { get; set; }
-            public string? ErrorMessage { get; set; }
-            public string? Token { get; set; }
-            public string? RefreshToken { get; set; }
-            public int? UserId { get; set; }
-        }
-
-        public class RefreshTokenRequestBody
-        {
-            public string? Token { get; set; }
-            public string? RefreshToken { get; set; }
+            _jwtService = jwtService;
         }
 
 
-        [HttpPost("authenticate")]
-        public async Task<ActionResult<string>> Authenticate([FromBody] AuthenticationRequestBody authenticationRequestBody)
-        {
-            // Step #1 Validate user credentials
-            var user = await _userRepo.FindUserByUsernameAsync(authenticationRequestBody.UserName);
+        //[HttpPost("authenticate")]
+        //public async Task<ActionResult<string>> Authenticate([FromBody] AuthenticationRequestBody authenticationRequestBody)
+        //{
+        //    // Step #1 Validate user credentials
+        //    var user = await _userService.FindUserByUsernameAsync(authenticationRequestBody.UserName);
 
             
-            if(user == null) return NotFound(new AuthResponseBody { ErrorMessage = "No account found" });
+        //    if(user == null) return NotFound(new AuthResponseBody { ErrorMessage = "No account found" });
 
-            var psw1 = user.Password;
-            var psw2 = authenticationRequestBody.Password;
-            var valid = ValidateUserCreds(psw1, psw2); 
+        //    var psw1 = user.Password;
+        //    var psw2 = authenticationRequestBody.Password;
+        //    var valid = ValidateUserCreds(psw1, psw2); 
 
-            if (valid != 0) return Unauthorized(new AuthResponseBody { ErrorMessage = "Invalid credentials" }); 
+        //    if (valid != 0) return Unauthorized(new AuthResponseBody { ErrorMessage = "Invalid credentials" }); 
            
 
-            // Step #2 & #3 create a security key and signing credentials
+        //    // Step #2 & #3 create a security key and signing credentials
 
          
-            var token = _jwtHandler.GenerateAccessToken(user); 
+        //    var token = _jwtHandler.GenerateAccessToken(user); 
 
-            var refreshToken = _jwtHandler.GenerateRefreshToken();
+        //    var refreshToken = _jwtHandler.GenerateRefreshToken();
 
-            user.RefreshToken = refreshToken;
-            user.RefreshTokenExiryTime = DateTime.Now.AddDays(2);
+        //    user.RefreshToken = refreshToken;
+        //    user.RefreshTokenExiryTime = DateTime.Now.AddDays(2);
 
-            await _userRepo.SaveAllChangesAsync(); 
+        //    await _userService.SaveAllChangesAsync(); 
 
 
-            // Return a response body with the token included
-            return Ok(new AuthResponseBody { IsAuthSuccessful = true, Token = token, RefreshToken = refreshToken, UserId = user.Id }); 
+        //    // Return a response body with the token included
+        //    return Ok(new AuthResponseBody { IsAuthSuccessful = true, Token = token, RefreshToken = refreshToken, UserId = user.Id }); 
 
-        }
+        //}
 
         [HttpPost("googleAuthenticate")]
-        public ActionResult<string> GoogleAuthenticate(object token)
+        public async Task<ActionResult<string>> GoogleAuthenticate([FromBody] GoogleAuthenticateRequestBody requestBody)
         {
-            Console.WriteLine(token);
-            return Ok(); 
+            //var tokenid = HttpContext.Request.Form["credential"];
+            GoogleJsonWebSignature.Payload payload = await GoogleJsonWebSignature.ValidateAsync(requestBody.IdToken);
+            if (!payload.Audience.Equals(_config["GoogleAuthSettings:clientId"]))
+                return BadRequest();
+
+            var user = await _userService.FindUserByEmailAsync(requestBody.Email);
+
+            if (user == null) return NotFound(new AuthResponseBody { ErrorMessage = "No account found" });
+
+            var (token, refreshToken) =  await _jwtService.GetAuthenticationTokens(user);
+
+            if(token != null && refreshToken != null)
+            {
+                return Ok(new AuthResponseBody { IsAuthSuccessful = true, Token = token, RefreshToken = refreshToken, UserId = user.Id }); 
+            }
+            return StatusCode(500); 
         }
 
         private int ValidateUserCreds(string? psw1, string? psw2) => psw1 != null ? String.Compare(psw1, psw2) : -1;
