@@ -14,11 +14,12 @@ using Plants.info.API.Data.Services;
 using Plants.info.API.Data.Services.PlantServices.Interfaces;
 using Plants.info.API.Data.Services.UserServices;
 using Plants.info.API.Data.Services.Utils;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Plants.info.API.Controllers
 {
+   [Authorize] //we have no way to pass down id values to this policy, therefore a custom attribute needs to be created but it is not recommended.
     [Route("api/users/{userId}/plants")] // Since we need to gather user information to get plants we reflect the URL as such and set plants as a child resource of Users. 
-    [Authorize] //we have no way to pass down id values to this policy, therefore a custom attribute needs to be created but it is not recommended.
     [ApiController]
     public class PlantsController : ControllerBase
     {

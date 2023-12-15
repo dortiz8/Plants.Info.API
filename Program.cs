@@ -1,6 +1,9 @@
 using Plants.info.API.Data;
 using Plants.info.API.Data.Contexts;
 using Plants.info.API.Data.Repository;
+using Plants.info.API.Security.Data.Services.Extensions;
+using Plants.info.API.Data.Services.Extensions;
+using Plants.info.API.Persistence.Data.Services.Extensions; 
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -10,6 +13,7 @@ using System.Text;
 using Plants.info.API.Data.Services.JwtFeatures;
 using Plants.info.API.Data.Services;
 using Plants.info.API.Data.Services.Extensions;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
@@ -25,43 +29,58 @@ var connectionString = builder.Configuration.GetConnectionString("UserContextDb"
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-builder.Services.AddTransient<UserSeeder>(); // new instance is created per request
-builder.Services.AddScoped<IUserRepository, UserRepository>(); // one instance per request
-builder.Services.AddScoped<IMenusRepository, MenusRepository>(); // one instance per request
+//builder.Services.AddTransient<UserSeeder>(); // new instance is created per request
+//builder.Services.AddScoped<IUserRepository, UserRepository>(); // one instance per request
+//builder.Services.AddScoped<IMenusRepository, MenusRepository>(); // one instance per request
+builder.Services.AddBusinessInfrastructure();
+builder.Services.AddSingleton<FileExtensionContentTypeProvider>(); 
+builder.Services.AddDbContext<UserContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddSecurityInfrastructure();
+builder.Services.AddPersistenceInfrastructure(); 
 
 // Authentication services 
-builder.Services.AddAuthentication("Bearer")
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new()
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Authentication:Issuer"],
-            ValidAudience = builder.Configuration["Authentication:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration["Authentication:SecretForKey"]))
-        };
-    });
-
-// Authentication policies
-builder.Services.AddAuthorization(options =>
+builder.Services.AddAuthentication((x) =>
 {
-    //options.AddPolicy("IdsMustMatch", policy =>
-    //{
-    //    policy.RequireAuthenticatedUser();
-    //    policy.RequireClaim("userId", "1");
-    //});
-    options.AddPolicy("RoleMustBeAdmin", policy =>
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+   // x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+
+})
+.AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false;
+    options.SaveToken = true; 
+    options.TokenValidationParameters = new TokenValidationParameters 
     {
-        policy.RequireAuthenticatedUser();
-        policy.RequireClaim("access_role", "9");
-    }); 
+        ValidIssuer = builder.Configuration["Authentication:Issuer"],
+        ValidAudience = builder.Configuration["Authentication:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration["Authentication:SecretForKey"])),
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+    };
 });
 
+// Authentication policies
+//builder.Services.AddAuthorization(options =>
+//{
+//    //options.AddPolicy("IdsMustMatch", policy =>
+//    //{
+//    //    policy.RequireAuthenticatedUser();
+//    //    policy.RequireClaim("userId", "1");
+//    //});
+//    //options.AddPolicy("RoleMustBeAdmin", policy =>
+//    //{
+//    //    policy.RequireAuthenticatedUser();
+//    //    policy.RequireClaim("access_role", "9");
+//    //}); 
+//});
+
+builder.Services.AddAuthorization(); 
+
 #if DEBUG
-    builder.Services.AddScoped<IPlantsRepository, PlantsRepository>();
+    //builder.Services.AddScoped<IPlantsRepository, PlantsRepository>();
 #else
     builder.Services.AddScoped<IPlantsRepository, PlantsRepository>();
 #endif
@@ -83,9 +102,6 @@ builder.Services.AddControllers( options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.MyServicesGroup(); 
-builder.Services.AddSingleton<FileExtensionContentTypeProvider>(); 
-builder.Services.AddDbContext<UserContext>(options => options.UseSqlServer(connectionString));
 //builder.Services.AddScoped<IJwtHandler, JwtHandler>(); 
 // Once all services are built and configured, then the web app can be built. 
 var app = builder.Build();
@@ -101,7 +117,7 @@ void RunSeeding(IHost app)
     {
         var seeder = scope.ServiceProvider.GetService<UserSeeder>();
         //seeder.Unseed(); // We can possibly use this to clear out seeded data
-        seeder.SeedSampleData();
+        seeder.SeedSampleData(builder.Configuration["Paths:JsonSamplePlants"]);
     }
 }
 
@@ -113,11 +129,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();// builds a UI
 }
 
-app.UseHttpsRedirection();
 // Enable enpoint routing 
-app.UseRouting(); 
-app.UseAuthentication(); 
+app.UseHttpsRedirection();
+app.UseRouting();
 app.UseCors("CorsPolicy");
+
+app.UseAuthentication(); 
 app.UseAuthorization();
 
 

@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
 using static Plants.info.API.Controllers.AuthenticationController;
 using Plants.info.API.Data.Services.UserServices;
+using Plants.info.API.Data.Models.Authentication;
 
 namespace Plants.info.API.Controllers
 {
